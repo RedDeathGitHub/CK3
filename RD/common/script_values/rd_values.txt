@@ -1,0 +1,7 @@
+﻿education_cost_level1 = 500
+education_cost_level2 = 1000
+education_cost_level3 = 1500
+education_cost_level4 = 2000
+
+commander_trait_cost = 3000
+attribute_cost = 750

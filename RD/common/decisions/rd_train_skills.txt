@@ -36,7 +36,7 @@ train_intrigue1_decision = {
 	}
 	
 	cost = {
-		gold = 500
+		gold = education_cost_level1
 	}
 	
 	effect = {
@@ -62,7 +62,7 @@ train_intrigue2_decision = {
 	}
 	
 	cost = {
-		gold = 1000
+		gold = education_cost_level2
 	}
 	
 	effect = {
@@ -89,7 +89,7 @@ train_intrigue3_decision = {
 	}
 	
 	cost = {
-		gold = 1500
+		gold = education_cost_level3
 	}
 	
 	effect = {
@@ -116,7 +116,7 @@ train_intrigue4_decision = {
 	}
 	
 	cost = {
-		gold = 2000
+		gold = education_cost_level4
 	}
 	
 	effect = {
@@ -148,7 +148,7 @@ train_diplomacy1_decision = {
 	}
 	
 	cost = {
-		gold = 500
+		gold = education_cost_level1
 	}
 	
 	effect = {
@@ -174,7 +174,7 @@ train_diplomacy2_decision = {
 	}
 	
 	cost = {
-		gold = 1000
+		gold = education_cost_level2
 	}
 	
 	effect = {
@@ -201,7 +201,7 @@ train_diplomacy3_decision = {
 	}
 	
 	cost = {
-		gold = 1500
+		gold = education_cost_level3
 	}
 	
 	effect = {
@@ -260,7 +260,7 @@ train_stewardship1_decision = {
 	}
 	
 	cost = {
-		gold = 500
+		gold = education_cost_level1
 	}
 	
 	effect = {
@@ -286,7 +286,7 @@ train_stewardship2_decision = {
 	}
 	
 	cost = {
-		gold = 1000
+		gold = education_cost_level2
 	}
 	
 	effect = {
@@ -313,7 +313,7 @@ train_stewardship3_decision = {
 	}
 	
 	cost = {
-		gold = 1500
+		gold = education_cost_level3
 	}
 	
 	effect = {
@@ -372,7 +372,7 @@ train_martial1_decision = {
 	}
 	
 	cost = {
-		gold = 500
+		gold = education_cost_level1
 	}
 	
 	effect = {
@@ -398,7 +398,7 @@ train_martial2_decision = {
 	}
 	
 	cost = {
-		gold = 1000
+		gold = education_cost_level2
 	}
 	
 	effect = {
@@ -425,7 +425,7 @@ train_martial3_decision = {
 	}
 	
 	cost = {
-		gold = 1500
+		gold = education_cost_level3
 	}
 	
 	effect = {
@@ -484,7 +484,7 @@ train_learning1_decision = {
 	}
 	
 	cost = {
-		gold = 500
+		gold = education_cost_level1
 	}
 	
 	effect = {
@@ -510,7 +510,7 @@ train_learning2_decision = {
 	}
 	
 	cost = {
-		gold = 1000
+		gold = education_cost_level2
 	}
 	
 	effect = {
@@ -537,7 +537,7 @@ train_learning3_decision = {
 	}
 	
 	cost = {
-		gold = 1500
+		gold = education_cost_level3
 	}
 	
 	effect = {
@@ -593,7 +593,7 @@ train_forest_fighter_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -621,7 +621,7 @@ train_cautious_leader_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -649,7 +649,7 @@ train_rough_terrain_expert_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -677,7 +677,7 @@ train_holy_warrior_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -705,7 +705,7 @@ train_jungle_stalker_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -733,7 +733,7 @@ train_reaver_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -761,7 +761,7 @@ train_desert_warrior_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -789,7 +789,7 @@ train_flexible_leader_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -817,7 +817,7 @@ train_forder_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -845,7 +845,7 @@ train_unyielding_defender_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -873,7 +873,7 @@ train_aggressive_attacker_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -901,7 +901,7 @@ train_military_engineer_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -929,7 +929,7 @@ train_logistician_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -957,7 +957,7 @@ train_organizer_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -985,7 +985,7 @@ train_negotiator_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -1013,7 +1013,7 @@ train_light_troop_specialist_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -1041,7 +1041,7 @@ train_heavy_troop_specialist_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -1069,7 +1069,7 @@ train_mounted_troop_specialist_decision = {
 	}
 	
 	cost = {
-		prestige = 5000
+		prestige = commander_trait_cost
 	}
 	
 	effect = {
@@ -1091,7 +1091,7 @@ gain_learning_decision = {
 	picture = "gfx/interface/icons/message_feed/learning.dds"
 
 	cost = {
-		piety = 750
+		piety = attribute_cost
 	}
 	
 	effect = {
@@ -1113,7 +1113,7 @@ gain_martial_decision = {
 	picture = "gfx/interface/icons/message_feed/martial.dds"
 
 	cost = {
-		piety = 750
+		piety = attribute_cost
 	}
 	
 	effect = {
@@ -1135,7 +1135,7 @@ gain_diplomacy_decision = {
 	picture = "gfx/interface/icons/message_feed/diplomacy.dds"
 
 	cost = {
-		piety = 750
+		piety = attribute_cost
 	}
 	
 	effect = {
@@ -1157,7 +1157,7 @@ gain_intrigue_decision = {
 	picture = "gfx/interface/icons/message_feed/intrigue.dds"
 
 	cost = {
-		piety = 750
+		piety = attribute_cost
 	}
 	
 	effect = {
@@ -1179,11 +1179,33 @@ gain_stewardship_decision = {
 	picture = "gfx/interface/icons/message_feed/stewardship.dds"
 
 	cost = {
-		piety = 750
+		piety = attribute_cost
 	}
 	
 	effect = {
 		add_stewardship_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+gain_prowess_decision = {
+	picture = "gfx/interface/icons/traits/prowess.dds"
+
+	cost = {
+		gold = attribute_cost
+	}
+	
+	effect = {
+		add_prowess_skill = 1
 	}
 	
 	ai_potential = {
