@@ -1,0 +1,4 @@
+﻿zolnowscy = {
+	name = "dynn_Zolnowscy"
+	culture = "polish"
+}

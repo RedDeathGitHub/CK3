@@ -387,7 +387,7 @@ window = {
 
 							portrait_texture = "[EventWindow.GetAnimatedEventPortraitTexture('left_portrait', 'camera_event_left', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							alwaystransparent = "[Not(EventWindow.ShouldShowPortraitInfo('left_portrait'))]"
-							tooltip_enabled = "[EventWindow.ShouldShowPortraitInfo('left_portrait')]"
+							tooltip_enabled = "[Not(EventWindow.ShouldShowPortraitInfo('left_portrait'))]"
 
 							blockoverride "grayscale" {}
 
@@ -407,6 +407,39 @@ window = {
 									spriteType = Corneredstretched
 									blend_mode = alphamultiply
 								}
+							}
+
+							text_label_center = {
+								visible = "[And(EventWindow.HasPortraitCharacter('left_portrait'), EventWindow.HasPortraitCharacter('right_portrait'))]"
+								parentanchor = bottom|hcenter
+								position = { -100 0 }
+								alwaystransparent = yes
+								text = "[Character.GetShortUIName]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
+							}
+
+							text_label_center = {
+								visible = "[And(And(EventWindow.HasPortraitCharacter('left_portrait'), EventWindow.HasPortraitCharacter('right_portrait')), And(Character.HasRelationTo(GetPlayer), Not(Character.IsLocalPlayer)))]"
+								parentanchor = bottom|hcenter
+								position = { -100 -20 }
+								alwaystransparent = yes
+								text = "[Character.GetRelationToString(GetPlayer)]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
+							}
+
+							text_label_center = {
+								visible = "[And(And(EventWindow.HasPortraitCharacter('left_portrait'), EventWindow.HasPortraitCharacter('right_portrait')), And(And(Not(Character.HasRelationTo(GetPlayer)), Character.HasLandedTitles), Not(Character.IsLocalPlayer)))]"
+								parentanchor = bottom|hcenter
+								position = { -100 -20 }
+								alwaystransparent = yes
+								text = "[Character.GetPrimaryTitle.GetName]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
 							}
 						}
 					}
@@ -428,7 +461,7 @@ window = {
 
 							portrait_texture = "[EventWindow.GetAnimatedEventPortraitTexture('right_portrait', 'camera_event_right', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 							alwaystransparent = "[Not(EventWindow.ShouldShowPortraitInfo('right_portrait'))]"
-							tooltip_enabled = "[EventWindow.ShouldShowPortraitInfo('right_portrait')]"
+							tooltip_enabled = "[Not(EventWindow.ShouldShowPortraitInfo('right_portrait'))]"
 
 							blockoverride "grayscale" {}
 
@@ -449,6 +482,39 @@ window = {
 									blend_mode = alphamultiply
 								}
 							}
+
+							text_label_center = {
+								visible = "[EventWindow.HasPortraitCharacter('right_portrait')]"
+								parentanchor = bottom|hcenter
+								position = { 100 0 }
+								alwaystransparent = yes
+								text = "[Character.GetShortUIName]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
+							}
+
+							text_label_center = {
+								visible = "[And(EventWindow.HasPortraitCharacter('right_portrait'), And(Character.HasRelationTo(GetPlayer), Not(Character.IsLocalPlayer)))]"
+								parentanchor = bottom|hcenter
+								position = { 100 -20 }
+								alwaystransparent = yes
+								text = "[Character.GetRelationToString(GetPlayer)]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
+							}
+
+							text_label_center = {
+								visible = "[And(EventWindow.HasPortraitCharacter('right_portrait'), And(And(Not(Character.HasRelationTo(GetPlayer)), Character.HasLandedTitles), Not(Character.IsLocalPlayer)))]"
+								parentanchor = bottom|hcenter
+								position = { 100 -20 }
+								alwaystransparent = yes
+								text = "[Character.GetPrimaryTitle.GetName]"
+								max_width = 230
+								align = center
+								fontsize_min = 12
+							}
 						}
 					}
 				}
@@ -465,7 +531,7 @@ window = {
 					parentanchor = bottom|left
 					portrait_texture = "[EventWindow.GetAnimatedEventPortraitTexture('left_portrait', 'camera_event_center', PdxGetWidgetScreenSize(PdxGuiWidget.Self))]"
 					alwaystransparent = "[Not(EventWindow.ShouldShowPortraitInfo('left_portrait'))]"
-					tooltip_enabled = "[EventWindow.ShouldShowPortraitInfo('left_portrait')]"
+					tooltip_enabled = "[Not(EventWindow.ShouldShowPortraitInfo('left_portrait'))]"
 					using = tooltip_below
 					tooltip_offset = { 550 -580 }
 
@@ -488,11 +554,44 @@ window = {
 							blend_mode = alphamultiply
 						}
 					}
+
+					text_label_center = {
+						visible = "[And(EventWindow.HasPortraitCharacter('left_portrait'), Not(EventWindow.HasPortraitCharacter('right_portrait')))]"
+						parentanchor = bottom|hcenter
+						alwaystransparent = yes
+						text = "[Character.GetShortUIName]"
+						max_width = 230
+						align = center
+						fontsize_min = 12
+					}
+
+					text_label_center = {
+						visible = "[And(And(EventWindow.HasPortraitCharacter('left_portrait'), Not(EventWindow.HasPortraitCharacter('right_portrait'))), And(Character.HasRelationTo(GetPlayer), Not(Character.IsLocalPlayer)))]"
+						parentanchor = bottom|hcenter
+						position = { 0 -20 }
+						alwaystransparent = yes
+						text = "[Character.GetRelationToString(GetPlayer)]"
+						max_width = 230
+						align = center
+						fontsize_min = 12
+					}
+
+					text_label_center = {
+						visible = "[And(And(EventWindow.HasPortraitCharacter('left_portrait'), Not(EventWindow.HasPortraitCharacter('right_portrait'))), And(And(Not(Character.HasRelationTo(GetPlayer)), Character.HasLandedTitles), Not(Character.IsLocalPlayer)))]"
+						parentanchor = bottom|hcenter
+						position = { 0 -20 }
+						alwaystransparent = yes
+						text = "[Character.GetPrimaryTitle.GetName]"
+						max_width = 230
+						align = center
+						fontsize_min = 12
+					}
 				}
 
 				margin_widget = {
 					name = "bottom_characters"
 					size = { 100% 170 }
+					position = { 0 -30 }
 					parentanchor = bottom|hcenter
 					margin_bottom = 10
 					allow_outside = yes
@@ -502,7 +601,7 @@ window = {
 						visible = "[Or(EventWindow.HasPortraitCharacter('lower_left_portrait'), Or(EventWindow.HasPortraitCharacter('lower_center_portrait'), EventWindow.HasPortraitCharacter('lower_right_portrait')))]"
 						position = { -55 7 }
 						size = { 624 100% }
-						texture = "gfx/interface/window_event/event_bottom_char_bg.dds"
+#						texture = "gfx/interface/window_event/event_bottom_char_bg.dds"
 					}
 
 					flowcontainer = {
@@ -566,7 +665,7 @@ window = {
 									blockoverride "coa"
 									{
 										event_portrait_status_icons_left = {
-											visible = "[EventWindow.ShouldShowPortraitInfo('lower_right_portrait')]"
+											visible = "[EventWindow.ShouldShowPortraitInfo('lower_left_portrait')]"
 											parentanchor = bottom|left
 											position = { -15 -5 }
 											scale = 0.8
@@ -590,9 +689,9 @@ window = {
 
 									text_label_center = {
 										parentanchor = bottom|hcenter
-										position = { 20 -5 }
+										position = { 0 -10 }
 										alwaystransparent = yes
-										text = "[Character.GetShortUINameNoTooltip]"
+										text = "[Character.GetShortUIName]"
 										max_width = 115
 										align = center
 										fontsize_min = 12
@@ -659,9 +758,9 @@ window = {
 
 									text_label_center = {
 										parentanchor = bottom|hcenter
-										position = { 20 -5 }
+										position = { 0 -10 }
 										alwaystransparent = yes
-										text = "[Character.GetShortUINameNoTooltip]"
+										text = "[Character.GetShortUIName]"
 										max_width = 115
 										align = center
 										fontsize_min = 12
@@ -758,9 +857,9 @@ window = {
 
 									text_label_center = {
 										parentanchor = bottom|hcenter
-										position = { 20 -5 }
+										position = { 0 -10 }
 										alwaystransparent = yes
-										text = "[Character.GetShortUINameNoTooltip]"
+										text = "[Character.GetShortUIName]"
 										max_width = 115
 										align = center
 										fontsize_min = 12
@@ -1273,6 +1372,8 @@ window = {
 						tooltip_enabled = "[Not( StringIsEmpty( EventOption.GetTooltip ) )]"
 
 						onclick = "[EventOption.Select]"
+						shortcut = "window_event"
+
 						onmousehierarchyenter = "[EventOption.OnEnter]"
 						onmousehierarchyleave = "[EventOption.OnLeave]"
 						enabled = "[EventOption.IsValid]"

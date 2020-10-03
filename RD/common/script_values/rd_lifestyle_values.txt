@@ -1,0 +1,14 @@
+﻿miniscule_lifestyle_xp = 15
+minor_lifestyle_xp = 25
+medium_lifestyle_xp = 50
+major_lifestyle_xp = 150
+massive_lifestyle_xp = 250
+monumental_lifestyle_xp = 500
+
+
+miniscule_lifestyle_experience = 15
+minor_lifestyle_experience = 25
+medium_lifestyle_experience = 50
+major_lifestyle_experience = 150
+massive_lifestyle_experience = 250
+monumental_lifestyle_experience = 500

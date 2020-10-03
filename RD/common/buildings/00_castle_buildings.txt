@@ -1,0 +1,1519 @@
+﻿@holding_illustration_western = "gfx/interface/illustrations/holding_types/castle_western.dds"
+@holding_illustration_mena = "gfx/interface/illustrations/holding_types/castle_mena.dds"
+@holding_illustration_india = "gfx/interface/illustrations/holding_types/castle_india.dds"
+@holding_illustration_mediterranean = "gfx/interface/illustrations/holding_types/castle_mediterranean.dds"
+
+castle_01 = {
+	construction_time = slow_construction_time
+	
+	### WESTERN ###
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_01_mesh"
+			"building_western_castle_01_b_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_01_mena_mesh"
+			"building_western_castle_01_b_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_01_mediterranean_mesh"
+			"building_western_castle_01_b_mediterranean_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_01_mena_mesh"
+			"building_western_castle_01_b_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	### INDIAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_01_western_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { indian_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_01_mena_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_01_mediterranean_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_01_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MENA ###
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_01_western_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mena_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_01_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_01_mediterranean_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_01_indian_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MEDITERRANEAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_01_western_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mediterranean_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_01_mena_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_01_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_01_indian_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 0 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+		barony_cannot_construct_holding = no
+	}
+	
+	can_construct = {	
+		culture = {
+			has_innovation = innovation_motte
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal_holding_in_county = no
+	}
+	
+	cost_gold = main_building_tier_1_cost
+	next_building = castle_02
+	
+	levy = excellent_building_levy_tier_1
+	garrison = good_building_garrison_tier_1
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_1
+		fort_level = great_building_fort_level_tier_1
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.1
+	}
+		
+	flag = castle
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+castle_02 = {
+	construction_time = slow_construction_time
+	
+	### WESTERN ###
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_02_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 1 } }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_02_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_western_castle_02_mediterranean_mesh"
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_02_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MENA ###
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_02_western_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mena_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_02_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_02_mediterranean_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_02_indian_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### INDIAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_02_western_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { indian_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_02_mena_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_02_mediterranean_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_02_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MEDITERRANEAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_02_western_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mediterranean_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_02_mena_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_02_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_02_indian_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 1 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_battlements
+		}
+	}
+	
+	cost_gold = main_building_tier_2_cost
+	next_building = castle_03
+	
+	levy = excellent_building_levy_tier_2
+	garrison = good_building_garrison_tier_3
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_2
+		fort_level = great_building_fort_level_tier_2
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.2
+	}
+	
+	flag = castle
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+castle_03 = {
+	construction_time = slow_construction_time
+	
+	### WESTERN ###
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_03_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 2 } }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_03_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_western_castle_03_mediterranean_mesh"
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_03_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MENA ###
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_03_western_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mena_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_03_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_03_mediterranean_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_03_indian_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### INDIAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_03_western_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { indian_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_03_mena_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_03_mediterranean_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_03_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MEDITERRANEAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_03_western_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mediterranean_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_03_mena_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_03_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_03_indian_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 2 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_hoardings
+		}
+	}
+	
+	cost_gold = main_building_tier_3_cost
+	next_building = castle_04
+	
+	levy = excellent_building_levy_tier_3
+	garrison = good_building_garrison_tier_3
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_3
+		fort_level = great_building_fort_level_tier_3
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.3
+	}
+	
+	flag = castle
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+castle_04 = {
+	construction_time = slow_construction_time
+	
+	### WESTERN ###
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_04_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 3 } }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_04_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 3 } }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_western_castle_04_mediterranean_mesh"
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 3 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_castle_04_mena_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/western_castle" soundparameter = { "Tier" = 3 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MENA ###
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_04_western_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mena_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_04_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_04_mediterranean_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mena_castle_04_indian_mesh"
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mena_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mena_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### INDIAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_04_western_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { indian_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_04_mena_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_04_mediterranean_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_indian_castle_04_mesh"
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/indian_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { indian_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	### MEDITERRANEAN ###
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_04_western_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mediterranean_building_gfx }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_04_mena_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mena }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_04_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_mediterranean }
+	}
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_castle_04_indian_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/Castle/mediterranean_castle" soundparameter = { "Tier" = 3 } }
+		graphical_cultures = { mediterranean_building_gfx }
+		graphical_regions = { graphical_india }
+	}
+	
+	
+	
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_machicolations
+		}
+	}
+	
+	cost_gold = main_building_tier_4_cost
+	
+	levy = excellent_building_levy_tier_4
+	garrison = good_building_garrison_tier_4
+	province_modifier = {
+		monthly_income = normal_building_tax_tier_4
+		fort_level = great_building_fort_level_tier_4
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.4
+	}
+	
+	flag = castle
+
+	type_icon = "icon_building_ramparts.dds"
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+siege_works_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	cost_gold = normal_building_tier_1_cost
+	
+	character_modifier = {
+		siege_weapon_siege_value_mult = 0.01
+		siege_weapon_toughness_add = 1
+	}
+
+	next_building = siege_works_02
+
+	type_icon = "icon_building_siege_works.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+siege_works_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	character_modifier = {
+		siege_weapon_siege_value_mult = 0.02
+		siege_weapon_toughness_add = 2
+	}
+	
+	next_building = siege_works_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+siege_works_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	cost_gold = normal_building_tier_3_cost
+	
+	character_modifier = {
+		siege_weapon_siege_value_mult = 0.03
+		siege_weapon_toughness_add = 3
+	}
+
+	ai_value = {
+		base = 25
+	}
+}
+
+royal_armory_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	cost_gold = normal_building_tier_1_cost
+	
+	character_modifier = {
+		skirmishers_damage_mult = 0.005
+		archers_damage_mult = 0.005
+		pikemen_damage_mult = 0.005
+		heavy_infantry_damage_mult = 0.005
+		light_cavalry_damage_mult = 0.005
+		heavy_cavalry_damage_mult = 0.005
+		knight_effectiveness_mult = 0.005
+	}
+	
+	next_building = royal_armory_02
+
+	type_icon = "icon_building_royal_armory.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+royal_armory_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+
+	character_modifier = {
+		skirmishers_damage_mult = 0.1
+		archers_damage_mult = 0.01
+		pikemen_damage_mult = 0.01
+		heavy_infantry_damage_mult = 0.01
+		light_cavalry_damage_mult = 0.01
+		heavy_cavalry_damage_mult = 0.01
+		knight_effectiveness_mult = 0.01
+	}
+	
+	next_building = royal_armory_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+royal_armory_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+
+	cost_gold = normal_building_tier_3_cost
+
+	character_modifier = {
+		skirmishers_damage_mult = 0.015
+		archers_damage_mult = 0.015
+		pikemen_damage_mult = 0.015
+		heavy_infantry_damage_mult = 0.015
+		light_cavalry_damage_mult = 0.015
+		heavy_cavalry_damage_mult = 0.015
+		knight_effectiveness_mult = 0.015
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+blacksmiths_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	cost_gold = normal_building_tier_1_cost
+	
+	character_modifier = {
+		skirmishers_toughness_mult = 0.005
+		archers_toughness_mult = 0.005
+		pikemen_toughness_mult = 0.005
+		heavy_infantry_toughness_mult = 0.005
+		light_cavalry_toughness_mult = 0.005
+		heavy_cavalry_toughness_mult = 0.005
+		knight_effectiveness_mult = 0.005
+	}
+	
+	next_building = blacksmiths_02
+
+	type_icon = "icon_building_blacksmiths.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+blacksmiths_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	character_modifier = {
+		skirmishers_toughness_mult = 0.01
+		archers_toughness_mult = 0.01
+		pikemen_toughness_mult = 0.01
+		heavy_infantry_toughness_mult = 0.01
+		light_cavalry_toughness_mult = 0.01
+		heavy_cavalry_toughness_mult = 0.01
+		knight_effectiveness_mult = 0.01
+	}
+	
+	next_building = blacksmiths_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+blacksmiths_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	cost_gold = normal_building_tier_3_cost
+	
+	character_modifier = {
+		skirmishers_toughness_mult = 0.015
+		archers_toughness_mult = 0.015
+		pikemen_toughness_mult = 0.015
+		heavy_infantry_toughness_mult = 0.015
+		light_cavalry_toughness_mult = 0.015
+		heavy_cavalry_toughness_mult = 0.015
+		knight_effectiveness_mult = 0.015
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+curtain_walls_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_1_cost
+	
+	garrison = good_building_garrison_tier_1
+	
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_1
+		defender_advantage = 2
+	}
+
+	next_building = curtain_walls_02
+
+	type_icon = "icon_building_curtain_walls.dds"
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+curtain_walls_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_01
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_battlements
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_2_cost
+	
+	garrison = good_building_garrison_tier_2
+	
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_2
+		defender_advantage = 4
+	}
+	
+	next_building = curtain_walls_03
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+curtain_walls_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_03
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_hoardings
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_3_cost
+
+	garrison = good_building_garrison_tier_3
+
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_3
+		defender_advantage = 6
+	}
+
+	next_building = curtain_walls_04
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+curtain_walls_04 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = castle_04
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_machicolations
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = normal_building_tier_4_cost
+	
+	garrison = good_building_garrison_tier_4
+	
+	province_modifier = {
+		fort_level = good_building_fort_level_tier_4
+		defender_advantage = 8
+	}
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+barracks_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_1_cost
+	
+	character_modifier = {
+		pikemen_damage_mult = 0.008
+		heavy_infantry_damage_mult = 0.008
+		pikemen_toughness_mult = 0.008
+		heavy_infantry_toughness_mult = 0.008
+	}
+	
+	next_building = barracks_02
+	
+	type_icon = "icon_building_barracks.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+barracks_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_2_cost
+	
+	character_modifier = {
+		pikemen_damage_mult = 0.016
+		heavy_infantry_damage_mult = 0.016
+		pikemen_toughness_mult = 0.016
+		heavy_infantry_toughness_mult = 0.016
+	}
+	
+	next_building = barracks_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+barracks_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_3_cost
+	
+	character_modifier = {
+		pikemen_damage_mult = 0.024
+		heavy_infantry_damage_mult = 0.024
+		pikemen_toughness_mult = 0.024
+		heavy_infantry_toughness_mult = 0.024
+	}
+	
+	next_building = barracks_04
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+barracks_04 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_4_cost
+	
+	character_modifier = {
+		pikemen_damage_mult = 0.032
+		heavy_infantry_damage_mult = 0.032
+		pikemen_toughness_mult = 0.032
+		heavy_infantry_toughness_mult = 0.032
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+archery_ranges_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_1_cost
+	
+	character_modifier = {
+		archers_damage_mult = 0.008
+		archers_toughness_mult = 0.008
+		skirmishers_damage_mult = 0.008
+		skirmishers_toughness_mult = 0.008
+	}
+	
+	next_building = archery_ranges_02
+	
+	type_icon = "icon_building_royal_hunting_grounds.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+archery_ranges_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_2_cost
+	
+	character_modifier = {
+		archers_damage_mult = 0.016
+		archers_toughness_mult = 0.016
+		skirmishers_damage_mult = 0.016
+		skirmishers_toughness_mult = 0.016
+	}
+	
+	next_building = archery_ranges_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+archery_ranges_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_3_cost
+	
+	character_modifier = {
+		archers_damage_mult = 0.024
+		archers_toughness_mult = 0.024
+		skirmishers_damage_mult = 0.024
+		skirmishers_toughness_mult = 0.024
+	}
+	
+	next_building = archery_ranges_04
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+archery_ranges_04 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_4_cost
+	
+	character_modifier = {
+		archers_damage_mult = 0.032
+		archers_toughness_mult = 0.032
+		skirmishers_damage_mult = 0.032
+		skirmishers_toughness_mult = 0.032
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+jousting_lists_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_1_cost
+	
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.008
+		heavy_cavalry_toughness_mult = 0.008
+		light_cavalry_damage_mult = 0.008
+		light_cavalry_toughness_mult = 0.008
+	}
+	
+	next_building = jousting_lists_02
+	
+	type_icon = "icon_building_jousting_lists.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+jousting_lists_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_2_cost
+	
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.016
+		light_cavalry_damage_mult = 0.016
+		heavy_cavalry_toughness_mult = 0.016
+		light_cavalry_toughness_mult = 0.016
+	}
+	
+	next_building = jousting_lists_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+jousting_lists_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_3_cost
+	
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.024
+		light_cavalry_damage_mult = 0.024
+		heavy_cavalry_toughness_mult = 0.024
+		light_cavalry_toughness_mult = 0.024
+	}
+	
+	next_building = jousting_lists_04
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+jousting_lists_04 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_4_cost
+	
+	character_modifier = {
+		heavy_cavalry_damage_mult = 0.032
+		light_cavalry_damage_mult = 0.032
+		heavy_cavalry_toughness_mult = 0.032
+		light_cavalry_toughness_mult = 0.032
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

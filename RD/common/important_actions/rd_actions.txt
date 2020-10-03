@@ -1,0 +1,332 @@
+﻿action_can_demand_payment = {
+	type = alert
+
+	check_create_action = {
+		every_hooked_character = {
+			limit = {
+				root = {
+					is_character_interaction_potentially_accepted = {
+						recipient = prev
+						interaction = demand_payment_interaction
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_demand_payment
+				actor = root
+				recipient = this
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = demand_payment_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_can_ask_hof_for_money = {
+	type = alert
+	check_create_action = {
+		if = {
+			limit = {
+				exists = faith.religious_head
+				faith.religious_head = {
+					root = {
+						is_character_interaction_potentially_accepted = {
+							recipient = prev
+							interaction = hof_ask_for_gold_interaction
+						}
+					}
+				}
+			}
+			faith.religious_head = {
+				try_create_important_action = {
+					important_action_type = action_can_ask_hof_for_money
+					actor = root
+					recipient = this
+				}
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = hof_ask_for_gold_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_no_heir = {
+	check_create_action = {
+		if = {
+			limit = {
+				NOT = {
+					any_held_title = {
+						tier > tier_barony
+						any_title_heir = {
+							dynasty = root.dynasty
+						}
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_no_heir
+				actor = root
+				recipient = primary_heir
+			}
+		}
+	}
+
+	effect = {
+		scope:actor = {
+			open_view_data = {
+				view = character
+			}
+		}
+		start_tutorial_lesson = reactive_advice_looming_game_over
+	}
+}
+
+action_adult_player_heir_not_married = {
+	check_create_action = {
+		if = {
+			limit = {
+				NOT = { has_pending_interaction_of_type = marry_off_interaction }
+				NOT = { has_pending_interaction_of_type = arrange_marriage_interaction }
+				exists = player_heir
+				player_heir = {
+					dynasty = root.dynasty
+					can_marry_trigger = yes
+					can_have_children = yes
+					is_married = no
+					is_adult = yes
+					is_betrothed = no
+				}
+				is_character_interaction_valid = {
+					recipient = player_heir
+					interaction = marry_off_interaction
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_adult_player_heir_not_married
+				actor = root
+				recipient = player_heir
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = marry_off_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_adult_ruler_not_married = {
+	check_create_action = {
+		if = {
+			limit = {
+				NOT = { has_pending_interaction_of_type = marry_off_interaction }
+				NOT = { has_pending_interaction_of_type = arrange_marriage_interaction }
+				can_marry_trigger = yes
+				is_married = no
+				is_betrothed = no
+				is_adult = yes
+				is_character_interaction_valid = {
+					recipient = root
+					interaction = marry_off_interaction
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_adult_ruler_not_married
+				actor = root
+				recipient = root
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = marry_off_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_non_adult_ruler_not_betrothed = {
+	check_create_action = {
+		if = {
+			limit = {
+				age > 10
+				NOT = { has_pending_interaction_of_type = marry_off_interaction }
+				NOT = { has_pending_interaction_of_type = arrange_marriage_interaction }
+				is_married = no
+				is_betrothed = no
+				is_adult = no
+				is_character_interaction_valid = {
+					recipient = root
+					interaction = marry_off_interaction
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_non_adult_ruler_not_betrothed
+				actor = root
+				recipient = root
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = marry_off_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_betrothed_can_marry = {
+	check_create_action = {
+		every_potential_marriage_option = {
+			if = {
+				limit = {
+					is_betrothed = yes
+					is_adult = yes
+					betrothed = {
+						is_adult = yes
+						NAND = { # To avoid getting two alerts when both parties are in your own court
+							is_female = no
+							matchmaker = PREV.matchmaker
+						}
+					}
+					NOT = {
+						root = {
+							exists = prev.betrothed.court_owner
+							is_at_war_with = prev.betrothed.court_owner
+						}
+					}
+				}
+				try_create_important_action = {
+					important_action_type = action_betrothed_can_marry
+					actor = root
+					recipient = betrothed.matchmaker
+					secondary_actor = this
+					secondary_recipient = betrothed
+				}
+			}
+		}
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = arrange_marriage_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+			secondary_actor = scope:secondary_actor
+			secondary_recipient = scope:secondary_recipient
+		}
+	}
+}
+
+action_missing_ghw_beneficiary = {
+	check_create_action = {
+		if = {
+			limit = {
+				exists = faith.great_holy_war
+				faith.great_holy_war = { has_pledged_attacker = root }
+				NOT = { root = root.faith.great_holy_war.ghw_war_declarer } #Not for the Caliph himself.
+				NOT = { exists = ghw_beneficiary }
+			}
+			try_create_important_action = {
+				important_action_type = action_missing_ghw_beneficiary
+				actor = root
+			}
+		}
+	}
+	effect = {
+		faith.great_holy_war = {
+			open_view_data = {
+				view = great_holy_war
+			}
+		}
+	}
+}
+
+action_can_ransom = {
+	type = alert
+
+	check_create_action = {
+		every_prisoner = {
+			limit = {
+				OR = {
+					AND = {
+						OR = {
+							is_pool_guest = yes
+							is_ruler = yes
+						}
+						gold > 0
+					}
+					AND = {
+						is_ruler = no
+						exists = liege
+						liege = {
+							gold > 0
+						}
+					}
+				}
+				NOT = { is_at_war_with = root }
+				root = {
+					is_character_interaction_potentially_accepted = {
+						recipient = prev
+						interaction = ransom_interaction
+					}
+				}
+			}
+			try_create_important_action = {
+				important_action_type = action_can_ransom
+				actor = root
+				recipient = this
+			}
+		}
+		
+	}
+
+	effect = {
+		open_interaction_window = {
+			interaction = ransom_interaction
+			actor = scope:actor
+			recipient = scope:recipient
+		}
+	}
+}
+
+action_not_enough_knights = {
+	type = alert
+
+	check_create_action = {
+		if = {
+			limit = {
+				max_number_of_knights != root.number_of_knights
+			}
+			try_create_important_action = {
+				important_action_type = action_not_enough_knights
+				actor = root
+			}
+		}
+	}
+	effect = {
+		root = {
+			open_view = military
+			open_view = knights
+		}
+	}
+}

@@ -1,0 +1,241 @@
+﻿@cultural_maa_extra_ai_score = 25
+
+light_horsemen = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 10
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+	
+	counters = {
+		archers = 1
+	}
+	
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	mercenary_fallback = yes
+	holy_order_fallback = yes
+	
+	stack = 100
+	icon = light_cavalry
+}
+
+chasseur = {
+	type = light_cavalry
+	
+	damage = 30
+	toughness = 10
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+caballero = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 15
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+hobelar = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 15
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+hussar = {
+	type = light_cavalry
+	
+	damage = 30
+	toughness = 10
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+sahel_horsemen = {
+	type = light_cavalry
+	
+	damage = 25
+	toughness = 15
+	pursuit = 20
+	screen = 10
+	
+	terrain_bonus = {
+		drylands = { damage = 10 toughness = 5 }
+		floodplains = { damage = 10 toughness = 5 }
+		desert = { damage = 10 toughness = 5 }
+		oasis = { damage = 10 toughness = 5 }
+		hills = { damage = -10 }
+		mountains = { damage = -20 }
+		desert_mountains = { damage = -20 }
+		wetlands = { damage = -20 pursuit = -20 screen = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = light_cavalry
+}
+
+camel_rider = {
+	type = light_cavalry
+	
+	damage = 20
+	toughness = 20
+	pursuit = 10
+	screen = 15
+	
+	terrain_bonus = {
+		desert = { damage = 10 }
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+	
+	counters = {
+		archers = 1
+	}
+	
+	buy_cost = { gold = light_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = light_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = light_cavalry_high_maint_cost }
+	
+	stack = 100
+
+	icon = camel_riders
+}
+

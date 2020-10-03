@@ -1,0 +1,39 @@
+﻿mongol_invasion = {
+	default = random_mongol_invasion
+
+	default_mongol_invasion = {
+	
+	}
+	
+	never_mongol_invasion = {
+		flag = blocks_achievements
+	}
+	
+	random_mongol_invasion = {
+	
+	}
+}
+
+generate_families = {
+	default = on_generate_families_ai_only
+
+	on_generate_families = {
+	
+	}
+	
+	on_generate_families_ai_only = {
+	
+	}
+
+	off_generate_families = {
+	
+	}
+}
+
+hungarian_migration = {
+	default = launch_random
+	launch_historical = {}
+	launch_immediate = {}
+	launch_random = {}
+	launch_off = { flag = blocks_achievements }
+}

@@ -585,6 +585,7 @@ widget = {
 			alpha = 0.7
 
 			onclick = "[ToggleGameView('outliner')]"
+			shortcut = "outliner_window"
 			tooltip = "TOGGLE_OUTLINER"
 
 			state = {
@@ -2760,7 +2761,7 @@ widget = {
 
 ### Message Feed
 notifications_message_feed = {
-	position = { -10 -135 }
+	position = { -10 -9999 }
 	layer = bottom
 }
 

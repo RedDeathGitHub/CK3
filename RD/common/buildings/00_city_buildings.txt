@@ -1,0 +1,532 @@
+﻿@holding_illustration_western = "gfx/interface/illustrations/holding_types/city_western.dds"
+@holding_illustration_india = "gfx/interface/illustrations/holding_types/city_india.dds"
+@holding_illustration_mediterranean = "gfx/interface/illustrations/holding_types/city_mediterranean.dds"
+@holding_illustration_mena = "gfx/interface/illustrations/holding_types/city_mena.dds"
+
+city_01 = {
+	construction_time = slow_construction_time
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"western_city_01_a_mesh"
+			"western_city_01_b_mesh"
+			"western_city_01_c_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 0 } }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mena_city_01_mesh"
+		}
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_mena }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_indian_city_01_mesh"
+		}
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/indian_city" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_city_01_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 0 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		barony_cannot_construct_holding = no
+	}
+	
+	can_construct = {
+		culture = {
+			has_innovation = innovation_city_planning
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal_holding_in_county = no
+	}
+	cost_gold = main_building_tier_1_cost
+	
+	levy = normal_building_levy_tier_1
+	garrison = normal_building_garrison_tier_1
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_1
+	}
+	
+	flag = city
+	next_building = city_02
+
+	type_icon = "icon_building_guild_halls.dds"
+	
+	ai_value = {
+		base = 0
+		modifier = {
+			add = 500
+			scope:holder = {
+				domain_limit_available < 1
+			}
+		}
+	}
+}
+
+city_02 = {
+	construction_time = slow_construction_time
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"western_city_01_a_mesh"
+			"western_city_01_b_mesh"
+			"western_city_01_c_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 1 } }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mena_city_01_mesh"
+		}
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_mena }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_indian_city_01_mesh"
+		}
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/indian_city" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	asset = {
+		type = pdxmesh
+		name = "building_mediterranean_city_01_mesh"
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 1 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	cost_gold = main_building_tier_2_cost
+	
+	levy = normal_building_levy_tier_2
+	garrison = normal_building_garrison_tier_2
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_2
+	}
+	flag = city
+	next_building = city_03
+	ai_value = {
+		base = 100
+	}
+}
+
+city_03 = {
+	construction_time = slow_construction_time
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_city_02_a_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 2 } }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mena_city_02_mesh"
+		}
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mena }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_indian_city_02_mesh"
+		}
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/indian_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mediterranean_city_02_mesh"
+		}
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	cost_gold = main_building_tier_3_cost
+	next_building = city_04
+	
+	levy = normal_building_levy_tier_3
+	garrison = normal_building_garrison_tier_3
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_3
+	}
+	flag = city
+	ai_value = {
+		base = 100
+	}
+}
+
+city_04 = {
+	construction_time = slow_construction_time
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_western_city_02_a_mesh"
+		}
+		illustration = @holding_illustration_western
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/western_city" soundparameter = { "Tier" = 2 } }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mena_city_02_mesh"
+		}
+		illustration = @holding_illustration_mena
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mena_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mena }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_indian_city_02_mesh"
+		}
+		illustration = @holding_illustration_india
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/indian_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_india }
+	}
+	
+	asset = {
+		type = pdxmesh
+		names = {
+			"building_mediterranean_city_02_mesh"
+		}
+		illustration = @holding_illustration_mediterranean
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/mediterranean_city" soundparameter = { "Tier" = 2 } }
+		graphical_regions = { graphical_mediterranean }
+	}
+	can_construct_potential = {
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	cost_gold = main_building_tier_4_cost
+	
+	levy = normal_building_levy_tier_4
+	garrison = normal_building_garrison_tier_4
+	province_modifier = {
+		monthly_income = excellent_building_tax_tier_4
+	}
+	flag = city
+	ai_value = {
+		base = 100
+	}
+}
+
+
+####
+#
+# City Buildings
+#
+####
+
+### Guild Halls
+
+guild_halls_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		has_building_or_higher = city_01
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_1_cost
+	
+	province_modifier = {
+		tax_mult = 0.08
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.05
+	}
+	
+	next_building = guild_halls_02
+
+	type_icon = "icon_building_guild_halls.dds"
+	
+	ai_value = {
+		base = 500
+		modifier = {
+			add = 500
+			scope:holder = {
+				has_government = republic_government
+			}
+		}
+	}
+}
+
+guild_halls_02 = {
+	construction_time = standard_construction_time
+
+	can_construct = {
+		has_building_or_higher = city_02
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_2_cost
+	
+	province_modifier = {
+		tax_mult = 0.16
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.10
+	}
+	
+	next_building = guild_halls_03
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+guild_halls_03 = {
+	construction_time = standard_construction_time
+
+	can_construct = {
+		has_building_or_higher = city_03
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_3_cost
+	
+	province_modifier = {
+		tax_mult = 0.24
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.15
+	}
+	
+	next_building = guild_halls_04
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+guild_halls_04 = {
+	construction_time = standard_construction_time
+
+	can_construct = {
+		has_building_or_higher = city_04
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_4_cost
+	
+	province_modifier = {
+		tax_mult = 0.32
+	}
+	
+	county_modifier = {
+		development_growth_factor = 0.20
+	}
+	
+	ai_value = {
+		base = 100
+	}
+}
+
+military_camps_01 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_1_cost
+	
+	levy = excellent_building_levy_tier_1
+	
+	county_modifier = {
+		supply_limit = 50
+	}
+	
+	next_building = military_camps_02
+
+	type_icon = "icon_building_military_camps.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+military_camps_02 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+	}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 02 }
+		scope:holder.culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_2_cost
+	
+	levy = excellent_building_levy_tier_2
+	
+	county_modifier = {
+		supply_limit = 150
+	}
+	
+	next_building = military_camps_03
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+military_camps_03 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		}
+
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 03 }
+		scope:holder.culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = cheap_building_tier_3_cost
+	
+	levy = excellent_building_levy_tier_3
+	
+	county_modifier = {
+		supply_limit = 250
+	}
+	
+	next_building = military_camps_04
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+military_camps_04 = {
+	construction_time = standard_construction_time
+
+	can_construct_potential = {
+		}
+	
+	can_construct = {
+		building_requirement_castle_city_church = { LEVEL = 04 }
+		scope:holder.culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = cheap_building_tier_4_cost
+	
+	levy = excellent_building_levy_tier_4
+	
+	county_modifier = {
+		supply_limit = 350
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}

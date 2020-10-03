@@ -7407,7 +7407,7 @@
 }
 
 #Vistulians in Great Moravia
-302058 = {
+302060 = {
 	name = Krak
 	dynasty = 2001003	#z Wiślanie
 	religion = slavic_pagan
@@ -7437,17 +7437,36 @@
 }
 
 #Vistulians (independent)
-302060 = {
-	name = Lech
-	dynasty = 2001003	#z Wiślanie
-	religion = slavic_pagan
+302058 = {
+	name = Mateusz
+	dynasty = zolnowscy
+	trait = gods_chosen
+	trait = brave
+	trait = greedy
+	trait = arrogant
+	
+	trait = education_intrigue_1
+	trait = beauty_good_3
+	trait = intellect_good_3
+	trait = physique_good_3
+	trait = strong
+	trait = shrewd
+	trait = berserker	
+	trait = organizer
+	trait = giant
+	
+	martial = 4
+	diplomacy = 4
+	intrigue = 35
+	stewardship = 6
+	learning = 4
+	prowess = 10
+	health = 8
+	
+	religion = catholic
 	culture = polish
-	father = 302057
-	845.2.13 = {
-		birth = 845.2.13
-	}
-	910.12.11 = {
-		death = 910.12.11
+	845.3.3 = {
+		birth = 845.3.3
 	}
 }
 

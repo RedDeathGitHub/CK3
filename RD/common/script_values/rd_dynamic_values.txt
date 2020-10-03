@@ -1,0 +1,209 @@
+﻿tiny_gold_value = 10
+
+minor_gold_value = 25
+
+medium_gold_value = 50
+
+major_gold_value = 100
+
+massive_gold_value = 250
+
+monumental_gold_value = 500
+
+individual_recruit_guest_interaction_cost = {
+	add = 0
+	###CLAIMS###
+	if = {
+		limit = {
+			save_temporary_scope_as = claim_holder
+			any_claim = {
+				courtier_or_guest_claim_trigger = { RULER = scope:claim_holder.host }
+			}
+		}
+		if = {
+			limit = {
+				save_temporary_scope_as = claim_holder
+				any_claim = {
+					courtier_or_guest_claim_trigger = { RULER = scope:claim_holder.host }
+					tier = tier_empire
+				}
+			}
+			add = 25
+		}
+		else_if = {
+			limit = {
+				save_temporary_scope_as = claim_holder
+				any_claim = {
+					courtier_or_guest_claim_trigger = { RULER = scope:claim_holder.host }
+					tier = tier_kingdom
+				}
+			}
+			add = 20
+		}
+		else_if = {
+			limit = {
+				save_temporary_scope_as = claim_holder
+				any_claim = {
+					courtier_or_guest_claim_trigger = { RULER = scope:claim_holder.host }
+					tier = tier_duchy
+				}
+			}
+			add = 15
+		}
+		else_if = {
+			limit = {
+				save_temporary_scope_as = claim_holder
+				any_claim = {
+					courtier_or_guest_claim_trigger = { RULER = scope:claim_holder.host }
+					tier = tier_county
+				}
+			}
+			add = 10
+		}
+	}
+
+	###DYNASTY###
+	if = {
+		limit = { exists = dynasty }
+		add = {
+			value = dynasty.dynasty_prestige_level #0-10
+			multiply = 1.5 #Max 150
+		}
+	}
+
+	###GENETIC TRAITS###
+	add = {
+		value = genetic_character_value
+		multiply = 2
+		min = -15
+	}
+
+	###COMMANDER TRAITS###
+	if = {
+		limit = { number_of_commander_traits >= 1 }
+		add = {
+			value = number_of_commander_traits
+			min = 0
+		}
+	}
+
+	###COURT PHYSICIAN TRAITS###
+	if = {
+		limit = {
+			OR = {
+				has_trait = physician_3
+				has_trait = mystic_3
+			}
+		}
+		add = 4
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_trait = lifestyle_herbalist
+				has_trait = physician_2
+				has_trait = mystic_2
+			}
+		}
+		add = 3
+	}
+	else_if = {
+		limit = {
+			OR = {
+				has_trait = physician_1
+				has_trait = mystic_1
+			}
+		}
+		add = 2
+	}
+
+	###SKILLS###
+	if = {
+		limit = { diplomacy >= high_skill_rating }
+		add = {
+			value = diplomacy
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+	if = {
+		limit = { martial >= high_skill_rating }
+		add = {
+			value = martial
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+	if = {
+		limit = { stewardship >= high_skill_rating }
+		add = {
+			value = stewardship
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+	if = {
+		limit = { intrigue >= high_skill_rating }
+		add = {
+			value = intrigue
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+	if = {
+		limit = { learning >= high_skill_rating }
+		add = {
+			value = learning
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+	if = {
+		limit = { prowess >= high_skill_rating }
+		add = {
+			value = prowess
+			subtract = high_skill_rating
+			multiply = 2
+		}
+	}
+
+
+
+	###PERSONALITY MULTIPLIER###
+	if = {
+		limit = {
+			OR = {
+				ai_greed >= high_positive_ai_value
+				has_trait = arrogant
+			}
+		}
+		multiply = 1.2
+	}
+	else_if = {
+		limit = {
+			OR = {
+				ai_greed <= high_negative_ai_value
+				has_trait = humble
+			}
+		}
+		multiply = 0.8
+	}
+
+	min = 10
+
+	#Rounds up to the closest number divisible by 5
+	divide = 5
+	ceiling = yes
+	multiply = 5
+	
+	
+	if = { # Tribal rulers pay less
+		limit = {
+			host = {
+				has_government = tribal_government
+			}
+		}
+		multiply = 0.25
+		min = 3
+	}
+}

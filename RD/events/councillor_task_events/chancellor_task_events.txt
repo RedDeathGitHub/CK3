@@ -329,36 +329,13 @@ chancellor_task.1003 = {
 			trigger_event = chancellor_task.1004
 		}
 		else = {
-			send_interface_message = {
-				type = event_chancellor_task_bad
-				title = chancellor_task.1003.message
-				desc = {
-					triggered_desc = {
-						trigger = {
-							scope:active_councillor = { diplomacy <= average_skill_level }
-						}
-						desc = task_diplomacy_bad_unskilled_notification_tooltip
-					}
-					triggered_desc = {
-						trigger = {
-							scope:active_councillor = { diplomacy > average_skill_level }
-						}
-						desc = task_diplomacy_bad_skilled_notification_tooltip
-					}
-				}
-				tooltip = task_foreign_affairs_notification_tooltip
-
-				left_icon = scope:neighbor
-				right_icon = scope:councillor
-
-				scope:neighbor = {
+			scope:neighbor = {
 					add_opinion = {
 						target = root
 						modifier = chancellor_task_neighbor_decreased_opinion
 						days = chancellor_task_modifier_duration
 					}
 				}
-			}
 		}
 	}
 }
@@ -565,50 +542,11 @@ chancellor_task.1103 = {
 			}
 		}
 
-		if = {
-			limit = {
-				scope:neighbor = {
-					OR = { #Either independent same rank -1, or same rank
-						AND = {
-							is_independent_ruler = yes
-							highest_held_title_tier >= root.highest_held_title_tier_minus_one
-						}
-						highest_held_title_tier >= root.highest_held_title_tier
-					}
-				}
-			}
-			trigger_event = chancellor_task.1104
-		}
-		else = {
-			send_interface_message = {
-				type = event_chancellor_task_good
-				title = chancellor_task.1103.message
-				desc = {
-					triggered_desc = {
-						trigger = {
-							scope:active_councillor = { diplomacy <= average_skill_level }
-						}
-						desc = task_diplomacy_good_unskilled_notification_tooltip
-					}
-					triggered_desc = {
-						trigger = {
-							scope:active_councillor = { diplomacy > average_skill_level }
-						}
-						desc = task_diplomacy_good_skilled_notification_tooltip
-					}
-				}
-				tooltip = task_foreign_affairs_notification_tooltip
-
-				left_icon = scope:neighbor
-				right_icon = scope:councillor
-
-				scope:neighbor = {
-					add_opinion = {
-						target = root
-						modifier = chancellor_task_neighbor_increased_opinion
-						days = chancellor_task_modifier_duration
-					}
-				}
+		scope:neighbor = {
+			add_opinion = {
+				target = root
+				modifier = chancellor_task_neighbor_increased_opinion
+				days = chancellor_task_modifier_duration
 			}
 		}
 	}
@@ -711,33 +649,10 @@ chancellor_task.2001 = {
 				save_scope_as = title
 			}
 		}
-		send_interface_message = {
-			type = event_chancellor_task_bad
-			title = chancellor_task_2001.message
-			desc = {
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy <= average_skill_level }
-					}
-					desc = task_diplomacy_bad_unskilled_notification_tooltip
-				}
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy > average_skill_level }
-					}
-					desc = task_diplomacy_bad_skilled_notification_tooltip
-				}
-			}
-			tooltip = task_integrate_title_notification_tooltip
-
-			left_icon = scope:title
-			right_icon = scope:councillor
-
-			scope:title = {
-				change_de_jure_drift_progress = {
-					target = root.primary_title
-					value = medium_de_jure_drift_progress_loss
-				}
+		scope:title = {
+			change_de_jure_drift_progress = {
+				target = root.primary_title
+				value = medium_de_jure_drift_progress_loss
 			}
 		}
 	}
@@ -864,41 +779,18 @@ chancellor_task.2002 = {
 			
 			add_to_list = resisting_counties
 		}
-		send_interface_message = {
-			type = event_chancellor_task_bad
-			title = chancellor_task_2002.message
-			desc = {
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy <= average_skill_level }
-					}
-					desc = task_diplomacy_bad_unskilled_notification_tooltip
-				}
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy > average_skill_level }
-					}
-					desc = task_diplomacy_bad_skilled_notification_tooltip
-				}
+		scope:title = {
+			change_de_jure_drift_progress = {
+				target = root.primary_title
+				value = medium_de_jure_drift_progress_loss
 			}
-			tooltip = task_integrate_title_notification_tooltip
+		}
 
-			left_icon = scope:title
-			right_icon = scope:councillor
-
-			scope:title = {
-				change_de_jure_drift_progress = {
-					target = root.primary_title
-					value = medium_de_jure_drift_progress_loss
-				}
-			}
-
-			every_in_list = {
-				list = resisting_counties
-				add_county_modifier = {
-					modifier = chancellor_task_county_resisting_integration_modifier
-					years = 10
-				}
+		every_in_list = {
+			list = resisting_counties
+			add_county_modifier = {
+				modifier = chancellor_task_county_resisting_integration_modifier
+				years = 10
 			}
 		}
 	}
@@ -974,48 +866,25 @@ chancellor_task.2101 = {
 				save_scope_as = title
 			}
 		}
-		send_interface_message = {
-			type = event_chancellor_task_good
-			title = chancellor_task_2101.message
-			desc = {
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy <= average_skill_level }
-					}
-					desc = task_diplomacy_good_unskilled_notification_tooltip
+		scope:county.duchy = {
+			every_in_de_jure_hierarchy = {
+				continue = {
+					tier >= tier_duchy
 				}
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy > average_skill_level }
-					}
-					desc = task_diplomacy_good_skilled_notification_tooltip
+				limit = {
+					tier = tier_county
+					#Be in the same realm as the Duchy
+					exists = scope:county.duchy.holder.top_liege
+					holder.top_liege = scope:county.duchy.holder.top_liege
 				}
+				change_county_control = medium_county_control_gain
 			}
-			tooltip = task_integrate_title_notification_tooltip
+		}
 
-			left_icon = scope:title
-			right_icon = scope:councillor
-
-			scope:county.duchy = {
-				every_in_de_jure_hierarchy = {
-					continue = {
-						tier >= tier_duchy
-					}
-					limit = {
-						tier = tier_county
-						#Be in the same realm as the Duchy
-						exists = scope:county.duchy.holder.top_liege
-						holder.top_liege = scope:county.duchy.holder.top_liege
-					}
-					change_county_control = medium_county_control_gain
-				}
-			}
-
-			scope:title = {
-				change_de_jure_drift_progress = {
-					target = root.primary_title
-					value = medium_de_jure_drift_progress_gain
-				}
+		scope:title = {
+			change_de_jure_drift_progress = {
+				target = root.primary_title
+				value = medium_de_jure_drift_progress_gain
 			}
 		}
 	}
@@ -1088,46 +957,23 @@ chancellor_task.2102 = {
 				}
 			}
 		}
-		send_interface_message = {
-			type = event_chancellor_task_good
-			title = chancellor_task_2102.message
-			desc = {
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy <= average_skill_level }
-					}
-					desc = task_diplomacy_good_unskilled_notification_tooltip
-				}
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy > average_skill_level }
-					}
-					desc = task_diplomacy_good_skilled_notification_tooltip
-				}
+		scope:title = {
+			change_de_jure_drift_progress = {
+				target = root.primary_title
+				value = medium_de_jure_drift_progress_gain
 			}
-			tooltip = task_integrate_title_notification_tooltip
-
-			left_icon = scope:title
-			right_icon = scope:councillor
-
-			scope:title = {
-				change_de_jure_drift_progress = {
-					target = root.primary_title
-					value = medium_de_jure_drift_progress_gain
+			every_in_de_jure_hierarchy = {
+				continue = {
+					tier >= tier_duchy
 				}
-				every_in_de_jure_hierarchy = {
-					continue = {
-						tier >= tier_duchy
-					}
-					limit = {
-						tier = tier_county
-						culture = scope:supporting_culture
-					}
-					custom = chancellor_task_every_county_of_culture_in_title
-					add_county_modifier = {
-						modifier = chancellor_task_county_endorsing_integration_modifier
-						years = 10
-					}
+				limit = {
+					tier = tier_county
+					culture = scope:supporting_culture
+				}
+				custom = chancellor_task_every_county_of_culture_in_title
+				add_county_modifier = {
+					modifier = chancellor_task_county_endorsing_integration_modifier
+					years = 10
 				}
 			}
 		}
@@ -1491,30 +1337,7 @@ chancellor_task.3003 = {
 		cp:councillor_chancellor = {
 			save_scope_as = active_councillor
 		}
-		send_interface_message = {
-			type = event_chancellor_task_bad
-			title = chancellor_task.3003.notification
-			desc = {
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy <= average_skill_level }
-					}
-					desc = task_diplomacy_bad_unskilled_notification_tooltip
-				}
-				triggered_desc = {
-					trigger = {
-						scope:active_councillor = { diplomacy > average_skill_level }
-					}
-					desc = task_diplomacy_bad_skilled_notification_tooltip
-				}
-			}
-			tooltip = task_domestic_affairs_notification_tooltip
-
-			left_icon = scope:chancellor
-			right_icon = root.primary_title
-
-			add_prestige = medium_prestige_loss
-		}
+		add_prestige = medium_prestige_loss
 	}
 
 }

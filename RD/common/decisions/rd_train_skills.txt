@@ -1,0 +1,1090 @@
+get_professional_army_decision = {
+	picture = "gfx/interface/icons/traits/professional_army.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = professional_army
+		}
+	}
+	
+	effect = {
+		add_trait = professional_army
+		add_prestige = 500
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_intrigue1_decision = {
+	picture = "gfx/interface/icons/traits/education_intrigue_1.dds"
+
+	is_shown = {
+		NOR = {
+			has_trait = education_intrigue_1
+			has_trait = education_intrigue_2
+			has_trait = education_intrigue_3
+			has_trait = education_intrigue_4
+		}
+	}
+	
+	cost = {
+		gold = 500
+	}
+	
+	effect = {
+		add_trait = education_intrigue_1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_intrigue2_decision = {
+	picture = "gfx/interface/icons/traits/education_intrigue_2.dds"
+
+	is_shown = {
+		has_trait = education_intrigue_1
+	}
+	
+	cost = {
+		gold = 1000
+	}
+	
+	effect = {
+		remove_trait = education_intrigue_1
+		add_trait = education_intrigue_2
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_intrigue3_decision = {
+	picture = "gfx/interface/icons/traits/education_intrigue_3.dds"
+
+	is_shown = {
+		has_trait = education_intrigue_2
+	}
+	
+	cost = {
+		gold = 1500
+	}
+	
+	effect = {
+		remove_trait = education_intrigue_2
+		add_trait = education_intrigue_3
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_intrigue4_decision = {
+	picture = "gfx/interface/icons/traits/education_intrigue_4.dds"
+
+	is_shown = {
+		has_trait = education_intrigue_3
+	}
+	
+	cost = {
+		gold = 2000
+	}
+	
+	effect = {
+		remove_trait = education_intrigue_3
+		add_trait = education_intrigue_4
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_diplomacy1_decision = {
+	picture = "gfx/interface/icons/traits/education_diplomacy_1.dds"
+
+	is_shown = {
+		NOR = {
+			has_trait = education_diplomacy_1
+			has_trait = education_diplomacy_2
+			has_trait = education_diplomacy_3
+			has_trait = education_diplomacy_4
+		}
+	}
+	
+	cost = {
+		gold = 500
+	}
+	
+	effect = {
+		add_trait = education_diplomacy_1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_diplomacy2_decision = {
+	picture = "gfx/interface/icons/traits/education_diplomacy_2.dds"
+
+	is_shown = {
+		has_trait = education_diplomacy_1
+	}
+	
+	cost = {
+		gold = 1000
+	}
+	
+	effect = {
+		remove_trait = education_diplomacy_1
+		add_trait = education_diplomacy_2
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_diplomacy3_decision = {
+	picture = "gfx/interface/icons/traits/education_diplomacy_3.dds"
+
+	is_shown = {
+		has_trait = education_diplomacy_2
+	}
+	
+	cost = {
+		gold = 1500
+	}
+	
+	effect = {
+		remove_trait = education_diplomacy_2
+		add_trait = education_diplomacy_3
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_diplomacy4_decision = {
+	picture = "gfx/interface/icons/traits/education_diplomacy_4.dds"
+
+	is_shown = {
+		has_trait = education_diplomacy_3
+	}
+	
+	cost = {
+		gold = 2000
+	}
+	
+	effect = {
+		remove_trait = education_diplomacy_3
+		add_trait = education_diplomacy_4
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_stewardship1_decision = {
+	picture = "gfx/interface/icons/traits/education_stewardship_1.dds"
+
+	is_shown = {
+		NOR = {
+			has_trait = education_stewardship_1
+			has_trait = education_stewardship_2
+			has_trait = education_stewardship_3
+			has_trait = education_stewardship_4
+		}
+	}
+	
+	cost = {
+		gold = 500
+	}
+	
+	effect = {
+		add_trait = education_stewardship_1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_stewardship2_decision = {
+	picture = "gfx/interface/icons/traits/education_stewardship_2.dds"
+
+	is_shown = {
+		has_trait = education_stewardship_1
+	}
+	
+	cost = {
+		gold = 1000
+	}
+	
+	effect = {
+		remove_trait = education_stewardship_1
+		add_trait = education_stewardship_2
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_stewardship3_decision = {
+	picture = "gfx/interface/icons/traits/education_stewardship_3.dds"
+
+	is_shown = {
+		has_trait = education_stewardship_2
+	}
+	
+	cost = {
+		gold = 1500
+	}
+	
+	effect = {
+		remove_trait = education_stewardship_2
+		add_trait = education_stewardship_3
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_stewardship4_decision = {
+	picture = "gfx/interface/icons/traits/education_stewardship_4.dds"
+
+	is_shown = {
+		has_trait = education_stewardship_3
+	}
+	
+	cost = {
+		gold = 2000
+	}
+	
+	effect = {
+		remove_trait = education_stewardship_3
+		add_trait = education_stewardship_4
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_martial1_decision = {
+	picture = "gfx/interface/icons/traits/education_martial_1.dds"
+
+	is_shown = {
+		NOR = {
+			has_trait = education_martial_1
+			has_trait = education_martial_2
+			has_trait = education_martial_3
+			has_trait = education_martial_4
+		}
+	}
+	
+	cost = {
+		gold = 500
+	}
+	
+	effect = {
+		add_trait = education_martial_1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_martial2_decision = {
+	picture = "gfx/interface/icons/traits/education_martial_2.dds"
+
+	is_shown = {
+		has_trait = education_martial_1
+	}
+	
+	cost = {
+		gold = 1000
+	}
+	
+	effect = {
+		remove_trait = education_martial_1
+		add_trait = education_martial_2
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_martial3_decision = {
+	picture = "gfx/interface/icons/traits/education_martial_3.dds"
+
+	is_shown = {
+		has_trait = education_martial_2
+	}
+	
+	cost = {
+		gold = 1500
+	}
+	
+	effect = {
+		remove_trait = education_martial_2
+		add_trait = education_martial_3
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_martial4_decision = {
+	picture = "gfx/interface/icons/traits/education_martial_4.dds"
+
+	is_shown = {
+		has_trait = education_martial_3
+	}
+	
+	cost = {
+		gold = 2000
+	}
+	
+	effect = {
+		remove_trait = education_martial_3
+		add_trait = education_martial_4
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_learning1_decision = {
+	picture = "gfx/interface/icons/traits/education_learning_1.dds"
+
+	is_shown = {
+		NOR = {
+			has_trait = education_learning_1
+			has_trait = education_learning_2
+			has_trait = education_learning_3
+			has_trait = education_learning_4
+		}
+	}
+	
+	cost = {
+		gold = 500
+	}
+	
+	effect = {
+		add_trait = education_learning_1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_learning2_decision = {
+	picture = "gfx/interface/icons/traits/education_learning_2.dds"
+
+	is_shown = {
+		has_trait = education_learning_1
+	}
+	
+	cost = {
+		gold = 1000
+	}
+	
+	effect = {
+		remove_trait = education_learning_1
+		add_trait = education_learning_2
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_learning3_decision = {
+	picture = "gfx/interface/icons/traits/education_learning_3.dds"
+
+	is_shown = {
+		has_trait = education_learning_2
+	}
+	
+	cost = {
+		gold = 1500
+	}
+	
+	effect = {
+		remove_trait = education_learning_2
+		add_trait = education_learning_3
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_learning4_decision = {
+	picture = "gfx/interface/icons/traits/education_learning_4.dds"
+
+	is_shown = {
+		has_trait = education_learning_3
+	}
+	
+	cost = {
+		gold = 2000
+	}
+	
+	effect = {
+		remove_trait = education_learning_3
+		add_trait = education_learning_4
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_forest_fighter_decision = {
+	picture = "gfx/interface/icons/traits/forest_fighter.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = forest_fighter
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = forest_fighter
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_cautious_leader_decision = {
+	picture = "gfx/interface/icons/traits/cautious_leader.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = cautious_leader
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = cautious_leader
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_rough_terrain_expert_decision = {
+	picture = "gfx/interface/icons/traits/rough_terrain_expert.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = rough_terrain_expert
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = rough_terrain_expert
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_holy_warrior_decision = {
+	picture = "gfx/interface/icons/traits/holy_warrior.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = holy_warrior
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = holy_warrior
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_jungle_stalker_decision = {
+	picture = "gfx/interface/icons/traits/jungle_stalker.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = jungle_stalker
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = jungle_stalker
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_reaver_decision = {
+	picture = "gfx/interface/icons/traits/reaver.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = reaver
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = reaver
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_desert_warrior_decision = {
+	picture = "gfx/interface/icons/traits/desert_warrior.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = desert_warrior
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = desert_warrior
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_flexible_leader_decision = {
+	picture = "gfx/interface/icons/traits/flexible_leader.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = flexible_leader
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = flexible_leader
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_forder_decision = {
+	picture = "gfx/interface/icons/traits/forder.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = forder
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = forder
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_unyielding_defender_decision = {
+	picture = "gfx/interface/icons/traits/unyielding_defender.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = unyielding_defender
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = unyielding_defender
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_aggressive_attacker_decision = {
+	picture = "gfx/interface/icons/traits/aggressive_attacker.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = aggressive_attacker
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = aggressive_attacker
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_military_engineer_decision = {
+	picture = "gfx/interface/icons/traits/military_engineer.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = military_engineer
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = military_engineer
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_logistician_decision = {
+	picture = "gfx/interface/icons/traits/logistician.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = logistician
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = logistician
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_organizer_decision = {
+	picture = "gfx/interface/icons/traits/organizer.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = organizer
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = organizer
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+
+
+gain_learning_decision = {
+	picture = "gfx/interface/icons/message_feed/learning.dds"
+
+	cost = {
+		piety = 750
+	}
+	
+	effect = {
+		add_learning_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+gain_martial_decision = {
+	picture = "gfx/interface/icons/message_feed/martial.dds"
+
+	cost = {
+		piety = 750
+	}
+	
+	effect = {
+		add_martial_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+gain_diplomacy_decision = {
+	picture = "gfx/interface/icons/message_feed/diplomacy.dds"
+
+	cost = {
+		piety = 750
+	}
+	
+	effect = {
+		add_diplomacy_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+gain_intrigue_decision = {
+	picture = "gfx/interface/icons/message_feed/intrigue.dds"
+
+	cost = {
+		piety = 750
+	}
+	
+	effect = {
+		add_intrigue_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+gain_stewardship_decision = {
+	picture = "gfx/interface/icons/message_feed/stewardship.dds"
+
+	cost = {
+		piety = 750
+	}
+	
+	effect = {
+		add_stewardship_skill = 1
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+

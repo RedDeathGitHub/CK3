@@ -1,0 +1,16 @@
+﻿court_chaplain_fabricate_claim_county_cost = {
+	add = 40
+	subtract = learning
+	min = 10
+}
+
+court_chaplain_fabricate_claim_duchy_cost = {
+	add = 40
+	subtract = learning
+	min = 10
+}
+
+convert_faith_development_penalty = {
+	value = 0
+}
+

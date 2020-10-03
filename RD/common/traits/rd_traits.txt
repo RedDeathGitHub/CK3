@@ -1,0 +1,206 @@
+﻿gods_chosen = {
+	index = 725
+	prowess = 10
+	health = 20
+	negate_health_penalty_add = 10
+	fertility = -1000
+	immortal = yes
+	monthly_lifestyle_xp_gain_mult = -1.0
+	monthly_dynasty_prestige_mult = 4.0
+}
+
+professional_army = {
+	index = 726
+	
+	levy_size = -10.0
+	domain_tax_mult = 0.25
+	movement_speed = 0.25
+	men_at_arms_cap = 2
+}
+
+strategist = {
+	index = 33
+	lifestyle = yes
+
+	martial = 3
+	diplomacy = 1
+
+	max_combat_roll = 15
+
+	ai_rationality = 30
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_strategist_desc
+			}
+			desc = trait_strategist_character_desc
+		}
+	}
+
+	compatibility = {
+		strategist = @pos_compat_medium
+		overseer = @pos_compat_medium
+		gallant = @pos_compat_medium
+		brave = @pos_compat_low
+		craven = @neg_compat_low
+	}
+}
+
+blind = {
+	index = 125
+	martial = -6
+	stewardship = -2
+	intrigue = -2
+	prowess = -50
+	health = -0.25
+	
+	dread_baseline_add = -10
+
+	attraction_opinion = -10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_blind_desc
+			}
+			desc = trait_blind_character_desc
+		}
+	}
+}
+
+one_legged = {
+	index = 109
+	learning = 1
+	prowess = -15
+	
+	dread_baseline_add = -10
+
+	attraction_opinion = -10
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_one_legged_desc
+			}
+			desc = trait_one_legged_character_desc
+		}
+	}
+
+	ai_energy = -10
+}
+
+one_eyed = {
+	index = 108
+	learning = 1
+	prowess = -4
+	
+	dread_baseline_add = 10
+
+	attraction_opinion = -5
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_one_eyed_desc
+			}
+			desc = trait_one_eyed_character_desc
+		}
+	}
+
+	ai_energy = -10
+}
+
+aggressive_attacker = {
+	index = 202
+	
+	commander = yes
+	
+	max_combat_roll = 5
+	enemy_hard_casualty_modifier = 0.15
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_aggressive_attacker_desc
+			}
+			desc = trait_aggressive_attacker_character_desc
+		}
+	}
+}
+
+unyielding_defender = {
+	index = 203
+	
+	commander = yes
+	
+	min_combat_roll = 3
+	hard_casualty_modifier = -0.15
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_unyielding_defender_desc
+			}
+			desc = trait_unyielding_defender_character_desc
+		}
+	}
+}
+
+cautious_leader = {
+	index = 253
+	
+	commander = yes
+	
+	min_combat_roll = 5
+
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_cautious_leader_desc
+			}
+			desc = trait_cautious_leader_character_desc
+		}
+	}
+}
+
+reckless = {
+	index = 211
+	
+	commander = yes
+	
+	max_combat_roll = 8
+	
+	desc = {
+		first_valid = {
+			triggered_desc = {
+				trigger = {
+					NOT = { exists = this }
+				}
+				desc = trait_reckless_desc
+			}
+			desc = trait_reckless_character_desc
+		}
+	}
+}

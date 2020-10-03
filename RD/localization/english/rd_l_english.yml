@@ -1,0 +1,25 @@
+﻿l_english:
+ trait_gods_chosen:0 "Gods Chosen"
+ trait_gods_chosen_desc:1 "Age or sickness shall not harm him."
+ 
+ trait_professional_army:0 "Professional army"
+ trait_professional_army_desc:1 "Full professional army, no levies."
+ 
+ base_modifier:0 "Base modifier"
+   
+ dynn_Zolnowscy:0 "Żołnowski"
+ 
+ innovation_heavy_hussar:0 "Heavy Hussars"
+ innovation_heavy_hussar_desc:0 "There is no cavalry equal to Polish Hussars"
+ 
+ heavy_hussar:0 "Husaria"
+ heavy_hussar_flavor:0 "#F Best cavalry ever created#!"
+
+ setting_holy_war_cb_7:0 "#high 7 Years #!" 
+ setting_holy_war_cb_7_desc:0 "Rulers must wait at least 7 years between holy wars."
+ 
+ setting_conquest_war_cb_7:0 "#high 7 Years #!" 
+ setting_conquest_war_cb_7_desc:0 "Rulers must wait at least 7 years between conquest wars."
+ 
+ recent_war:0 "Recent War"
+ recent_war_desc:0 "This character has recently called a war and must wait before calling another."

@@ -1,0 +1,202 @@
+﻿l_english:
+ get_professional_army_decision: "Get professional army"
+ get_professional_army_decision_tooltip: "You ditch levies for professional soldiers."
+ get_professional_army_decision_desc: "It's time for a new martial era - one with professional sodiers taking place of levies."
+ get_professional_army_decision_confirm: "Yes!"
+
+ train_intrigue1_decision: "Intrigue Education 1"
+ train_intrigue1_decision_tooltip: "Hired trainers will help you improve"
+ train_intrigue1_decision_desc: "Train Intrigue Level 1"
+ train_intrigue1_decision_confirm: "Yes!"
+ 
+ train_intrigue2_decision: "Intrigue Education 2"
+ train_intrigue2_decision_tooltip: "Hired trainers will help you improve"
+ train_intrigue2_decision_desc: "Train Intrigue Level 2"
+ train_intrigue2_decision_confirm: "Yes!"
+ 
+ train_intrigue3_decision: "Intrigue Education 3"
+ train_intrigue3_decision_tooltip: "Hired trainers will help you improve"
+ train_intrigue3_decision_desc: "Train Intrigue Level 3"
+ train_intrigue3_decision_confirm: "Yes!"
+ 
+ train_intrigue4_decision: "Intrigue Education 4"
+ train_intrigue4_decision_tooltip: "Hired trainers will help you improve"
+ train_intrigue4_decision_desc: "Train Intrigue Level 4"
+ train_intrigue4_decision_confirm: "Yes!"
+ 
+ train_diplomacy1_decision: "Diplomacy Education 1"
+ train_diplomacy1_decision_tooltip: "Hired trainers will help you improve"
+ train_diplomacy1_decision_desc: "Train Diplomacy Level 1"
+ train_diplomacy1_decision_confirm: "Yes!"
+ 
+ train_diplomacy2_decision: "Diplomacy Education 2"
+ train_diplomacy2_decision_tooltip: "Hired trainers will help you improve"
+ train_diplomacy2_decision_desc: "Train Diplomacy Level 2"
+ train_diplomacy2_decision_confirm: "Yes!"
+ 
+ train_diplomacy3_decision: "Diplomacy Education 3"
+ train_diplomacy3_decision_tooltip: "Hired trainers will help you improve"
+ train_diplomacy3_decision_desc: "Train Diplomacy Level 3"
+ train_diplomacy3_decision_confirm: "Yes!"
+ 
+ train_diplomacy4_decision: "Diplomacy Education 4"
+ train_diplomacy4_decision_tooltip: "Hired trainers will help you improve"
+ train_diplomacy4_decision_desc: "Train Diplomacy Level 4"
+ train_diplomacy4_decision_confirm: "Yes!"
+ 
+ train_martial1_decision: "Martial Education 1"
+ train_martial1_decision_tooltip: "Hired trainers will help you improve"
+ train_martial1_decision_desc: "Train Martial Level 1"
+ train_martial1_decision_confirm: "Yes!"
+ 
+ train_martial2_decision: "Martial Education 2"
+ train_martial2_decision_tooltip: "Hired trainers will help you improve"
+ train_martial2_decision_desc: "Train Martial Level 2"
+ train_martial2_decision_confirm: "Yes!"
+ 
+ train_martial3_decision: "Martial Education 3"
+ train_martial3_decision_tooltip: "Hired trainers will help you improve"
+ train_martial3_decision_desc: "Train Martial Level 3"
+ train_martial3_decision_confirm: "Yes!"
+ 
+ train_martial4_decision: "Martial Education 4"
+ train_martial4_decision_tooltip: "Hired trainers will help you improve"
+ train_martial4_decision_desc: "Train Martial Level 4"
+ train_martial4_decision_confirm: "Yes!"
+ 
+ train_stewardship1_decision: "Stewardship Education 1"
+ train_stewardship1_decision_tooltip: "Hired trainers will help you improve"
+ train_stewardship1_decision_desc: "Train Stewardship Level 1"
+ train_stewardship1_decision_confirm: "Yes!"
+ 
+ train_stewardship2_decision: "Stewardship Education 2"
+ train_stewardship2_decision_tooltip: "Hired trainers will help you improve"
+ train_stewardship2_decision_desc: "Train Stewardship Level 2"
+ train_stewardship2_decision_confirm: "Yes!"
+ 
+ train_stewardship3_decision: "Stewardship Education 3"
+ train_stewardship3_decision_tooltip: "Hired trainers will help you improve"
+ train_stewardship3_decision_desc: "Train Stewardship Level 3"
+ train_stewardship3_decision_confirm: "Yes!"
+ 
+ train_stewardship4_decision: "Stewardship Education 4"
+ train_stewardship4_decision_tooltip: "Hired trainers will help you improve"
+ train_stewardship4_decision_desc: "Train Stewardship Level 4"
+ train_stewardship4_decision_confirm: "Yes!"
+ 
+ train_learning1_decision: "Learning Education 1"
+ train_learning1_decision_tooltip: "Hired trainers will help you improve"
+ train_learning1_decision_desc: "Train Learning Level 1"
+ train_learning1_decision_confirm: "Yes!"
+ 
+ train_learning2_decision: "Learning Education 2"
+ train_learning2_decision_tooltip: "Hired trainers will help you improve"
+ train_learning2_decision_desc: "Train Learning Level 2"
+ train_learning2_decision_confirm: "Yes!"
+ 
+ train_learning3_decision: "Learning Education 3"
+ train_learning3_decision_tooltip: "Hired trainers will help you improve"
+ train_learning3_decision_desc: "Train Learning Level 3"
+ train_learning3_decision_confirm: "Yes!"
+ 
+ train_learning4_decision: "Learning Education 4"
+ train_learning4_decision_tooltip: "Hired trainers will help you improve"
+ train_learning4_decision_desc: "Train Learning Level 4"
+ train_learning4_decision_confirm: "Yes!"
+ 
+ gain_stewardship_decision: "Gain Stewardship"
+ gain_stewardship_decision_tooltip: "Gods reward your dedication!"
+ gain_stewardship_decision_desc: "Gain 1 Stewardship"
+ gain_stewardship_decision_confirm: "Yes!"
+ 
+ gain_intrigue_decision: "Gain Intrigue"
+ gain_intrigue_decision_tooltip: "Gods reward your dedication."
+ gain_intrigue_decision_desc: "Gain 1 Intrigue"
+ gain_intrigue_decision_confirm: "Yes!"
+ 
+ gain_diplomacy_decision: "Gain Diplomacy"
+ gain_diplomacy_decision_tooltip: "Gods reward your dedication!"
+ gain_diplomacy_decision_desc: "Gain 1 Diplomacy"
+ gain_diplomacy_decision_confirm: "Yes!"
+ 
+ gain_martial_decision: "Gain Martial"
+ gain_martial_decision_tooltip: "Gods reward your dedication!"
+ gain_martial_decision_desc: "Gain 1 Martial"
+ gain_martial_decision_confirm: "Yes!"
+ 
+ gain_learning_decision: "Gain Learning"
+ gain_learning_decision_tooltip: "Gods reward your dedication!"
+ gain_learning_decision_desc: "Gain 1 Learning"
+ gain_learning_decision_confirm: "Yes!"
+ 
+ train_logistician_decision: "Gain Logistician"
+ train_logistician_decision_tooltip: "You feel you now understand more about war."
+ train_logistician_decision_desc: "Gain Logistician"
+ train_logistician_decision_confirm: "Yes!"
+ 
+ train_military_engineer_decision: "Gain Military Engineer"
+ train_military_engineer_decision_tooltip: "You feel you now understand more about war."
+ train_military_engineer_decision_desc: "Gain Military Engineer"
+ train_military_engineer_decision_confirm: "Yes!"
+ 
+ train_aggressive_attacker_decision: "Gain Aggressive Attacker"
+ train_aggressive_attacker_decision_tooltip: "You feel you now understand more about war."
+ train_aggressive_attacker_decision_desc: "Gain Aggressive Attacker"
+ train_aggressive_attacker_decision_confirm: "Yes!"
+ 
+ train_unyielding_defender_decision: "Gain Unyielding Defender"
+ train_unyielding_defender_decision_tooltip: "You feel you now understand more about war."
+ train_unyielding_defender_decision_desc: "Gain Unyielding Defender"
+ train_unyielding_defender_decision_confirm: "Yes!"
+ 
+ train_forder_decision: "Gain Forder"
+ train_forder_decision_tooltip: "You feel you now understand more about war."
+ train_forder_decision_desc: "Gain Forder"
+ train_forder_decision_confirm: "Yes!"
+ 
+ train_flexible_leader_decision: "Gain Flexible Leader"
+ train_flexible_leader_decision_tooltip: "You feel you now understand more about war."
+ train_flexible_leader_decision_desc: "Gain Flexible Leader"
+ train_flexible_leader_decision_confirm: "Yes!"
+ 
+ train_desert_warrior_decision: "Gain Desert Warrior"
+ train_desert_warrior_decision_tooltip: "You feel you now understand more about war."
+ train_desert_warrior_decision_desc: "Gain Desert Warrior"
+ train_desert_warrior_decision_confirm: "Yes!"
+ 
+ train_reaver_decision: "Gain Reaver"
+ train_reaver_decision_tooltip: "You feel you now understand more about war."
+ train_reaver_decision_desc: "Gain Reaver"
+ train_reaver_decision_confirm: "Yes!"
+ 
+ train_jungle_stalker_decision: "Gain Jungle Stalker"
+ train_jungle_stalker_decision_tooltip: "You feel you now understand more about war."
+ train_jungle_stalker_decision_desc: "Gain Jungle Stalker"
+ train_jungle_stalker_decision_confirm: "Yes!"
+ 
+ train_holy_warrior_decision: "Gain Holy Warrior"
+ train_holy_warrior_decision_tooltip: "You feel you now understand more about war."
+ train_holy_warrior_decision_desc: "Gain Holy Warrior"
+ train_holy_warrior_decision_confirm: "Yes!"
+ 
+ train_rough_terrain_expert_decision: "Gain Rough Terrain Expert"
+ train_rough_terrain_expert_decision_tooltip: "You feel you now understand more about war."
+ train_rough_terrain_expert_decision_desc: "Gain Rough Terrain Expert"
+ train_rough_terrain_expert_decision_confirm: "Yes!"
+ 
+ train_cautious_leader_decision: "Gain Cautious Leader"
+ train_cautious_leader_decision_tooltip: "You feel you now understand more about war."
+ train_cautious_leader_decision_desc: "Gain Cautious Leader"
+ train_cautious_leader_decision_confirm: "Yes!"
+ 
+ train_forest_fighter_decision: "Gain Forest Fighter"
+ train_forest_fighter_decision_tooltip: "You feel you now understand more about war."
+ train_forest_fighter_decision_desc: "Gain Forest Fighter"
+ train_forest_fighter_decision_confirm: "Yes!"
+ 
+ train_organizer_decision: "Gain Organizer"
+ train_organizer_decision_tooltip: "You feel you now understand more about war."
+ train_organizer_decision_desc: "Gain Organizer"
+ train_organizer_decision_confirm: "Yes!"
+ 
+ 

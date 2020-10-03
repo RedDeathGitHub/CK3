@@ -1,0 +1,5 @@
+﻿imprisonment_tyranny_gain = 5
+execution_tyranny_gain = 10
+banishment_tyranny_gain = 5
+revoke_title_tyranny_gain = 5
+revoke_vassal_tyranny_gain = 5

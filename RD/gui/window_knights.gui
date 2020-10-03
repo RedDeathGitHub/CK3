@@ -5,10 +5,10 @@
 window = {
 	datacontext = "[KnightsView.GetMilitaryView]"
 	name = "knight_view"
-	size = { 540 865 }
+	size = { 540 99% }
 	parentanchor = top|right
-	position = { -626 170 }
-	movable = no
+	position = { -626 6 }
+	movable = yes
 	layer = middle
 
 	using = Window_Background_Subwindow
@@ -17,7 +17,7 @@ window = {
 		name = _show
 		using = Animation_FadeIn_Quick
 
-		position = { -626 170 }
+		position = { -626 6 }
 	}
 
 	state = {
@@ -182,6 +182,15 @@ window = {
 												text = "[prowess_i][Character.GetSkill( 'prowess' )]"
 												using = Font_Size_Big
 												default_format = "#high"
+
+												background = {
+													name = "skill_icon_bg"
+													texture = "gfx/interface/window_character/character_view_prowess_bg.dds"
+													frame = "[SkillItem.GetFrame]"
+													framesize = { 70 26 }
+													margin = { 10 0 }
+												} 
+
 											}
 
 											expand = {}
@@ -265,4 +274,3 @@ window = {
 		}
 	}
 }
-

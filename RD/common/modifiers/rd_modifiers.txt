@@ -1,0 +1,78 @@
+﻿base_modifier = {
+}
+
+baron_modifier = {
+	domain_limit = 2
+	# Barons don't get to have knights
+}
+
+count_modifier = {
+	domain_limit = 5
+	knight_limit = 1
+}
+
+duke_modifier = {
+	domain_limit = 15
+	knight_limit = 2
+	vassal_limit = 25
+}
+
+king_modifier = {
+	domain_limit = 50
+	knight_limit = 3
+	vassal_limit = 100
+}
+
+emperor_modifier = {
+	domain_limit = 2000
+	knight_limit = 4
+	vassal_limit = 2000
+}
+
+prestige_level_0 = {
+	hide_effects = yes # Custom description will generate the full level information
+	knight_limit = -1
+}
+prestige_level_1 = {
+	hide_effects = yes # Custom description will generate the full level information
+	monthly_prestige = 0.4
+}
+prestige_level_2 = {
+	hide_effects = yes # Custom description will generate the full level information
+	monthly_prestige = 0.8
+}
+prestige_level_3 = {
+	hide_effects = yes # Custom description will generate the full level information
+	knight_limit = 1
+	monthly_prestige = 1.2
+}
+prestige_level_4 = {
+	hide_effects = yes # Custom description will generate the full level information
+	knight_limit = 1
+	monthly_prestige = 1.6
+}
+prestige_level_5 = {
+	hide_effects = yes # Custom description will generate the full level information
+	knight_limit = 2
+	monthly_prestige = 2.0
+}
+
+recent_war = {
+	icon = prestige_negative
+}
+
+recently_looted_modifier = {
+	icon = martial_negative
+	development_growth_factor = -0.1
+	tax_mult = -0.20
+}
+
+county_capital_province_modifier = {
+	supply_limit_mult = 0.1
+}
+
+peasant_war_lost_county_modifier = {
+	icon = county_modifier_opinion_negative
+	county_opinion_add = 50
+	monthly_county_control_change_factor = -0.20
+}

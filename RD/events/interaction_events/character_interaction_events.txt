@@ -493,31 +493,6 @@ char_interaction.0151 = {
 
 # (Conditional) Release from Prison: Accepted
 char_interaction.0160 = {
-	type = letter_event
-	opening = {
-		desc = char_interaction.0001.opening
-	}
-	desc = char_interaction.0160.desc
-	
-	sender = scope:recipient
-
-	option = {
-		name = {
-			trigger = {
-				scope:recipient = {
-					OR = {
-						is_courtier_of = root
-						is_foreign_court_or_pool_guest_of = root
-					}
-				}
-				scope:banish = no
-			}
-			text = char_interaction.0160.a.courtier
-		}
-		name = {
-			text = char_interaction.0160.a
-		}
-	}
 }
 
 # (Conditional) Release from Prison: Refused
@@ -782,7 +757,7 @@ char_interaction.0199 = {
 	sender = scope:recipient
 
 	immediate = {
-		show_as_tooltip = { revoke_title_interaction_effect = yes }
+		revoke_title_interaction_effect = yes
 	}
 
 	option = {

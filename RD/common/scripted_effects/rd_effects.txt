@@ -1,0 +1,20 @@
+﻿conquest_county_cb_cooldown_effect = {
+	add_character_modifier = {
+		modifier = recent_war
+		years = 1
+	}
+}
+
+conquest_dutchy_cb_cooldown_effect = {
+	add_character_modifier = {
+		modifier = recent_war
+		years = 3
+	}
+}
+
+conquest_kingdom_cb_cooldown_effect = {
+	add_character_modifier = {
+		modifier = recent_war
+		years = 5
+	}
+}

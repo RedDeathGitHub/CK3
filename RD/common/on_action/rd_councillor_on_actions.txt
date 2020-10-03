@@ -1,0 +1,6 @@
+﻿task_find_secrets_outcome = {
+	random_events = {
+		100 = spymaster_task.0301 #Find minor secret
+		50 = spymaster_task.0302 #Find major secret)
+	}
+}

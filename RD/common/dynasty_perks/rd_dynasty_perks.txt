@@ -1,0 +1,50 @@
+﻿warfare_legacy_3 = { # Squire Traditions
+	legacy = warfare_legacy_track
+
+	cost = dynasty_legacy_tier_3_cost
+
+	character_modifier = {
+		max_combat_roll = 5
+	}
+}
+
+warfare_legacy_5 = { # Private Army
+	legacy = warfare_legacy_track
+
+	cost = dynasty_legacy_tier_5_cost
+
+	character_modifier = {
+		men_at_arms_cap = 1
+		men_at_arms_limit = 2
+		men_at_arms_maintenance = -0.05
+	}
+	effect = {
+		custom_description_no_bullet = {
+			text = warfare_legacy_5_effect
+		}	
+	}
+}
+
+# LAW LEGACIES
+
+law_legacy_3 = { # Power and Prosperity
+	legacy = law_legacy_track
+
+	cost = dynasty_legacy_tier_3_cost
+
+	character_modifier = {
+		domain_tax_mult = 0.05
+	}
+}
+
+law_legacy_5 = { # Home Estates
+	legacy = law_legacy_track
+
+	cost = dynasty_legacy_tier_5_cost
+
+	character_modifier = {
+		name = law_legacy_5_name
+		build_gold_cost = -0.05
+		build_speed = -0.10
+	}
+}

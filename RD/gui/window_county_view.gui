@@ -9,7 +9,7 @@ window = {
 	allow_outside = yes
 	movable = no
 	layer = windows_layer
-	size = { 625 610 }
+	size = { 625 750 }
 	datacontext = "[HoldingView.GetHolding]"
 	datacontext = "[HoldingView.GetProvince]"
 	datacontext = "[Province.GetCounty]"
@@ -1426,22 +1426,8 @@ window = {
 					name = "buildings_grid_special"
 					parentanchor = right
 					ignoreinvisible = yes
-					margin_right = -3
-
-					# Upgrade buildings
-					flowcontainer = {
-						name = "buildings_grid"
-						datamodel = "[HoldingView.GetBuildings]"
-						ignoreinvisible = yes
-						spacing = 3
-						margin_right = 3
-						righttoleft = yes
-
-						item = {
-							widget_building_item = {}
-						}
-					}
-
+					#margin_right = -3
+					
 					flowcontainer = {
 						visible = "[Or(HoldingView.HasDuchyCapitalBuildingSlot, HoldingView.HasSpecialBuildingSlot )]"
 						spacing = 3
@@ -1459,7 +1445,21 @@ window = {
 								spriteborder = { 20 20 }
 							}
 						}
-
+												
+						#widget_building_item = {
+						#	name = "duchy_capital_building_1"
+						#	datacontext = "[HoldingView.GetGUIDuchyCapitalBuilding]"
+						#	visible = "[HoldingView.HasDuchyCapitalBuildingSlot]"
+						#	
+						#	button_standard = {
+						#		size = { 100% 100% }
+						#		texture = "gfx/interface/buttons/button_duchy_capital.dds"
+						#		alwaystransparent = yes
+						#		spriteborder = { 20 20 }
+						#	}
+						#}
+												
+						
 						widget_building_item = {
 							name = "special_building"
 							datacontext = "[HoldingView.GetGUISpecialBuilding]"
@@ -1481,6 +1481,25 @@ window = {
 						}
 					}
 				}
+				# Upgrade buildings
+				flowcontainer = {
+					fixedgridbox = {
+						name = "buildings_fixedgrid"
+						datamodel = "[HoldingView.GetBuildings]"
+						
+						flipdirection = yes
+						addcolumn = 60
+						addrow = 65
+						maxhorizontalslots = 5
+						datamodel_wrap = 5
+						maxverticalslots = 2
+						
+						item = {
+							widget_building_item = {}
+						}
+					}
+				}
+			
 			}
 
 		}
@@ -1497,13 +1516,14 @@ window = {
 	#widgetanchor = top|left
 	#position = { 605 -1000 }
 	size = { 100% 100% }
-	movable = no
-	layer = windows_layer
+	movable = yes
+	layer = middle
 
 	state = {
 		name = _show
 		using = Animation_FadeIn_Quick
-		position_x = 0
+		position_x = 150
+		position_y = -165
 	}
 
 	state = {
@@ -2491,7 +2511,7 @@ window = {
 
 window = {
 	name = "holding_type_selection_view"
-	movable = no
+	movable = yes
 	layer = windows_layer
 	parentanchor = bottom|hcenter
 	position = { 70 -50 }
@@ -2573,7 +2593,7 @@ window = {
 types CountyViewTypes
 {
 	type widget_building_item = widget {
-		parentanchor = bottom
+		parentanchor = left|top
 		size = { 55 55 }
 		enabled = "[GUIBuildingItem.IsBuildingButtonEnabled]"
 		tooltip = "[GUIBuildingItem.GetTooltip]"

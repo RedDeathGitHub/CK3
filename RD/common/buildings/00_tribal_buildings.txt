@@ -1,0 +1,353 @@
+﻿@holding_illustration_arid = "gfx/interface/illustrations/holding_types/tribe_arid.dds"
+@holding_illustration_grass = "gfx/interface/illustrations/holding_types/tribe_grass.dds"
+
+# Tribal Hold
+tribe_01 = {
+	construction_time = standard_construction_time
+
+	asset = {
+		type = pdxmesh
+		names = {
+			"western_castle_tribal_01_a_mesh"
+			"western_castle_tribal_01_b_mesh"
+			"western_castle_tribal_01_c_mesh"
+			"western_castle_tribal_01_d_mesh"
+		}
+		illustration = @holding_illustration_grass
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
+	}
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		always = no	#Tribes are set at game start.
+	}
+	
+	cost_gold = cheap_building_tier_1_cost
+	next_building = tribe_02
+	
+	levy = good_building_levy_tier_1
+	garrison = good_building_garrison_tier_1
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_2
+		fort_level = 1
+	}
+	
+	county_modifier = {
+		monthly_county_control_change_factor = 0.05
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.1
+	}
+	
+	next_building = tribe_02
+
+	type_icon = "icon_building_longhouses.dds"
+
+	ai_value = {
+		base = 25
+	}
+}
+
+tribe_02 = {
+	construction_time = standard_construction_time
+
+	asset = {
+		type = pdxmesh
+		names = {
+			"western_castle_tribal_01_a_mesh"
+			"western_castle_tribal_01_b_mesh"
+			"western_castle_tribal_01_c_mesh"
+			"western_castle_tribal_01_d_mesh"
+		}
+		illustration = @holding_illustration_grass
+		soundeffect = { soundeffect = "event:/SFX/Ambience/3DMapEmitters/Holdings/City/tribal_city" soundparameter = { "Tier" = 0 } }
+	}
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = { has_innovation = innovation_plenary_assemblies }
+			has_government = tribal_government
+		}
+	}
+	
+	cost_gold = cheap_building_tier_2_cost
+	
+	levy = good_building_levy_tier_2
+	garrison = good_building_garrison_tier_2
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_4
+		fort_level = 2
+	}
+	
+	county_modifier = {
+		monthly_county_control_change_factor = 0.05
+	}
+	
+	character_modifier = {
+		monthly_prestige = 0.2
+	}
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+longhouses_01 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_1_cost
+	
+	character_modifier = {
+		monthly_prestige = 0.05
+	}
+
+	county_modifier = {
+		monthly_county_control_change_add = 0.1
+		county_opinion_add = 5
+	}
+	
+	next_building = longhouses_02
+
+	type_icon = "icon_building_longhouses.dds"
+
+	ai_value = {
+		base = 50
+	}
+}
+
+longhouses_02 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = { has_innovation = innovation_barracks }
+			has_government = tribal_government
+		}
+	}
+	
+	cost_gold = tribal_building_tier_2_cost
+	
+	character_modifier = {
+		monthly_prestige = 0.1
+	}
+	
+	county_modifier = {
+		monthly_county_control_change_add = 0.2
+		county_opinion_add = 10
+	}
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+# War Camps
+
+war_camps_01 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			has_government = tribal_government
+		}
+	}
+	
+	cost_gold = tribal_building_tier_1_cost
+	
+	levy = small_building_levy_tier_1
+
+	next_building = war_camps_02
+
+	type_icon = "icon_building_warcamps.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+war_camps_02 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = { has_innovation = innovation_barracks }
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_2_cost
+	
+	levy = small_building_levy_tier_2
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+# Palisades
+
+palisades_01 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_1_cost
+
+	garrison = normal_building_garrison_tier_1
+	
+	province_modifier = {
+		defender_advantage = normal_building_advantage_tier_1
+		fort_level = 1
+	}
+	
+	next_building = palisades_02
+
+	type_icon = "icon_building_palisades.dds"
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+palisades_02 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = { has_innovation = innovation_motte }
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_2_cost
+
+	garrison = normal_building_garrison_tier_2
+	
+	province_modifier = {
+		defender_advantage = normal_building_advantage_tier_2
+		fort_level = 2
+	}
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+# Market Villages
+
+market_villages_01 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_1_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_1
+		supply_limit = 500
+	}
+	
+	next_building = market_villages_02
+
+	type_icon = "icon_building_market_villages.dds"
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+market_villages_02 = {
+	construction_time = quick_construction_time
+
+	is_enabled = {
+		building_requirement_tribal = yes
+	}
+	can_construct_potential = {
+		has_building_or_higher = tribe_01
+	}
+	can_construct_showing_failures_only = {
+		scope:holder = {
+			culture = { has_innovation = innovation_city_planning }
+			has_government = tribal_government
+		}
+	}	
+	
+	cost_gold = tribal_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = poor_building_tax_tier_2
+		supply_limit = 1000
+	}
+	
+	ai_value = {
+		base = 50
+	}
+}

@@ -1,0 +1,116 @@
+﻿@cultural_maa_extra_ai_score = 25
+
+pikemen_unit = {
+	type = pikemen
+	
+	damage = 10
+	toughness = 20
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { toughness = 5 }
+		mountains = { toughness = 10 }
+		desert_mountains = { toughness = 10 }
+	}
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = pikemen_recruitment_cost }
+	low_maintenance_cost = { gold = pikemen_low_maint_cost }
+	high_maintenance_cost = { gold = pikemen_high_maint_cost }
+	
+	mercenary_fallback = yes
+	holy_order_fallback = yes
+	
+	stack = 100
+	icon = pikemen
+}
+
+landsknecht = {
+	type = pikemen
+	
+	damage = 15
+	toughness = 20
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { toughness = 5 }
+		mountains = { toughness = 10 }
+		desert_mountains = { toughness = 10 }
+	}
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = pikemen_recruitment_cost }
+	low_maintenance_cost = { gold = pikemen_low_maint_cost }
+	high_maintenance_cost = { gold = pikemen_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = pikemen
+}
+
+picchieri = {
+	type = pikemen
+	
+	damage = 10
+	toughness = 25
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { toughness = 5 }
+		mountains = { toughness = 10 }
+		desert_mountains = { toughness = 10 }
+	}
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = pikemen_recruitment_cost }
+	low_maintenance_cost = { gold = pikemen_low_maint_cost }
+	high_maintenance_cost = { gold = pikemen_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = pikemen
+}
+
+schiltron = {
+	type = pikemen
+	
+	damage = 13
+	toughness = 22
+	pursuit = 0
+	screen = 0
+	
+	terrain_bonus = {
+		hills = { toughness = 5 }
+		mountains = { toughness = 10 }
+		desert_mountains = { toughness = 10 }
+	}
+
+	counters = {
+		light_cavalry = 1
+		heavy_cavalry = 1
+	}
+
+	buy_cost = { gold = pikemen_recruitment_cost }
+	low_maintenance_cost = { gold = pikemen_low_maint_cost }
+	high_maintenance_cost = { gold = pikemen_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = pikemen
+}
+

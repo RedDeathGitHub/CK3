@@ -1,0 +1,329 @@
+﻿##########
+# Duchy Capital Buildings
+# These are built in the first barony of the first county of any duchy
+# Holding the associated duchy is required both to build, and for the buildings to be enabled
+##########
+
+military_academy_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_burhs
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_1_cost
+	
+	character_modifier = {
+		men_at_arms_limit = 1
+	}
+	
+	next_building = military_academy_02
+	
+	type_icon = "icon_building_military_academy.dds"
+
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+military_academy_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_castle_baileys
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_2_cost
+	
+	character_modifier = {
+		men_at_arms_limit = 2
+	}
+	
+	next_building = military_academy_03
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+military_academy_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_royal_armory
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	character_modifier = {
+		men_at_arms_limit = 3
+	}
+	
+	type = duchy_capital
+	
+	flag = fully_upgraded_duchy_capital_building
+
+	ai_value = {
+		base = 25
+	}
+}
+
+tax_assessor_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_1_cost
+	
+	character_modifier = {
+		domain_tax_mult = 0.02
+	}
+	
+	next_building = tax_assessor_02
+
+	type_icon = "icon_building_tax_assessor.dds"
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+tax_assessor_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_2_cost
+	
+	character_modifier = {
+		domain_tax_mult = 0.04
+	}
+	
+	next_building = tax_assessor_03
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+tax_assessor_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	character_modifier = {
+		domain_tax_mult = 0.06
+	}
+	
+	type = duchy_capital
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+leisure_palace_01 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_1_cost
+	
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.02
+		stress_loss_mult = 0.05
+	}
+	
+	next_building = leisure_palace_02
+
+	type_icon = "icon_building_leisure_palace.dds"
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+leisure_palace_02 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_2_cost
+	
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.04
+		stress_loss_mult = 0.10
+	}
+	
+	next_building = leisure_palace_03
+	
+	type = duchy_capital
+	
+	ai_value = {
+		base = 25
+	}
+}
+
+leisure_palace_03 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_requirement_castle_city_church = { LEVEL = 01 }
+		building_requirement_tribal = no
+	}
+	
+	can_construct_showing_failures_only = {
+		
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	is_enabled = {
+		county.duchy.holder = county.holder
+	}
+	show_disabled = yes
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	character_modifier = {
+		monthly_prestige_gain_mult = 0.06
+		stress_loss_mult = 0.15
+	}
+	
+	type = duchy_capital
+	
+	flag = fully_upgraded_duchy_capital_building
+	
+	ai_value = {
+		base = 25
+	}
+}

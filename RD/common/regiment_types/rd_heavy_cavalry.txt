@@ -1,0 +1,175 @@
+﻿@cultural_maa_extra_ai_score = 25
+
+armored_horsemen = {
+	type = heavy_cavalry
+	
+	damage = 30
+	toughness = 20
+	pursuit = 10
+	screen = 5
+	
+	terrain_bonus = {
+		steppe = { damage = 20 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		jungle = { damage = -10 }
+		forest = { damage = -10 }
+		taiga = { damage = -10 }
+		hills = { damage = -10 }
+		mountains = { damage = -15 }
+		desert_mountains = { damage = -15 }
+		wetlands = { damage = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 100
+	allowed_in_hired_troops = no
+	icon = heavy_cavalry
+}
+
+heavy_hussar = {
+	type = heavy_cavalry
+	
+	damage = 50
+	toughness = 20
+	pursuit = 10
+	screen = 5
+	
+	terrain_bonus = {
+		steppe = { damage = 20 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		jungle = { damage = -10 }
+		forest = { damage = -10 }
+		taiga = { damage = -10 }
+		hills = { damage = -10 }
+		mountains = { damage = -15 }
+		desert_mountains = { damage = -15 }
+		wetlands = { damage = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+gendarme = {
+	type = heavy_cavalry
+	
+	damage = 40
+	toughness = 20
+	pursuit = 10
+	screen = 5
+	
+	terrain_bonus = {
+		steppe = { damage = 20 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		jungle = { damage = -10 }
+		forest = { damage = -10 }
+		taiga = { damage = -10 }
+		hills = { damage = -10 }
+		mountains = { damage = -15 }
+		desert_mountains = { damage = -15 }
+		wetlands = { damage = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+cataphract = {
+	type = heavy_cavalry
+	
+	damage = 30
+	toughness = 30
+	pursuit = 10
+	screen = 5
+	
+	terrain_bonus = {
+		steppe = { damage = 20 }
+		plains = { damage = 20 }
+		drylands = { damage = 20 }
+		jungle = { damage = -10 }
+		forest = { damage = -10 }
+		taiga = { damage = -10 }
+		hills = { damage = -10 }
+		mountains = { damage = -15 }
+		desert_mountains = { damage = -15 }
+		wetlands = { damage = -20 }
+	}
+
+	counters = {
+		archers = 1
+	}
+
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = heavy_cavalry
+}
+
+war_elephant = {
+	type = heavy_cavalry
+	
+	damage = 120
+	toughness = 150
+	pursuit = 10
+	screen = 5
+	
+	siege_value = 0.1
+	
+	terrain_bonus = {
+		steppe = { damage = 40 }
+		plains = { damage = 40 }
+		drylands = { damage = 40 }
+		jungle = { damage = -20 }
+		forest = { damage = -20 }
+		taiga = { damage = -20 }
+		hills = { damage = -20 }
+		mountains = { damage = -30 }
+		desert_mountains = { damage = -30 }
+		wetlands = { damage = -40 }
+	}
+	
+	counters = {
+		skirmishers = 2
+		heavy_infantry = 2
+	}
+	
+	buy_cost = { gold = heavy_cavalry_recruitment_cost }
+	low_maintenance_cost = { gold = heavy_cavalry_low_maint_cost }
+	high_maintenance_cost = { gold = heavy_cavalry_high_maint_cost }
+	
+	stack = 25
+	allowed_in_hired_troops = no
+	
+	icon = war_elephants
+}

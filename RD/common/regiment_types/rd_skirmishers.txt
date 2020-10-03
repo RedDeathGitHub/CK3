@@ -1,0 +1,175 @@
+﻿@cultural_maa_extra_ai_score = 25
+
+light_footmen = {
+	type = skirmishers
+	
+	damage = 10
+	toughness = 10
+	pursuit = 5
+	screen = 5
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	mercenary_fallback = yes
+	holy_order_fallback = yes
+	
+	stack = 100
+	icon = skirmishers
+}
+
+goedendag = {
+	type = skirmishers
+	
+	damage = 15
+	toughness = 10
+	pursuit = 5
+	screen = 5
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+horn_warrior = {
+	type = skirmishers
+	
+	damage = 12
+	toughness = 13
+	pursuit = 5
+	screen = 5
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+shomer = {
+	type = skirmishers
+	
+	damage = 10
+	toughness = 15
+	pursuit = 5
+	screen = 5
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+guinea_warrior = { #AKA Guinean uplander
+	type = skirmishers
+	
+	damage = 13
+	toughness = 12
+	pursuit = 0
+	screen = 10
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+abudrar = { #AKA Jabali - Berber mountaineer
+	type = skirmishers
+	
+	damage = 14
+	toughness = 11
+	pursuit = 5
+	screen = 5
+	
+	terrain_bonus = {
+		forest = { damage = 5 }
+		taiga = { damage = 5 }
+		jungle = { damage = 5 }
+	}
+	
+	buy_cost = { gold = skirmisher_recruitment_cost }
+	low_maintenance_cost = { gold = skirmisher_low_maint_cost }
+	high_maintenance_cost = { gold = skirmisher_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = skirmishers
+}
+
+horse_archers = {
+	type = skirmishers
+
+	damage = 35
+	toughness = 5
+	pursuit = 15
+	screen = 10
+	
+	terrain_bonus = {
+		steppe = { damage = 10 }
+		plains = { damage = 10 }
+		drylands = { damage = 10 }
+		jungle = { damage = -5 }
+		forest = { damage = -5 }
+		taiga = { damage = -5 }
+		hills = { damage = -5 }
+		mountains = { damage = -10 }
+		desert_mountains = { damage = -10 }
+		wetlands = { damage = -15 }
+	}
+	
+	counters = {
+		skirmishers = 1
+	}
+
+	buy_cost = { gold = horse_archers_recruitment_cost }
+	low_maintenance_cost = { gold = horse_archers_low_maint_cost }
+	high_maintenance_cost = { gold = horse_archers_high_maint_cost }
+	
+	stack = 100
+	ai_quality = { value = @cultural_maa_extra_ai_score }
+	icon = horse_archers
+}
