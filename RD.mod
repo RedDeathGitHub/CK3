@@ -3,5 +3,5 @@ tags={
 	"Fixes"
 }
 name="RD"
-supported_version="2.0"
-path="c:\Code\repositories\CK3\RD\"
+supported_version="1.*"
+path="c:/Code/repositories/CK3/RD"
