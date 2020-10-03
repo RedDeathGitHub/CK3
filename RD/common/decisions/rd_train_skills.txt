@@ -975,7 +975,117 @@ train_organizer_decision = {
 	ai_check_interval = 0
 }
 
+train_negotiator_decision = {
+	picture = "gfx/interface/icons/traits/negotiator.dds"
 
+	is_shown = {
+		NOT = {
+			has_trait = negotiator
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = negotiator
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_light_troop_specialist_decision = {
+	picture = "gfx/interface/icons/traits/light_troop_specialist.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = light_troop_specialist
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = light_troop_specialist
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_heavy_troop_specialist_decision = {
+	picture = "gfx/interface/icons/traits/heavy_troop_specialist.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = heavy_troop_specialist
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = heavy_troop_specialist
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
+
+train_mounted_troop_specialist_decision = {
+	picture = "gfx/interface/icons/traits/mounted_troop_specialist.dds"
+
+	is_shown = {
+		NOT = {
+			has_trait = mounted_troop_specialist
+		}
+	}
+	
+	cost = {
+		prestige = 5000
+	}
+	
+	effect = {
+		add_trait = mounted_troop_specialist
+	}
+	
+	ai_potential = {
+		always = no
+	}
+
+	ai_will_do = {
+		base = 0
+	}
+	
+	ai_check_interval = 0
+}
 
 gain_learning_decision = {
 	picture = "gfx/interface/icons/message_feed/learning.dds"

@@ -199,4 +199,24 @@
  train_organizer_decision_desc: "Gain Organizer"
  train_organizer_decision_confirm: "Yes!"
  
+ train_negotiator_decision: "Gain Negotiator"
+ train_negotiator_decision_tooltip: "You feel you now understand more about war."
+ train_negotiator_decision_desc: "Gain Negotiator"
+ train_negotiator_decision_confirm: "Yes!"
+ 
+ train_light_troop_specialist_decision: "Gain Light troop specialist"
+ train_light_troop_specialist_decision_tooltip: "You feel you now understand more about war."
+ train_light_troop_specialist_decision_desc: "Gain Light troop specialist"
+ train_light_troop_specialist_decision_confirm: "Yes!"
+ 
+ train_heavy_troop_specialist_decision: "Gain Heavy troop specialist"
+ train_heavy_troop_specialist_decision_tooltip: "You feel you now understand more about war."
+ train_heavy_troop_specialist_decision_desc: "Gain Heavy troop specialist"
+ train_heavy_troop_specialist_decision_confirm: "Yes!"
+ 
+ train_mounted_troop_specialist_decision: "Gain Mounted troop specialist"
+ train_mounted_troop_specialist_decision_tooltip: "You feel you now understand more about war."
+ train_mounted_troop_specialist_decision_desc: "Gain Mounted troop specialist"
+ train_mounted_troop_specialist_decision_confirm: "Yes!"
+ 
  

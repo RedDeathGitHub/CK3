@@ -204,3 +204,47 @@ reckless = {
 		}
 	}
 }
+
+negotiator = {
+	index = 1201
+	
+	commander = yes
+	
+	mercenary_hire_cost_mult = -0.1
+	men_at_arms_maintenance = -0.05
+}
+
+light_troop_specialist = {
+	index = 1202
+	
+	commander = yes
+	
+	skirmishers_damage_mult = 0.1
+	skirmishers_toughness_mult = 0.1
+	archers_damage_mult = 0.1
+	archers_toughness_mult = 0.1
+}
+
+heavy_troop_specialist = {
+	index = 1203
+	
+	commander = yes
+	
+	pikemen_damage_mult = 0.1
+	pikemen_toughness_mult = 0.1
+	heavy_infantry_damage_mult = 0.1
+	heavy_infantry_toughness_mult = 0.1
+}
+
+mounted_troop_specialist = {
+	index = 1204
+	
+	commander = yes
+	
+	light_cavalry_damage_mult = 0.1
+	light_cavalry_toughness_mult = 0.1
+	heavy_cavalry_damage_mult = 0.1
+	heavy_cavalry_toughness_mult = 0.1
+}
+
+

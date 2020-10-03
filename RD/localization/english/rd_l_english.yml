@@ -1,9 +1,21 @@
 ﻿l_english:
  trait_gods_chosen:0 "Gods Chosen"
- trait_gods_chosen_desc:1 "Age or sickness shall not harm him."
+ trait_gods_chosen_desc:1 "Age or sickness shall not harm him"
  
  trait_professional_army:0 "Professional army"
- trait_professional_army_desc:1 "Full professional army, no levies."
+ trait_professional_army_desc:1 "Full professional army, no levies"
+ 
+ trait_negotiator:0 "Negotiator"
+ trait_negotiator_desc:1 "Commander able to negotiate better contracts."
+ 
+ trait_light_troop_specialist:0 "Light troop specialist"
+ trait_light_troop_specialist_desc:1 "Commander who specializes in light troops"
+ 
+ trait_heavy_troop_specialist:0 "Heavy troop specialist"
+ trait_heavy_troop_specialist_desc:1 "Commander who specializes in heavy troops"
+ 
+ trait_mounted_troop_specialist:0 "Mounted troop specialist"
+ trait_mounted_troop_specialist_desc:1 "Commander who specializes in mounted troops"
  
  base_modifier:0 "Base modifier"
    
