@@ -1,20 +1,4 @@
-﻿clan_government_levies_default = 0.4
-clan_government_levies_player = 0.4
-clan_government_levies_opinion_scale_positive = 0.004
-clan_government_levies_opinion_scale_negative = 0.004
-clan_government_levies_min_ca_1 = 0.1
-clan_government_levies_min_ca_2 = 0.2
-clan_government_levies_min_ca_3 = 0.3
-
-clan_government_tax_default = 0.3
-clan_government_tax_player = 0.3
-clan_government_tax_opinion_scale_positive = 0.003
-clan_government_tax_opinion_scale_negative = 0.003
-clan_government_tax_min_ca_1 = 0.05
-clan_government_tax_min_ca_2 = 0.1
-clan_government_tax_min_ca_3 = 0.2
-
-#Feudal government values
+﻿#Feudal government values
 exempt_feudal_tax = 0.15
 low_feudal_tax = 0.3
 normal_feudal_tax = 0.45
