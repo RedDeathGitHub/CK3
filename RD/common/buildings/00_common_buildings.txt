@@ -9,7 +9,7 @@ common_tradeport_01 = {
 
 	can_construct_potential = {
 		building_common_tradeport_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -43,7 +43,7 @@ common_tradeport_02 = {
 		building_common_tradeport_requirement_terrain = yes
 	}
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -78,7 +78,7 @@ common_tradeport_03 = {
 		building_common_tradeport_requirement_terrain = yes
 	}
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		culture = {
 			has_innovation = innovation_windmills
 		}
@@ -112,7 +112,7 @@ common_tradeport_04 = {
 		building_common_tradeport_requirement_terrain = yes
 	}
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		culture = {
 			has_innovation = innovation_cranes
 		}

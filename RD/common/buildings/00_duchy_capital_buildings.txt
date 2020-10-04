@@ -8,7 +8,7 @@ military_academy_01 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -45,7 +45,7 @@ military_academy_02 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -81,7 +81,7 @@ military_academy_03 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -116,7 +116,7 @@ tax_assessor_01 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -153,7 +153,7 @@ tax_assessor_02 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -188,7 +188,7 @@ tax_assessor_03 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -222,7 +222,7 @@ leisure_palace_01 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -260,7 +260,7 @@ leisure_palace_02 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	
@@ -296,7 +296,7 @@ leisure_palace_03 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 		building_requirement_tribal = no
 	}
 	

@@ -9,7 +9,7 @@ pastures_01 = {
 
 	can_construct_potential = {
 		building_pastures_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -44,7 +44,7 @@ pastures_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -80,7 +80,7 @@ pastures_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -116,7 +116,7 @@ pastures_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -147,7 +147,7 @@ hunting_grounds_01 = {
 
 	can_construct_potential = {
 		building_hunting_grounds_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -181,7 +181,7 @@ hunting_grounds_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -216,7 +216,7 @@ hunting_grounds_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -251,7 +251,7 @@ hunting_grounds_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -283,7 +283,7 @@ orchards_01 = {
 
 	can_construct_potential = {
 		building_orchards_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -314,7 +314,7 @@ orchards_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -346,7 +346,7 @@ orchards_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -378,7 +378,7 @@ orchards_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -407,7 +407,7 @@ cereal_fields_01 = {
 
 	can_construct_potential = {
 		building_cereal_fields_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -438,7 +438,7 @@ cereal_fields_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -470,7 +470,7 @@ cereal_fields_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -502,7 +502,7 @@ cereal_fields_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -529,7 +529,7 @@ camel_farms_01 = {
 
 	can_construct_potential = {
 		building_camel_farms_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -564,7 +564,7 @@ camel_farms_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_burhs
 		}
@@ -600,7 +600,7 @@ camel_farms_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_castle_baileys
 		}
@@ -636,7 +636,7 @@ camel_farms_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_royal_armory
 		}
@@ -667,7 +667,7 @@ logging_camps_01 = {
 
 	can_construct_potential = {
 		building_logging_camps_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -702,7 +702,7 @@ logging_camps_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -738,7 +738,7 @@ logging_camps_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -774,7 +774,7 @@ logging_camps_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -807,7 +807,7 @@ peat_quarries_01 = {
 
 	can_construct_potential = {
 		building_peat_quarries_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -842,7 +842,7 @@ peat_quarries_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -878,7 +878,7 @@ peat_quarries_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -914,7 +914,7 @@ peat_quarries_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -947,7 +947,7 @@ hill_farms_01 = {
 
 	can_construct_potential = {
 		building_hill_farms_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -981,7 +981,7 @@ hill_farms_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -1016,7 +1016,7 @@ hill_farms_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -1051,7 +1051,7 @@ hill_farms_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -1083,7 +1083,7 @@ elephant_pens_01 = {
 
 	can_construct_potential = {
 		building_elephant_pens_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -1118,7 +1118,7 @@ elephant_pens_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -1154,7 +1154,7 @@ elephant_pens_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -1190,7 +1190,7 @@ elephant_pens_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -1223,7 +1223,7 @@ plantations_01 = {
 
 	can_construct_potential = {
 		building_plantations_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 	
 	can_construct_showing_failures_only = {
@@ -1257,7 +1257,7 @@ plantations_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -1293,7 +1293,7 @@ plantations_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -1328,7 +1328,7 @@ plantations_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
@@ -1360,7 +1360,7 @@ quarries_01 = {
 
 	can_construct_potential = {
 		building_quarries_requirement_terrain = yes
-		building_requirement_castle_city_church = { LEVEL = 01 }
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -1395,7 +1395,7 @@ quarries_02 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 02 }
+		has_building_or_higher = city_02
 		scope:holder.culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -1431,7 +1431,7 @@ quarries_03 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 03 }
+		has_building_or_higher = city_03
 		scope:holder.culture = {
 			has_innovation = innovation_windmills
 		}
@@ -1467,7 +1467,7 @@ quarries_04 = {
 	}
 
 	can_construct = {
-		building_requirement_castle_city_church = { LEVEL = 04 }
+		has_building_or_higher = city_04
 		scope:holder.culture = {
 			has_innovation = innovation_cranes
 		}
