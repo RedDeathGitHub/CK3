@@ -32,7 +32,6 @@ tribe_01 = {
 	
 	province_modifier = {
 		monthly_income = poor_building_tax_tier_2
-		fort_level = 1
 	}
 	
 	county_modifier = {
@@ -86,7 +85,6 @@ tribe_02 = {
 	
 	province_modifier = {
 		monthly_income = poor_building_tax_tier_4
-		fort_level = 2
 	}
 	
 	county_modifier = {

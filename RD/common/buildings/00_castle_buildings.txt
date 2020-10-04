@@ -278,7 +278,7 @@ curtain_walls_01 = {
 	garrison = good_building_garrison_tier_1
 	
 	province_modifier = {
-		fort_level = good_building_fort_level_tier_1
+		fort_level = great_building_fort_level_tier_1
 		defender_advantage = 2
 	}
 
@@ -313,7 +313,7 @@ curtain_walls_02 = {
 	garrison = good_building_garrison_tier_2
 	
 	province_modifier = {
-		fort_level = good_building_fort_level_tier_2
+		fort_level = great_building_fort_level_tier_2
 		defender_advantage = 4
 	}
 	
@@ -346,7 +346,7 @@ curtain_walls_03 = {
 	garrison = good_building_garrison_tier_3
 
 	province_modifier = {
-		fort_level = good_building_fort_level_tier_3
+		fort_level = great_building_fort_level_tier_3
 		defender_advantage = 6
 	}
 
@@ -379,7 +379,7 @@ curtain_walls_04 = {
 	garrison = good_building_garrison_tier_4
 	
 	province_modifier = {
-		fort_level = good_building_fort_level_tier_4
+		fort_level = great_building_fort_level_tier_4
 		defender_advantage = 8
 	}
 	

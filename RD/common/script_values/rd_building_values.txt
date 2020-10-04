@@ -70,14 +70,14 @@
 ###############
 
 # Base
-@normal_fort_level_base = 1
-@good_fort_level_base = 3
-@great_fort_level_base = 5
+@normal_fort_level_base = 2
+@good_fort_level_base = 4
+@great_fort_level_base = 6
 
 # Scaling Increase
 @normal_fort_level_scale_addition_per_tier = 2
 @good_fort_level_scale_addition_per_tier = 4
-@great_fort_level_scale_addition_per_tier = 6
+@great_fort_level_scale_addition_per_tier = 8
 
 ##############
 # Advantage  #
