@@ -1,0 +1,153 @@
+﻿### HARD CODED - DO NOT REMOVE ###
+
+attacker_offensive = {
+	enemy_unit_priority = 400
+	
+	objectives = {
+		wargoal_province = 800
+
+		enemy_unit_province = {
+			priority = 500
+			area = wargoal
+			area = primary_attacker
+		}
+	}
+	
+	objectives = {
+		enemy_unit_province = {
+			priority = 400
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 550
+		enemy_province = 200
+	}
+
+	objectives = {
+		enemy_ally_province = 75
+	}
+	
+	objectives = {
+		capital_province = 50
+	}
+	
+	objectives = {
+		province = 25
+	}
+
+	objectives = {
+		defend_wargoal_province = 5
+	}
+}
+
+attacker_defensive = {
+	enemy_unit_priority = 500
+	
+	objectives = {
+		enemy_unit_province = {
+			priority = 400
+		}		
+
+		wargoal_province = 450
+	}
+	
+	objectives = {
+		enemy_capital_province = 450
+		enemy_province = 100
+	}
+
+	objectives = {
+		enemy_ally_province = 75
+	}
+	
+	objectives = {
+		capital_province = 200
+	}
+	
+	objectives = {
+		province = 100
+	}
+
+	objectives = {
+		defend_wargoal_province = 5
+	}
+}
+
+defender_offensive = {
+	enemy_unit_priority = 400
+	
+	objectives = {
+		wargoal_province = 600
+		
+		enemy_unit_province = {
+			priority = 400
+			area = wargoal
+			area = primary_defender
+		}
+	}
+
+	objectives = {
+		enemy_unit_province = {
+			priority = 200
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 450
+		enemy_province = 100
+	}
+
+	objectives = {
+		enemy_ally_province = 75
+	}
+	
+	objectives = {
+		capital_province = 50
+		province = 25
+	}
+
+	objectives = {
+		defend_wargoal_province = 5
+	}
+}
+
+defender_defensive = {
+	enemy_unit_priority = 500
+	
+	objectives = {
+		wargoal_province = 600
+		
+		enemy_unit_province = {
+			priority = 400
+			area = wargoal
+			area = primary_defender
+		}
+	}
+
+	objectives = {
+		enemy_unit_province = {
+			priority = 200
+		}
+	}
+	
+	objectives = {
+		enemy_capital_province = 300
+		enemy_province = 100
+	}
+
+	objectives = {
+		enemy_ally_province = 75
+	}
+	
+	objectives = {
+		capital_province = 400
+		province = 150
+	}	
+
+	objectives = {
+		defend_wargoal_province = 5
+	}
+}
+
+### HARD CODED - DO NOT REMOVE ###

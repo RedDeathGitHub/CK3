@@ -1,3 +1,0 @@
-﻿NAI = {
-	AI_BASE_WAR_CHANCE = 0.2
-}
