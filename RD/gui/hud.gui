@@ -1729,6 +1729,22 @@ widget = {
 	layer = bottom
 
 	using = Animation_ShowHide_Quick
+	
+	flowcontainer = {
+		spacing = 3
+		ignoreinvisible = yes
+		allow_outside = yes
+		
+		position = { 20 20 }
+		dockable_button = {
+			shortcut = "screenshot"
+            visible = "yes"
+			size = { 0 0 }
+			text = ""
+			onclick = "[ExecuteConsoleCommand('debug_mode')]"
+            tooltip = "Enable debug_mode"
+		}
+	}
 
 	icon = {
 		visible = "[And(GetPlayer.IsValid, Not(GetVariableSystem.Exists( 'hide_bottom_left_HUD')))]"
