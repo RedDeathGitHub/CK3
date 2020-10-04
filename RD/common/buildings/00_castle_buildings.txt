@@ -279,7 +279,7 @@ curtain_walls_01 = {
 	
 	province_modifier = {
 		fort_level = great_building_fort_level_tier_1
-		defender_advantage = 2
+		defender_advantage = normal_building_advantage_tier_1
 	}
 
 	next_building = curtain_walls_02
@@ -314,7 +314,7 @@ curtain_walls_02 = {
 	
 	province_modifier = {
 		fort_level = great_building_fort_level_tier_2
-		defender_advantage = 4
+		defender_advantage = normal_building_advantage_tier_2
 	}
 	
 	next_building = curtain_walls_03
@@ -347,7 +347,7 @@ curtain_walls_03 = {
 
 	province_modifier = {
 		fort_level = great_building_fort_level_tier_3
-		defender_advantage = 6
+		defender_advantage = normal_building_advantage_tier_3
 	}
 
 	next_building = curtain_walls_04
@@ -380,15 +380,46 @@ curtain_walls_04 = {
 	
 	province_modifier = {
 		fort_level = great_building_fort_level_tier_4
-		defender_advantage = 8
+		defender_advantage = normal_building_advantage_tier_4
 	}
+	
+	next_building = curtain_walls_05
 	
 	ai_value = {
 		base = 50
 	}
 }
 
+curtain_walls_05 = {
+	construction_time = slow_construction_time
 
+	can_construct_potential = {
+		has_building_or_higher = city_05
+	}
+
+	can_construct = {
+		scope:holder.culture = {
+			has_innovation = innovation_machicolations
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+	
+	cost_gold = metropolis_building_cost
+	
+	garrison = good_building_garrison_tier_5
+	
+	province_modifier = {
+		fort_level = great_building_fort_level_tier_5
+		defender_advantage = normal_building_advantage_tier_5
+	}
+	
+	ai_value = {
+		base = 50
+	}
+}
 
 
 

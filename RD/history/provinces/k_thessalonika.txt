@@ -8,9 +8,8 @@
 	# History	
 	769.1.1 = {
 		buildings = {
-			city_04
-			#farm_estates_01
-			#regimental_grounds_01
+			city_05
+			curtain_walls_01
 		}
 		special_building = hagia_sophia_01
 		duchy_capital_building = theodosian_walls_01

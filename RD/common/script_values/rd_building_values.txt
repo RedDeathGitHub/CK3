@@ -25,6 +25,8 @@
 @silver_mine_tax_base = 1
 @special_mine_tax_base = 2
 
+metropolis_building_tax = 5
+
 # We have four 'tax classes', each one has a better scale than the others.
 @poor_tax_scale_addition_per_tier = 0.05
 @normal_tax_scale_addition_per_tier = 0.1
@@ -102,6 +104,8 @@
 @expensive_cost_base = 300
 @main_cost_base = 500
 
+metropolis_main_building_cost = 20000
+metropolis_building_cost = 2000
 
 # We have four 'building cost classes', each one has a better scale than the others.
 @tribal_cost_scale_addition_per_tier = 25
@@ -220,6 +224,7 @@ building_disable_inefficient_value_add = 5
 @good_garrison_tier_2 = @[good_garrison_tier_1 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_3 = @[good_garrison_tier_2 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_4 = @[good_garrison_tier_3 + good_garrison_scale_addition_per_tier]
+@good_garrison_tier_5 = @[good_garrison_tier_4 * 2]
 
 @normal_build_speed_tier_1 = @[normal_build_speed_base]
 @normal_build_speed_tier_2 = @[normal_build_speed_tier_1 + normal_build_speed_scale_addition_per_tier]
@@ -250,11 +255,13 @@ building_disable_inefficient_value_add = 5
 @great_fort_level_tier_2 = @[great_fort_level_tier_1 + great_fort_level_scale_addition_per_tier]
 @great_fort_level_tier_3 = @[great_fort_level_tier_2 + great_fort_level_scale_addition_per_tier]
 @great_fort_level_tier_4 = @[great_fort_level_tier_3 + great_fort_level_scale_addition_per_tier]
+@great_fort_level_tier_5 = @[great_fort_level_tier_4 + 20]
 
 @normal_advantage_tier_1 = @[normal_advantage_base]
 @normal_advantage_tier_2 = @[normal_advantage_tier_1 + normal_advantage_scale_addition_per_tier]
 @normal_advantage_tier_3 = @[normal_advantage_tier_2 + normal_advantage_scale_addition_per_tier]
 @normal_advantage_tier_4 = @[normal_advantage_tier_3 + normal_advantage_scale_addition_per_tier]
+@normal_advantage_tier_5 = @[normal_advantage_tier_4 + normal_advantage_scale_addition_per_tier * 2]
 
 @good_advantage_tier_1 = @[good_advantage_base]
 @good_advantage_tier_2 = @[good_advantage_tier_1 + good_advantage_scale_addition_per_tier]
@@ -409,6 +416,7 @@ good_building_garrison_tier_1 = @[good_garrison_tier_1]
 good_building_garrison_tier_2 = @[good_garrison_tier_2]
 good_building_garrison_tier_3 = @[good_garrison_tier_3]
 good_building_garrison_tier_4 = @[good_garrison_tier_4]
+good_building_garrison_tier_5 = @[good_garrison_tier_5]
 
 ######################
 # Build Speed Values #
@@ -453,6 +461,7 @@ great_building_fort_level_tier_1 = @[great_fort_level_tier_1]
 great_building_fort_level_tier_2 = @[great_fort_level_tier_2]
 great_building_fort_level_tier_3 = @[great_fort_level_tier_3]
 great_building_fort_level_tier_4 = @[great_fort_level_tier_4]
+great_building_fort_level_tier_5 = @[great_fort_level_tier_5]
 
 #############
 # Advantage #
@@ -463,6 +472,7 @@ normal_building_advantage_tier_1 = @[normal_advantage_tier_1]
 normal_building_advantage_tier_2 = @[normal_advantage_tier_2]
 normal_building_advantage_tier_3 = @[normal_advantage_tier_3]
 normal_building_advantage_tier_4 = @[normal_advantage_tier_4]
+normal_building_advantage_tier_5 = @[normal_advantage_tier_5]
 
 # Good advantage
 good_building_advantage_tier_1 = @[good_advantage_tier_1]
