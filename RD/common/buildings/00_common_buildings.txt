@@ -8,7 +8,11 @@ common_tradeport_01 = {
 	construction_time = quick_construction_time
 
 	can_construct_potential = {
-		building_common_tradeport_requirement_terrain = yes
+		OR = {
+			building_common_tradeport_requirement_terrain = yes
+			building_common_river_tradeport_requirement_terrain = yes
+		}
+		
 		has_building_or_higher = city_01
 	}
 
@@ -40,8 +44,12 @@ common_tradeport_02 = {
 	construction_time = quick_construction_time
 
 	can_construct_potential = {
-		building_common_tradeport_requirement_terrain = yes
+		OR = {
+			building_common_tradeport_requirement_terrain = yes
+			building_common_river_tradeport_requirement_terrain = yes
+		}
 	}
+	
 	can_construct = {
 		has_building_or_higher = city_02
 		culture = {
@@ -75,8 +83,12 @@ common_tradeport_03 = {
 	construction_time = quick_construction_time
 
 	can_construct_potential = {
-		building_common_tradeport_requirement_terrain = yes
+		OR = {
+			building_common_tradeport_requirement_terrain = yes
+			building_common_river_tradeport_requirement_terrain = yes
+		}
 	}
+	
 	can_construct = {
 		has_building_or_higher = city_03
 		culture = {
@@ -110,8 +122,12 @@ common_tradeport_04 = {
 	construction_time = quick_construction_time
 
 	can_construct_potential = {
-		building_common_tradeport_requirement_terrain = yes
+		OR = {
+			building_common_tradeport_requirement_terrain = yes
+			building_common_river_tradeport_requirement_terrain = yes
+		}
 	}
+	
 	can_construct = {
 		has_building_or_higher = city_04
 		culture = {
@@ -145,7 +161,10 @@ common_tradeport_05 = {
 	construction_time = slow_construction_time
 
 	can_construct_potential = {
-		building_common_tradeport_requirement_terrain = yes
+		OR = {
+			building_common_tradeport_requirement_terrain = yes
+			building_common_river_tradeport_requirement_terrain = yes
+		}
 	}
 
 	can_construct = {
