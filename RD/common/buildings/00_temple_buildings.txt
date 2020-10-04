@@ -2,7 +2,7 @@
 	construction_time = standard_construction_time
 
 	can_construct_potential = {
-		has_building_or_higher = temple_01
+		has_building_or_higher = city_01
 	}
 
 	can_construct_showing_failures_only = {
@@ -32,7 +32,7 @@ monastic_schools_02 = {
 	construction_time = standard_construction_time
 
 	can_construct = {
-		has_building_or_higher = temple_02
+		has_building_or_higher = city_02
 		culture = {
 			has_innovation = innovation_manorialism
 		}
@@ -63,7 +63,7 @@ monastic_schools_03 = {
 	construction_time = standard_construction_time
 
 	can_construct = {
-		has_building_or_higher = temple_03
+		has_building_or_higher = city_03
 		culture = {
 			has_innovation = innovation_windmills
 		}
@@ -94,7 +94,7 @@ monastic_schools_04 = {
 	construction_time = standard_construction_time
 
 	can_construct = {
-		has_building_or_higher = temple_04
+		has_building_or_higher = city_04
 		culture = {
 			has_innovation = innovation_cranes
 		}
@@ -112,6 +112,37 @@ monastic_schools_04 = {
 	
 	character_modifier = {
 		monthly_piety = 0.12
+	}
+	
+	next_building = monastic_schools_05
+	
+	ai_value = {
+		base = 50
+	}
+}
+
+monastic_schools_05 = {
+	construction_time = slow_construction_time
+
+	can_construct = {
+		has_building_or_higher = city_05
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = metropolis_building_cost
+	
+	county_modifier = {
+		development_growth_factor = 0.30
+	}
+	
+	character_modifier = {
+		monthly_piety = 1.0
 	}
 	
 	ai_value = {

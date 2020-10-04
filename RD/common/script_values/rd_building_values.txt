@@ -224,7 +224,7 @@ building_disable_inefficient_value_add = 5
 @good_garrison_tier_2 = @[good_garrison_tier_1 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_3 = @[good_garrison_tier_2 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_4 = @[good_garrison_tier_3 + good_garrison_scale_addition_per_tier]
-@good_garrison_tier_5 = @[good_garrison_tier_4 * 2]
+@good_garrison_tier_5 = @[good_garrison_tier_4 + good_garrison_scale_addition_per_tier]
 
 @normal_build_speed_tier_1 = @[normal_build_speed_base]
 @normal_build_speed_tier_2 = @[normal_build_speed_tier_1 + normal_build_speed_scale_addition_per_tier]

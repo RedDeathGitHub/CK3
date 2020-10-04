@@ -456,6 +456,11 @@
 	867.1.1 = {
 		holding = castle_holding
 		special_building = house_of_wisdom_01
+		
+		buildings = {
+			city_05
+			curtain_walls_01
+		}
 	}
 	
 

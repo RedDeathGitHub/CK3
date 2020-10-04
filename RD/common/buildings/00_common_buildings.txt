@@ -100,6 +100,7 @@ common_tradeport_03 = {
 	}
 	
 	next_building = common_tradeport_04
+	
 	ai_value = {
 		base = 100
 	}
@@ -131,6 +132,42 @@ common_tradeport_04 = {
 	
 	county_modifier = {
 		development_growth = 0.08
+	}
+
+	ai_value = {
+		base = 100
+	}
+	
+	next_building = common_tradeport_05
+}
+
+common_tradeport_05 = {
+	construction_time = slow_construction_time
+
+	can_construct_potential = {
+		building_common_tradeport_requirement_terrain = yes
+	}
+
+	can_construct = {
+		has_building_or_higher = city_05
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+
+	can_construct_showing_failures_only = {
+		building_requirement_tribal = no
+	}
+
+	cost_gold = metropolis_building_cost
+	
+	province_modifier = {
+		monthly_income = metropolis_building_tax
+		tax_mult = 0.30
+	}
+	
+	county_modifier = {
+		development_growth = 0.20
 	}
 
 	ai_value = {

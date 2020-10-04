@@ -1050,11 +1050,10 @@ theodosian_walls_01 = {
 	
 	cost_gold = 3000
 	
-	garrison = 1000
+	garrison = 750
 
 	province_modifier = {
 		fort_level = 20
-		garrison_size = 2
 	}
 	county_modifier = {
 		development_growth = 0.3
@@ -1094,7 +1093,6 @@ aurelian_walls_01 = {
 	}
 	province_modifier = {
 		fort_level = 15
-		garrison_size = 0.5
 	}
 	
 	ai_value = {
