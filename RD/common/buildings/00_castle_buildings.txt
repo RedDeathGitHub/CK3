@@ -50,7 +50,7 @@ royal_armory_02 = {
 	cost_gold = normal_building_tier_2_cost
 
 	character_modifier = {
-		skirmishers_damage_mult = 0.1
+		skirmishers_damage_mult = 0.01
 		archers_damage_mult = 0.01
 		pikemen_damage_mult = 0.01
 		heavy_infantry_damage_mult = 0.01

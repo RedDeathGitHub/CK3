@@ -35,3 +35,11 @@
  
  recent_war:0 "Recent War"
  recent_war_desc:0 "This character has recently called a war and must wait before calling another."
+ 
+ building_royal_armory_04:0 "Grand Royal Arsenal"
+ building_royal_armory_04_desc:0 "Best weapons money can buy."
+ 
+ building_blacksmiths_04:0 "Grand Royal Forges"
+ building_blacksmiths_04_desc:0 "Best equipment money can buy."
+ 
+ 
