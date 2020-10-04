@@ -37,3 +37,51 @@ hungarian_migration = {
 	launch_random = {}
 	launch_off = { flag = blocks_achievements }
 }
+
+culture_conversion_speed = {
+	default = faster_culture_conversion_speed
+
+	default_culture_conversion_speed = {
+	
+	}
+	
+	faster_culture_conversion_speed = {
+		flag = blocks_achievements
+	}
+	
+	significantly_faster_culture_conversion_speed = {
+		flag = blocks_achievements
+	}
+	
+	significantly_slower_culture_conversion_speed = {
+	
+	}
+	
+	slower_culture_conversion_speed = {
+	
+	}
+}
+
+faith_conversion_speed = {
+	default = faster_faith_conversion_speed
+
+	default_faith_conversion_speed = {
+	
+	}
+	
+	faster_faith_conversion_speed = {
+		flag = blocks_achievements
+	}
+	
+	significantly_faster_faith_conversion_speed = {
+		flag = blocks_achievements
+	}
+	
+	significantly_slower_faith_conversion_speed = {
+	
+	}
+	
+	slower_faith_conversion_speed = {
+	
+	}
+}
