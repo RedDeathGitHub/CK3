@@ -27,7 +27,7 @@ tribe_01 = {
 	cost_gold = cheap_building_tier_1_cost
 	next_building = tribe_02
 	
-	levy = good_building_levy_tier_1
+	levy = normal_building_levy_tier_1
 	garrison = good_building_garrison_tier_1
 	
 	province_modifier = {
@@ -80,7 +80,7 @@ tribe_02 = {
 	
 	cost_gold = cheap_building_tier_2_cost
 	
-	levy = good_building_levy_tier_2
+	levy = normal_building_levy_tier_2
 	garrison = good_building_garrison_tier_2
 	
 	province_modifier = {
@@ -119,6 +119,7 @@ longhouses_01 = {
 	
 	character_modifier = {
 		monthly_prestige = 0.05
+		men_at_arms_limit = 1
 	}
 
 	county_modifier = {
@@ -155,6 +156,7 @@ longhouses_02 = {
 	
 	character_modifier = {
 		monthly_prestige = 0.1
+		men_at_arms_limit = 1
 	}
 	
 	county_modifier = {

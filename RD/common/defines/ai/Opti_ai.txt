@@ -231,7 +231,7 @@
 	REGIMENT_OBSOLETION_SCORE_DIFFERENCE = 20			# The AI will disband a regiment if it is this much worse than the best available regiment, and it is unable to hire more regiments (due to cost or being at cap). Quick math: 10 damage * 100 men / 200 cost = 5 score difference
 
 
-	AI_BASE_WAR_CHANCE = 0.4							# Basic chance of declaring war. Further reduced by energy; x0 at -100, x1 at 100, x0.5 at 0 energy
+	AI_BASE_WAR_CHANCE = 0.2							# Basic chance of declaring war. Further reduced by energy; x0 at -100, x1 at 100, x0.5 at 0 energy
 	AI_WAR_BASE_COOLDOWN = 150							# How long, in days, does the AI have to wait between wars?
 	AI_WAR_COOLDOWN_RATIO_FOR_FULL_CHANCE = 3			# How far beyond the cooldown do you have to go before the time since the last war stops reducing the chance? With these numbers, chance at day 3650 would be 0x, 1x at 3650*2, and 0.5x at 3650*1.5
 	AI_WAR_MAX_OFFENSIVE_WAR_PENALTY = 0.0				# If your offensive war penalty is higher than this, don't declare war unless you're a warmonger (faith doctrine) or irrational

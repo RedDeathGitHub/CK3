@@ -15,13 +15,7 @@
 	cost_gold = normal_building_tier_1_cost
 	
 	character_modifier = {
-		skirmishers_damage_mult = 0.005
-		archers_damage_mult = 0.005
-		pikemen_damage_mult = 0.005
-		heavy_infantry_damage_mult = 0.005
-		light_cavalry_damage_mult = 0.005
-		heavy_cavalry_damage_mult = 0.005
-		knight_effectiveness_mult = 0.005
+		men_at_arms_limit = 1
 	}
 	
 	next_building = royal_armory_02
@@ -50,13 +44,7 @@ royal_armory_02 = {
 	cost_gold = normal_building_tier_2_cost
 
 	character_modifier = {
-		skirmishers_damage_mult = 0.01
-		archers_damage_mult = 0.01
-		pikemen_damage_mult = 0.01
-		heavy_infantry_damage_mult = 0.01
-		light_cavalry_damage_mult = 0.01
-		heavy_cavalry_damage_mult = 0.01
-		knight_effectiveness_mult = 0.01
+		men_at_arms_limit = 2
 	}
 	
 	next_building = royal_armory_03
@@ -83,13 +71,7 @@ royal_armory_03 = {
 	cost_gold = normal_building_tier_3_cost
 
 	character_modifier = {
-		skirmishers_damage_mult = 0.015
-		archers_damage_mult = 0.015
-		pikemen_damage_mult = 0.015
-		heavy_infantry_damage_mult = 0.015
-		light_cavalry_damage_mult = 0.015
-		heavy_cavalry_damage_mult = 0.015
-		knight_effectiveness_mult = 0.015
+		men_at_arms_limit = 3
 	}
 	
 	next_building = royal_armory_04
@@ -116,145 +98,7 @@ royal_armory_04 = {
 	cost_gold = normal_building_tier_4_cost
 
 	character_modifier = {
-		skirmishers_damage_mult = 0.02
-		archers_damage_mult = 0.02
-		pikemen_damage_mult = 0.02
-		heavy_infantry_damage_mult = 0.02
-		light_cavalry_damage_mult = 0.02
-		heavy_cavalry_damage_mult = 0.02
-		knight_effectiveness_mult = 0.02
-	}
-	
-	ai_value = {
-		base = 25
-	}
-}
-
-blacksmiths_01 = {
-	construction_time = slow_construction_time
-
-	can_construct_potential = {
-		has_building_or_higher = city_01
-		building_requirement_tribal = no
-	}
-	
-	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_burhs
-		}
-	}
-	
-	cost_gold = normal_building_tier_1_cost
-	
-	character_modifier = {
-		skirmishers_toughness_mult = 0.005
-		archers_toughness_mult = 0.005
-		pikemen_toughness_mult = 0.005
-		heavy_infantry_toughness_mult = 0.005
-		light_cavalry_toughness_mult = 0.005
-		heavy_cavalry_toughness_mult = 0.005
-		siege_weapon_siege_value_mult = 0.005
-	}
-	
-	next_building = blacksmiths_02
-
-	type_icon = "icon_building_blacksmiths.dds"
-	
-	ai_value = {
-		base = 25
-	}
-}
-
-blacksmiths_02 = {
-	construction_time = slow_construction_time
-
-	can_construct_potential = {
-		has_building_or_higher = city_02
-		building_requirement_tribal = no
-	}
-	
-	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_castle_baileys
-		}
-	}
-	
-	cost_gold = normal_building_tier_2_cost
-	
-	character_modifier = {
-		skirmishers_toughness_mult = 0.01
-		archers_toughness_mult = 0.01
-		pikemen_toughness_mult = 0.01
-		heavy_infantry_toughness_mult = 0.01
-		light_cavalry_toughness_mult = 0.01
-		heavy_cavalry_toughness_mult = 0.01
-		siege_weapon_siege_value_mult = 0.01
-	}
-	
-	next_building = blacksmiths_03
-	
-	ai_value = {
-		base = 25
-	}
-}
-
-blacksmiths_03 = {
-	construction_time = slow_construction_time
-
-	can_construct_potential = {
-		has_building_or_higher = city_03
-		building_requirement_tribal = no
-	}
-	
-	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_royal_armory
-		}
-	}
-	
-	cost_gold = normal_building_tier_3_cost
-	
-	character_modifier = {
-		skirmishers_toughness_mult = 0.015
-		archers_toughness_mult = 0.015
-		pikemen_toughness_mult = 0.015
-		heavy_infantry_toughness_mult = 0.015
-		light_cavalry_toughness_mult = 0.015
-		heavy_cavalry_toughness_mult = 0.015
-		siege_weapon_siege_value_mult = 0.015
-	}
-	
-	next_building = blacksmiths_04
-	
-	ai_value = {
-		base = 25
-	}
-}
-
-blacksmiths_04 = {
-	construction_time = slow_construction_time
-
-	can_construct_potential = {
-		has_building_or_higher = city_04
-		building_requirement_tribal = no
-	}
-	
-	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_royal_armory
-		}
-	}
-	
-	cost_gold = normal_building_tier_4_cost
-	
-	character_modifier = {
-		skirmishers_toughness_mult = 0.02
-		archers_toughness_mult = 0.02
-		pikemen_toughness_mult = 0.02
-		heavy_infantry_toughness_mult = 0.02
-		light_cavalry_toughness_mult = 0.02
-		heavy_cavalry_toughness_mult = 0.02
-		siege_weapon_siege_value_mult = 0.02
+		men_at_arms_limit = 4
 	}
 	
 	ai_value = {

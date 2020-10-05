@@ -61,7 +61,7 @@ city_01 = {
 	}
 	cost_gold = main_building_tier_1_cost
 	
-	levy = normal_building_levy_tier_1
+	levy = good_building_levy_tier_1
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_1
 	}
@@ -134,7 +134,7 @@ city_02 = {
 	}
 	cost_gold = main_building_tier_2_cost
 	
-	levy = normal_building_levy_tier_2
+	levy = good_building_levy_tier_2
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_2
 	}
@@ -198,7 +198,7 @@ city_03 = {
 	cost_gold = main_building_tier_3_cost
 	next_building = city_04
 	
-	levy = normal_building_levy_tier_3
+	levy = good_building_levy_tier_3
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_3
 	}
@@ -260,7 +260,7 @@ city_04 = {
 	}
 	cost_gold = main_building_tier_4_cost
 	
-	levy = normal_building_levy_tier_4
+	levy = good_building_levy_tier_4
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_4
 	}
@@ -330,7 +330,7 @@ city_05 = {
 	levy = excellent_building_levy_tier_4
 	
 	province_modifier = {
-		monthly_income = metropolis_building_tax
+		monthly_income = metropolis_main_building_tax
 	}
 	
 	county_modifier = {

@@ -44,3 +44,14 @@
  
  building_city_05:1 "Megalopolis"
  building_city_05_desc:1 "This city has incontestably grown into a fully-fledged Megalopolis, quite conceivably the greatest city ever built. Pedestrians can walk miles without seeing an apparent end to the city. In any district of the city you can find radiant wonders and great works never before seen beyond the city walls. It may have taken a few generations to accomplish this, and cost some blood, sweat, and wealth beyond imagining – but any who walks the beautifully paved streets of the city agrees that any sacrifice would be worth it for such a magnificent city.\nIt truly has become a City of Wonders!"
+ 
+ building_type_wieliczka_mines_01:0 "The Wieliczka Mines"
+ building_type_wieliczka_mines_01_desc:1 "At the foot of Krakow lies a profitable and ever sought-after salt mine."
+ building_wieliczka_mines_01:1 "Wieliczka Mining Settlement"
+ building_wieliczka_mines_01_desc:1 "A small mining settlement has sprung up near where the salt veins lie. The settlers have started opening up the veins and extracting the salt, but so far they're only scratching the surface."
+ building_wieliczka_mines_02:1 "Wieliczka Mine"
+ building_wieliczka_mines_02_desc:1 "As the settlement grows, more and more salt is being extracted. The influx of competent engineers allows for the construction of an actual mine."
+ building_wieliczka_mines_03:1 "Large Wieliczka Mine"
+ building_wieliczka_mines_03_desc:1 "As the mining operations grow, so does the mines themselves. More entrances are constructed, and large shafts are dug to allow the extraction of deep salt."
+ building_wieliczka_mines_04:1 "Wieliczka Mining Complex"
+ building_wieliczka_mines_04_desc:1 "As the production of salt increases, so do the profits."

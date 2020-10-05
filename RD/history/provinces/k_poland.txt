@@ -5,6 +5,11 @@
 	culture = polish
 	religion = slavic_pagan
 	holding = tribal_holding
+	
+	867.1.1 = {
+		special_building_slot = wieliczka_mines_01
+	}
+	
 	966.4.14 = {
 		religion = catholic
 		holding = castle_holding

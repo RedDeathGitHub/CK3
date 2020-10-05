@@ -27,7 +27,20 @@ military_academy_01 = {
 	cost_gold = expensive_building_tier_1_cost
 	
 	character_modifier = {
-		men_at_arms_limit = 1
+		skirmishers_damage_mult = 0.01
+		archers_damage_mult = 0.01
+		pikemen_damage_mult = 0.01
+		heavy_infantry_damage_mult = 0.01
+		light_cavalry_damage_mult = 0.01
+		heavy_cavalry_damage_mult = 0.01
+		knight_effectiveness_mult = 0.01
+		skirmishers_toughness_mult = 0.01
+		archers_toughness_mult = 0.01
+		pikemen_toughness_mult = 0.01
+		heavy_infantry_toughness_mult = 0.01
+		light_cavalry_toughness_mult = 0.01
+		heavy_cavalry_toughness_mult = 0.01
+		siege_weapon_siege_value_mult = 0.01
 	}
 	
 	next_building = military_academy_02
@@ -65,7 +78,20 @@ military_academy_02 = {
 	cost_gold = expensive_building_tier_2_cost
 	
 	character_modifier = {
-		men_at_arms_limit = 2
+		skirmishers_damage_mult = 0.02
+		archers_damage_mult = 0.02
+		pikemen_damage_mult = 0.02
+		heavy_infantry_damage_mult = 0.02
+		light_cavalry_damage_mult = 0.02
+		heavy_cavalry_damage_mult = 0.02
+		knight_effectiveness_mult = 0.02
+		skirmishers_toughness_mult = 0.02
+		archers_toughness_mult = 0.02
+		pikemen_toughness_mult = 0.02
+		heavy_infantry_toughness_mult = 0.02
+		light_cavalry_toughness_mult = 0.02
+		heavy_cavalry_toughness_mult = 0.02
+		siege_weapon_siege_value_mult = 0.02
 	}
 	
 	next_building = military_academy_03
@@ -100,7 +126,20 @@ military_academy_03 = {
 	cost_gold = expensive_building_tier_3_cost
 	
 	character_modifier = {
-		men_at_arms_limit = 3
+		skirmishers_damage_mult = 0.03
+		archers_damage_mult = 0.03
+		pikemen_damage_mult = 0.03
+		heavy_infantry_damage_mult = 0.03
+		light_cavalry_damage_mult = 0.03
+		heavy_cavalry_damage_mult = 0.03
+		knight_effectiveness_mult = 0.03
+		skirmishers_toughness_mult = 0.03
+		archers_toughness_mult = 0.03
+		pikemen_toughness_mult = 0.03
+		heavy_infantry_toughness_mult = 0.03
+		light_cavalry_toughness_mult = 0.03
+		heavy_cavalry_toughness_mult = 0.03
+		siege_weapon_siege_value_mult = 0.03
 	}
 	
 	type = duchy_capital
