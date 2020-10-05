@@ -1,167 +1,8 @@
-﻿##########
-# Wieliczka Mines
-##########
-
-wieliczka_mines_01 = {
-	asset = {
-		type = pdxmesh
-		name = "building_special_mines_mesh"
-	}
-
-	construction_time = slow_construction_time
-
-	type_icon = "icon_structure_mines.dds"
-
-	can_construct_potential = {
-		building_requirement_tribal = no
-		has_building_or_higher = city_01
-		culture = {
-			has_innovation = innovation_crop_rotation
-		}
-	}
-	
-	cost_gold = expensive_building_tier_1_cost
-	
-	province_modifier = {
-		monthly_income = copper_mine_building_tax_tier_1
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.05
-	}
-	
-	next_building = wieliczka_mines_02
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-wieliczka_mines_02 = {
-
-	asset = {
-		type = pdxmesh
-		name = "building_special_mines_mesh"
-	}
-
-	construction_time = slow_construction_time
-
-	type_icon = "icon_structure_mines.dds"
-
-	can_construct_potential = {
-		
-		building_requirement_tribal = no
-	}
-	can_construct = {
-		has_building_or_higher = city_02
-		culture = {
-			has_innovation = innovation_manorialism
-		}
-	}
-	
-	cost_gold = expensive_building_tier_2_cost
-	
-	province_modifier = {
-		monthly_income = copper_mine_building_tax_tier_2
-	}
-	county_modifier = {
-		development_growth_factor = 0.1
-	}
-	
-	next_building = wieliczka_mines_03
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-wieliczka_mines_03 = {
-
-	asset = {
-		type = pdxmesh
-		name = "building_special_mines_mesh"
-	}
-
-	construction_time = slow_construction_time
-
-	type_icon = "icon_structure_mines.dds"
-
-	can_construct_potential = {
-		
-		building_requirement_tribal = no
-	}
-	can_construct = {
-		has_building_or_higher = city_03
-		culture = {
-			has_innovation = innovation_windmills
-		}
-	}
-	
-	cost_gold = expensive_building_tier_3_cost
-	
-	province_modifier = {
-		monthly_income = copper_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
-	
-	next_building = wieliczka_mines_04
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-wieliczka_mines_04 = {
-	asset = {
-		type = pdxmesh
-		name = "building_special_mines_mesh"
-	}
-
-	construction_time = slow_construction_time
-
-	type_icon = "icon_structure_mines.dds"
-
-	can_construct_potential = {
-		
-		building_requirement_tribal = no
-	}
-	can_construct = {
-		has_building_or_higher = city_04
-		culture = {
-			has_innovation = innovation_cranes
-		}
-	}
-	
-	cost_gold = expensive_building_tier_4_cost
-	
-	province_modifier = {
-		monthly_income = copper_mine_building_tax_tier_4
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
-	}
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-###########
+﻿###########
 ## Generic Holy Site Buildings
 ###########
 
 holy_site_cathedral_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_cathedral_generic_mesh"
@@ -202,16 +43,6 @@ holy_site_cathedral_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		holy_order_hire_cost_mult = -0.15
-		clergy_opinion = 5
-		monthly_county_control_change_factor = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
 	}
 	
 	province_modifier = {
@@ -261,16 +92,6 @@ holy_site_mosque_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		domain_tax_different_faith_mult = 0.15
-		levy_reinforcement_rate_same_faith = 0.15
-		monthly_county_control_change_factor = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
 	}
 	
 	province_modifier = {
@@ -285,7 +106,6 @@ holy_site_mosque_01 = {
 }
 
 holy_site_pagan_grand_temple_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_cathedral_pagan_mesh"
@@ -326,22 +146,10 @@ holy_site_pagan_grand_temple_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		knight_effectiveness_mult = 0.15
-		levy_reinforcement_rate = 0.1
-		monthly_county_control_change_factor = 0.05
 	}
 	
-	county_modifier = {
-		tax_mult = 0.1
-		levy_size = 0.1
-		development_growth_factor = 0.2
-		development_growth = 0.1
-	}
-	
-	levy = 500
 	province_modifier = {
-		monthly_income = 1
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -393,16 +201,6 @@ holy_site_indian_grand_temple_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		different_faith_opinion = 5
-		different_faith_county_opinion_mult = -0.15
-		monthly_county_control_change_factor = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
 	}
 	
 	province_modifier = {
@@ -457,15 +255,6 @@ holy_site_other_grand_temple_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		short_reign_duration_mult = -0.1
-		monthly_county_control_change_factor = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
 	}
 	
 	province_modifier = {
@@ -505,22 +294,11 @@ holy_site_mahabodhi_temple_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 1
-		monthly_dynasty_prestige_mult = 0.05
-		learning_per_piety_level = 2
-		different_faith_opinion = 5
-		religious_vassal_opinion = 10
-		different_faith_county_opinion_mult = -0.2
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.3
-		development_growth = 0.2
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -555,20 +333,11 @@ holy_site_imam_ali_mosque_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 1
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_change_factor = 0.1
-		same_faith_opinion = 5
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.3
-		development_growth = 0.2
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -609,20 +378,11 @@ holy_site_great_mosque_of_mecca_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 1
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_change_factor = 0.1
-		same_faith_opinion = 5
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.35
-		development_growth = 0.3
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -665,21 +425,11 @@ holy_site_great_mosque_of_cordoba_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		different_culture_opinion = 5
-		character_capital_county_monthly_development_growth_add = 0.2
-		monthly_piety = 0.5
-		monthly_dynasty_prestige_mult = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.15
-		levy_size = 0.15
-		development_growth_factor = 0.2
-		development_growth = 0.2
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -694,7 +444,6 @@ holy_site_great_mosque_of_cordoba_01 = {
 ##########
 
 holy_site_great_mosque_of_djenne_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_great_mosque_of_djenne_mesh"
@@ -741,15 +490,11 @@ holy_site_great_mosque_of_djenne_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 1
-		monthly_dynasty_prestige_mult = 0.05
+		monthly_piety = 0.25
 	}
 	
-	county_modifier = {
-		tax_mult = 0.15
-		levy_size = 0.15
-		development_growth_factor = 0.2
-		development_growth = 0.2
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -805,14 +550,11 @@ holy_site_great_mosque_of_samarra_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		build_speed = -0.1
-		monthly_piety = 0.3
+		monthly_piety = 0.25
 	}
 	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -873,17 +615,7 @@ holy_site_cologne_cathedral_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety_gain_mult = 0.15
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_piety_gain_per_knight_add = 0.1
-		knight_effectiveness_mult = 0.2
-		monthly_county_control_change_factor = 0.05
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
@@ -948,20 +680,11 @@ holy_site_canterbury_cathedral_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 0.3
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_change_factor = 0.05
-		monthly_piety_gain_per_happy_powerful_vassal_add = 0.2
-	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_piety = 0.25
 	}
 	
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -1017,17 +740,11 @@ holy_site_prophetic_mosque_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 0.5
-		county_opinion_add = 5
-		holy_order_hire_cost_mult = -0.15
-		knight_effectiveness_mult = 0.2
+		monthly_piety = 0.25
 	}
 	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.75
-		development_growth = 0.2
-		supply_limit_mult = 1
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -1058,18 +775,8 @@ doges_palace_01 = { # Should technically be burnt down/rebuilt, but this is most
 	
 	cost_gold = 1000
 	
-	county_modifier = {
-		development_growth_factor = 0.3
-		development_growth = 0.3
-		tax_mult = 0.5
-		hostile_raid_time = 0.5
-	}
-	
 	province_modifier = {
-		garrison_size = 1
-		fort_level = 3
-		levy_size = 1
-		defender_advantage = 10
+		monthly_income = 3
 	}
 	
 	ai_value = {
@@ -1094,17 +801,8 @@ walls_of_genoa_01 = {
 	
 	cost_gold = 1000
 	
-	county_modifier = {
-		defender_advantage = 5
-		development_growth_factor = 0.1
-		development_growth = 0.2
-		tax_mult = 0.1
-		hostile_raid_time = 0.5
-	}
-	
 	province_modifier = {
-		garrison_size = 0.25
-		fort_level = 2
+		fort_level = 10
 	}
 	
 	ai_value = {
@@ -1133,20 +831,10 @@ visby_ringmur_01 = {
 		}
 	}
 	
-	cost_gold = 500
-	
-	county_modifier = {
-		defender_advantage = 5
-		development_growth_factor = 0.15
-		development_growth = 0.2
-		tax_mult = 0.15
-		county_opinion_add = 5
-		hostile_raid_time = 0.5
-	}
+	cost_gold = 1000
 	
 	province_modifier = {
-		garrison_size = 0.25
-		fort_level = 1
+		fort_level = 10
 	}
 	
 	ai_value = {
@@ -1171,18 +859,8 @@ walls_of_benin_01 = {
 	
 	cost_gold = 1000
 	
-	county_modifier = {
-		levy_size = 0.5
-		defender_advantage = 5
-		development_growth_factor = 0.75
-		development_growth = 0.2
-		tax_mult = 0.2
-		hostile_raid_time = 0.5
-	}
-	
 	province_modifier = {
-		garrison_size = 0.5
-		fort_level = 2
+		fort_level = 10
 	}
 	
 	ai_value = {
@@ -1211,12 +889,7 @@ theodosian_walls_01 = {
 	garrison = 750
 
 	province_modifier = {
-		fort_level = 20
-	}
-	county_modifier = {
-		development_growth = 0.3
-		development_growth_factor = 0.2
-		hostile_raid_time = 1.0
+		fort_level = 30
 	}
 	
 	ai_value = {
@@ -1244,13 +917,8 @@ aurelian_walls_01 = {
 	
 	garrison = 500
 	
-	county_modifier = {
-		development_growth = 0.2
-		development_growth_factor = 0.1
-		hostile_raid_time = 0.5
-	}
 	province_modifier = {
-		fort_level = 15
+		fort_level = 20
 	}
 	
 	ai_value = {
@@ -1265,7 +933,6 @@ aurelian_walls_01 = {
 ##########
 
 the_colosseum_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_colosseum_mesh"
@@ -1281,12 +948,8 @@ the_colosseum_01 = {
 	
 	cost_gold = 3000
 
-	character_modifier = {
-		army_maintenance_mult = -0.05 # 'Stealing' the metal from the colosseum building itself
-	}
-	
 	province_modifier = {
-		build_speed = -0.1 # 'Stealing' the metal from the colosseum building itself
+		monthly_income = 4
 	}
 	
 	ai_value = {
@@ -1309,17 +972,10 @@ iron_pillar_of_delhi_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 1000
 
 	character_modifier = {
 		monthly_prestige_gain_mult = 0.05
-		army_maintenance_mult = -0.05
-		heavy_infantry_toughness_mult = 0.1
-		heavy_cavalry_toughness_mult = 0.1
-	}
-	county_modifier = {
-		development_growth = 0.1
-		development_growth_factor = 0.1
 	}
 	
 	ai_value = {
@@ -1344,16 +1000,10 @@ iron_pillar_of_dhar_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 2000
+	cost_gold = 1000
 
 	character_modifier = {
-		advantage = 5
 		monthly_dynasty_prestige_mult = 0.05
-	}
-	
-	county_modifier = {
-		development_growth = 0.1
-		levy_size = 0.15
 	}
 	
 	ai_value = {
@@ -1368,7 +1018,6 @@ iron_pillar_of_dhar_01 = {
 ##########
 
 the_pyramids_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_pyramids_giza_mesh"
@@ -1382,14 +1031,11 @@ the_pyramids_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 5000
 
 	character_modifier = {
-		monthly_dynasty_prestige_mult = 0.05
-		short_reign_duration_mult = -0.2
-	}
-	county_modifier = {
-		development_growth = 0.1
+		monthly_dynasty_prestige_mult = 0.10
+		monthly_prestige_gain_mult = 0.10
 	}
 	
 	ai_value = {
@@ -1404,7 +1050,6 @@ the_pyramids_01 = {
 ##########
 
 stonehenge_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_stonehenge_mesh"
@@ -1418,12 +1063,10 @@ stonehenge_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 1000
 
 	character_modifier = {
-		learning = 2
-		monthly_learning_lifestyle_xp_gain_mult = 0.15
-		faith_conversion_piety_cost_mult = -0.2
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -1438,7 +1081,6 @@ stonehenge_01 = {
 ##########
 
 offas_dyke_01 = { # For Matt Frary
-
 	construction_time = very_slow_construction_time
 
 	type_icon = "icon_building_palisades.dds"
@@ -1447,10 +1089,10 @@ offas_dyke_01 = { # For Matt Frary
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 1000
 
 	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_1
+		fort_level = 10
 	}
 	
 	ai_value = {
@@ -1473,10 +1115,10 @@ hadrians_wall_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 1000
 
 	province_modifier = {
-		build_gold_cost = -0.1
+		fort_level = 10
 	}
 	
 	ai_value = {
@@ -1506,15 +1148,8 @@ petra_01 = {
 	
 	cost_gold = 3000
 
-	county_modifier = {
-		tax_mult = 0.1
-		supply_limit_mult = 0.25
-		development_growth = 0.1
-		development_growth_factor = 0.15
-	}
-	
 	province_modifier = {
-		monthly_income = good_building_tax_tier_2
+		monthly_income = 4
 	}
 	
 	ai_value = {
@@ -1550,12 +1185,6 @@ buddhas_of_bamian_01 = {
 
 	character_modifier = {
 		monthly_piety_gain_mult = 0.1
-		diplomacy_per_piety_level = 1
-	}
-	county_modifier = {
-		tax_mult = 0.1
-		development_growth = 0.2
-		development_growth_factor = 0.75
 	}
 	
 	ai_value = {
@@ -1578,52 +1207,10 @@ alhambra_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
-
-	garrison = good_building_garrison_tier_1
-	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_1
-		fort_level = good_building_fort_level_tier_1
-	}
-	
-	next_building = alhambra_02
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-alhambra_02 = {
-	construction_time = very_slow_construction_time
-
-	type_icon = "icon_structure_alhambra.dds"
-	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
-	
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_hoardings
-		}
-	}
-	
 	cost_gold = 2000
 
-	character_modifier = {
-		monthly_prestige_gain_mult = 0.10
-	}
-	garrison = good_building_garrison_tier_4
 	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_4
-		fort_level = good_building_fort_level_tier_4
-	}
-	county_modifier = {
-		development_growth = 0.2
-		development_growth_factor = 0.25
-		monthly_county_control_change_add = 1
+		fort_level = 20
 	}
 	
 	ai_value = {
@@ -1632,6 +1219,7 @@ alhambra_02 = {
 	
 	type = special
 }
+
 
 ##########
 # Citadel of Aleppo
@@ -1646,56 +1234,10 @@ citadel_of_aleppo_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
-	
-	character_modifier = {
-		monthly_prestige = 0.1
-	}
-	
-	garrison = good_building_garrison_tier_1
-	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_1
-		fort_level = good_building_fort_level_tier_1
-	}
-	
-	next_building = citadel_of_aleppo_02
-	
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-citadel_of_aleppo_02 = {
-	construction_time = very_slow_construction_time
-
-	type_icon = "icon_structure_the_citadel_of_aleppo.dds"
-	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
-	
-	can_construct = {
-		scope:holder.culture = {
-			has_innovation = innovation_hoardings
-		}
-	}
-	
 	cost_gold = 2000
-
-	character_modifier = {
-		monthly_prestige = 0.3
-		prowess_per_piety_level = 2
-	}
-	garrison = good_building_garrison_tier_3
+	
 	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_3
-		fort_level = good_building_fort_level_tier_3
-	}
-	county_modifier = {
-		development_growth = 0.2
-		development_growth_factor = 0.15
+		fort_level = 20
 	}
 	
 	ai_value = {
@@ -1704,6 +1246,7 @@ citadel_of_aleppo_02 = {
 	
 	type = special
 }
+
 
 ##########
 # House of Wisdom
@@ -1718,19 +1261,10 @@ house_of_wisdom_01 = {
 		building_requirement_tribal = no
 	}
 	
-	cost_gold = 3000
+	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 2
-		monthly_lifestyle_xp_gain_mult = 0.15
-		different_culture_opinion = 10
-		cultural_head_fascination_mult = 0.15
-		faith_creation_piety_cost_mult = -0.2
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth = 0.2
-		development_growth_factor = 0.2
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -1768,17 +1302,7 @@ the_tower_of_london_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		dread_gain_mult = 0.3
-	}
-	garrison = good_building_garrison_tier_3
-	province_modifier = {
-		defender_advantage = normal_building_advantage_tier_3
-		fort_level = good_building_fort_level_tier_3
-	}
-	county_modifier = {
-		development_growth = 0.1
-		development_growth_factor = 0.1
-		tax_mult = 0.05
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -1793,7 +1317,6 @@ the_tower_of_london_01 = {
 ##########
 
 notre_dame_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_notre_dame_mesh"
@@ -1827,19 +1350,7 @@ notre_dame_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 1
-		stewardship_per_piety_level = 1
 		monthly_dynasty_prestige_mult = 0.05
-	}
-	county_modifier = {
-		county_opinion_add = 5
-		tax_mult = 0.2
-		development_growth_factor = 0.3
-		development_growth = 0.2
-	}
-	
-	province_modifier = {
-		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -1854,7 +1365,6 @@ notre_dame_01 = {
 ##########
 
 brihadeeswarar_temple_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_brihadeeswarar_temple_mesh"
@@ -1891,15 +1401,10 @@ brihadeeswarar_temple_01 = {
 
 	character_modifier = {
 		monthly_piety = 0.25
-		monthly_dynasty_prestige_mult = 0.05
-		same_faith_opinion = 5
-		stewardship_per_piety_level = 1
 	}
-	
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.1
+
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -1939,18 +1444,11 @@ shwedagon_pagoda_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety = 0.5
-		clergy_opinion = 5
-		tyranny_gain_mult = -0.1
-		monthly_dynasty_prestige_mult = 0.05
+		monthly_piety = 0.25
 	}
+
 	province_modifier = {
 		monthly_income = 2
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
 	}
 	
 	ai_value = {
@@ -1990,17 +1488,11 @@ ananda_temple_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning = 2
-		monthly_piety_gain_mult = 0.05
-		county_opinion_add = 5
-		monthly_county_control_change_factor = 0.1
+		monthly_piety = 0.25
 	}
+
 	province_modifier = {
-		monthly_income = 3
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2051,12 +1543,11 @@ the_friday_mosque_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		piety_level_impact_mult = 0.5
+		monthly_piety = 0.25
 	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.25
-		development_growth = 0.2
+
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2096,17 +1587,11 @@ khajuraho_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		different_faith_opinion = 10
-		faith_conversion_piety_cost_mult = -0.2
-		monthly_piety_gain_per_happy_powerful_vassal_mult = 0.05
+		monthly_piety = 0.25
 	}
+
 	province_modifier = {
-		monthly_income = 1.5
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.2
-		development_growth = 0.2
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2121,7 +1606,6 @@ khajuraho_01 = {
 ##########
 
 palace_of_aachen_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_palace_of_aachen_mesh"
@@ -2140,15 +1624,7 @@ palace_of_aachen_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		powerful_vassal_opinion = 5
-		clergy_opinion = 5
-		monthly_prestige_gain_per_happy_powerful_vassal_add = 0.1
-		tyranny_gain_mult = -0.2
 		monthly_dynasty_prestige_mult = 0.05
-	}
-	
-	county_modifier = {
-		development_growth = 0.2
 	}
 	
 	ai_value = {
@@ -2163,7 +1639,6 @@ palace_of_aachen_01 = {
 ##########
 
 hagia_sophia_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_hagia_sophia_mesh"
@@ -2190,74 +1665,11 @@ hagia_sophia_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		intrigue_per_prestige_level = 2
-		learning = 2
-		knight_limit = 2
-		knight_effectiveness_mult = 0.2
-		monthly_dynasty_prestige_mult = 0.05
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.2
-	}
-	
-	ai_value = {
-		base = 100
-	}
-	
-	next_building = hagia_sophia_02
-	
-	type = special
-}
-
-hagia_sophia_02 = {
-
-	asset = {
-		type = pdxmesh
-		name = "building_special_hagia_sophia_minarets_mesh"
+		monthly_piety = 0.25
 	}
 
-	construction_time = very_slow_construction_time
-
-	type_icon = "icon_structure_hagia_sophia.dds"
-	
-	can_construct_potential = {
-		building_requirement_tribal = no
-	}
-	
-	can_construct = {
-		scope:holder = {
-			faith = { religion_tag = islam_religion }
-		}
-	}
-	
-	is_enabled = {
-		OR = {
-			scope:holder = {
-				faith = { religion_tag = islam_religion }
-			}
-			custom_description = {
-				text = holy_site_building_trigger
-				barony = {
-					is_holy_site_of = scope:holder.faith
-				}
-			}
-		}
-	}
-	
-	show_disabled = yes
-	
-	cost_gold = 1000
-	cost_piety = 1000
-
-	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		intrigue_per_prestige_level = 2
-		learning = 2
-		knight_limit = 2
-		knight_effectiveness_mult = 0.2
-		monthly_dynasty_prestige_mult = 0.05
+	province_modifier = {
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2295,21 +1707,11 @@ dome_of_the_rock_01 = {
 	cost_gold = 1000
 
 	character_modifier = {
-		monthly_piety_gain_per_knight_mult = 0.03
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_change_factor = 0.1
-		martial_per_piety_level = 1
-		knight_effectiveness_mult = 0.2
+		monthly_piety = 0.25
 	}
-	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.3
-		development_growth = 0.2
-	}
-	
+
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2357,26 +1759,13 @@ temple_in_jerusalem_01 = {
 	show_disabled = yes
 	
 	cost_gold = 1000
-	cost_piety = 1000
-
+	
 	character_modifier = {
-		monthly_piety_gain_per_knight_mult = 0.03
-		monthly_dynasty_prestige_mult = 0.05
-		monthly_county_control_change_factor = 0.1
-		martial_per_piety_level = 1
-		learning_per_prestige_level = 2
-		knight_effectiveness_mult = 0.2
-		same_faith_opinion = 5
+		monthly_piety = 0.25
 	}
-	
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.3
-		development_growth = 0.2
-	}
-	
+
 	province_modifier = {
-		monthly_income = 3
+		monthly_income = 2
 	}
 	
 	ai_value = {
@@ -2391,7 +1780,6 @@ temple_in_jerusalem_01 = {
 ##########
 
 rammelsberg_mines_01 = {
-
 	asset = {
 		type = pdxmesh
 		name = "building_special_mines_mesh"
@@ -2413,10 +1801,6 @@ rammelsberg_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.05
 	}
 	
 	next_building = rammelsberg_mines_02
@@ -2453,10 +1837,6 @@ rammelsberg_mines_02 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_2
-	}
-	county_modifier = {
-		tax_mult = 0.25
-		development_growth_factor = 0.1
 	}
 	
 	next_building = rammelsberg_mines_03
@@ -2495,10 +1875,6 @@ rammelsberg_mines_03 = {
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_3
 	}
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.15
-	}
 	
 	next_building = rammelsberg_mines_04
 	
@@ -2535,10 +1911,6 @@ rammelsberg_mines_04 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_4
-	}
-	county_modifier = {
-		tax_mult = 0.35
-		development_growth_factor = 0.2
 	}
 	
 	ai_value = {
@@ -2577,10 +1949,6 @@ kutna_hora_mines_01 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_1
 	}
-	county_modifier = {
-		tax_mult = 0.1
-		development_growth_factor = 0.05
-	}
 	
 	next_building = kutna_hora_mines_02
 	
@@ -2617,10 +1985,6 @@ kutna_hora_mines_02 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_2
-	}
-	county_modifier = {
-		tax_mult = 0.15
-		development_growth_factor = 0.1
 	}
 	
 	next_building = kutna_hora_mines_03
@@ -2659,10 +2023,6 @@ kutna_hora_mines_03 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_3
 	}
-	county_modifier = {
-		tax_mult = 0.20
-		development_growth_factor = 0.15
-	}
 	
 	next_building = kutna_hora_mines_04
 	
@@ -2700,10 +2060,6 @@ kutna_hora_mines_04 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		tax_mult = 0.25
-		development_growth_factor = 0.2
-	}
 	
 	ai_value = {
 		base = 100
@@ -2739,9 +2095,6 @@ kremnica_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		development_growth_factor = 0.05
 	}
 	
 	next_building = kremnica_mines_02
@@ -2779,9 +2132,6 @@ kremnica_mines_02 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		development_growth_factor = 0.1
-	}
 	
 	next_building = kremnica_mines_03
 	
@@ -2818,9 +2168,6 @@ kremnica_mines_03 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_3
 	}
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
 	
 	next_building = kremnica_mines_04
 	
@@ -2856,9 +2203,6 @@ kremnica_mines_04 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_4
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
 	}
 	
 	ai_value = {
@@ -2897,11 +2241,6 @@ falun_mines_01 = {
 	province_modifier = {
 		monthly_income = copper_mine_building_tax_tier_1
 	}
-	county_modifier = {
-		tax_mult = 0.05
-		levy_size = 0.1
-		development_growth_factor = 0.05
-	}
 	
 	next_building = falun_mines_02
 	
@@ -2938,11 +2277,6 @@ falun_mines_02 = {
 	
 	province_modifier = {
 		monthly_income = copper_mine_building_tax_tier_2
-	}
-	county_modifier = {
-		tax_mult = 0.1
-		levy_size = 0.2
-		development_growth_factor = 0.1
 	}
 	
 	next_building = falun_mines_03
@@ -2981,12 +2315,7 @@ falun_mines_03 = {
 	province_modifier = {
 		monthly_income = copper_mine_building_tax_tier_3
 	}
-	county_modifier = {
-		tax_mult = 0.15
-		levy_size = 0.3
-		development_growth_factor = 0.15
-	}
-	
+
 	next_building = falun_mines_04
 	
 	ai_value = {
@@ -3023,12 +2352,7 @@ falun_mines_04 = {
 	province_modifier = {
 		monthly_income = copper_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		tax_mult = 0.20
-		levy_size = 0.4
-		development_growth_factor = 0.2
-	}
-	
+
 	ai_value = {
 		base = 100
 	}
@@ -3064,9 +2388,6 @@ schwaz_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		development_growth_factor = 0.1
 	}
 	
 	next_building = schwaz_mines_02
@@ -3105,9 +2426,6 @@ schwaz_mines_02 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
 	
 	next_building = schwaz_mines_03
 	
@@ -3144,9 +2462,6 @@ schwaz_mines_03 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
 	}
 	
 	next_building = schwaz_mines_04
@@ -3185,9 +2500,6 @@ schwaz_mines_04 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		development_growth_factor = 0.25
-	}
 	
 	ai_value = {
 		base = 100
@@ -3223,9 +2535,6 @@ argentiera_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		development_growth_factor = 0.1
 	}
 	
 	next_building = argentiera_mines_02
@@ -3263,9 +2572,6 @@ argentiera_mines_02 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
 	
 	next_building = argentiera_mines_03
 	
@@ -3301,9 +2607,6 @@ argentiera_mines_03 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
 	}
 	
 	next_building = argentiera_mines_04
@@ -3341,9 +2644,6 @@ argentiera_mines_04 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		development_growth_factor = 0.25
-	}
 	
 	ai_value = {
 		base = 100
@@ -3379,10 +2679,6 @@ kollur_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.1
 	}
 	
 	next_building = kollur_mines_02
@@ -3420,10 +2716,6 @@ kollur_mines_02 = {
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		tax_mult = 0.25
-		development_growth_factor = 0.15
-	}
 	
 	next_building = kollur_mines_03
 	
@@ -3459,10 +2751,6 @@ kollur_mines_03 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.2
 	}
 	
 	next_building = kollur_mines_04
@@ -3500,11 +2788,7 @@ kollur_mines_04 = {
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		tax_mult = 0.35
-		development_growth_factor = 0.25
-	}
-	
+
 	ai_value = {
 		base = 100
 	}
@@ -3539,9 +2823,6 @@ siderokausia_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		development_growth_factor = 0.1
 	}
 	
 	next_building = siderokausia_mines_02
@@ -3579,9 +2860,6 @@ siderokausia_mines_02 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
 	
 	next_building = siderokausia_mines_03
 	
@@ -3617,9 +2895,6 @@ siderokausia_mines_03 = {
 	
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		development_growth_factor = 0.2
 	}
 	
 	next_building = siderokausia_mines_04
@@ -3657,9 +2932,6 @@ siderokausia_mines_04 = {
 	province_modifier = {
 		monthly_income = silver_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		development_growth_factor = 0.25
-	}
 	
 	ai_value = {
 		base = 100
@@ -3695,10 +2967,6 @@ mali_mines_01 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_1
-	}
-	county_modifier = {
-		tax_mult = 0.2
-		development_growth_factor = 0.05
 	}
 	
 	next_building = mali_mines_02
@@ -3736,10 +3004,6 @@ mali_mines_02 = {
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_2
 	}
-	county_modifier = {
-		tax_mult = 0.25
-		development_growth_factor = 0.1
-	}
 	
 	next_building = mali_mines_03
 	
@@ -3775,10 +3039,6 @@ mali_mines_03 = {
 	
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_3
-	}
-	county_modifier = {
-		tax_mult = 0.3
-		development_growth_factor = 0.15
 	}
 	
 	next_building = mali_mines_04
@@ -3816,9 +3076,150 @@ mali_mines_04 = {
 	province_modifier = {
 		monthly_income = special_mine_building_tax_tier_4
 	}
-	county_modifier = {
-		tax_mult = 0.35
-		development_growth_factor = 0.2
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+
+##########
+# Wieliczka Mines
+##########
+
+wieliczka_mines_01 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		building_requirement_tribal = no
+		has_building_or_higher = city_01
+		culture = {
+			has_innovation = innovation_crop_rotation
+		}
+	}
+	
+	cost_gold = expensive_building_tier_1_cost
+	
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_1
+	}
+	
+	next_building = wieliczka_mines_02
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+
+wieliczka_mines_02 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		has_building_or_higher = city_02
+		culture = {
+			has_innovation = innovation_manorialism
+		}
+	}
+	
+	cost_gold = expensive_building_tier_2_cost
+	
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_2
+	}
+	
+	next_building = wieliczka_mines_03
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+
+wieliczka_mines_03 = {
+
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		has_building_or_higher = city_03
+		culture = {
+			has_innovation = innovation_windmills
+		}
+	}
+	
+	cost_gold = expensive_building_tier_3_cost
+	
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_3
+	}
+	
+	next_building = wieliczka_mines_04
+	
+	ai_value = {
+		base = 100
+	}
+	
+	type = special
+}
+
+wieliczka_mines_04 = {
+	asset = {
+		type = pdxmesh
+		name = "building_special_mines_mesh"
+	}
+
+	construction_time = slow_construction_time
+
+	type_icon = "icon_structure_mines.dds"
+
+	can_construct_potential = {
+		
+		building_requirement_tribal = no
+	}
+	can_construct = {
+		has_building_or_higher = city_04
+		culture = {
+			has_innovation = innovation_cranes
+		}
+	}
+	
+	cost_gold = expensive_building_tier_4_cost
+	
+	province_modifier = {
+		monthly_income = copper_mine_building_tax_tier_4
 	}
 	
 	ai_value = {
@@ -3833,18 +3234,14 @@ mali_mines_04 = {
 ##########
 
 hall_of_heroes_01 = {
-
 	type_icon = "icon_building_hall_of_heroes.dds"
 	
-	levy = 150
-	garrison = 75
-	cost_gold = 0
-	construction_time = 0
+	cost_gold = 1000
+	
+	construction_time = slow_construction_time
 
 	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		prowess = 1
-		knight_effectiveness_mult = 0.05
+		monthly_prestige_gain_mult = 0.05
 	}
 
 	is_enabled = {
@@ -3853,120 +3250,6 @@ hall_of_heroes_01 = {
 	
 	next_building = hall_of_heroes_02
 
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-hall_of_heroes_02 = {
-
-	type_icon = "icon_building_hall_of_heroes.dds"
-	
-	levy = 265
-	garrison = 110
-	cost_gold = 225
-	construction_time = 500
-
-	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		prowess = 1
-		knight_effectiveness_mult = 0.1
-	}
-
-	is_enabled = {
-		building_hall_of_heroes_requirement = yes
-	}
-
-	
-	next_building = hall_of_heroes_03
-
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-hall_of_heroes_03 = {
-
-	type_icon = "icon_building_hall_of_heroes.dds"
-	
-	levy = 375
-	garrison = 150
-	cost_gold = 300
-	construction_time = 500
-
-	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		prowess = 2
-		knight_effectiveness_mult = 0.15
-	}
-
-	is_enabled = {
-		building_hall_of_heroes_requirement = yes
-	}
-
-	
-	next_building = hall_of_heroes_04
-
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-hall_of_heroes_04 = {
-
-	type_icon = "icon_building_hall_of_heroes.dds"
-	
-	levy = 500
-	garrison = 225
-	cost_gold = 375
-	construction_time = 500
-
-	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		prowess = 2
-		knight_effectiveness_mult = 0.2
-	}
-
-	is_enabled = {
-		building_hall_of_heroes_requirement = yes
-	}
-
-	
-	next_building = hall_of_heroes_05
-
-	ai_value = {
-		base = 100
-	}
-	
-	type = special
-}
-
-hall_of_heroes_05 = {
-
-	type_icon = "icon_building_hall_of_heroes.dds"
-	
-	levy = 700
-	garrison = 260
-	cost_gold = 450
-	construction_time = 500
-
-	character_modifier = {
-		monthly_piety_gain_per_knight_add = 0.1
-		prowess = 3
-		knight_effectiveness_mult = 0.25
-	}
-
-	is_enabled = {
-		building_hall_of_heroes_requirement = yes
-	}
-
-	
 	ai_value = {
 		base = 100
 	}
@@ -3996,13 +3279,7 @@ generic_university = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 1
-		monthly_lifestyle_xp_gain_mult = 0.05
-		monthly_dynasty_prestige = 0.25
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -4030,15 +3307,7 @@ al_azhar_university = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 1
-		diplomacy_per_prestige_level = 1
-		monthly_lifestyle_xp_gain_mult = 0.1
-		monthly_dynasty_prestige = 0.25
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -4066,15 +3335,7 @@ sankore_university = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 1
-		martial_per_prestige_level = 1
-		monthly_lifestyle_xp_gain_mult = 0.1
-		monthly_dynasty_prestige = 0.25
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -4102,15 +3363,7 @@ siena_university = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 1
-		intrigue_per_prestige_level = 1
-		monthly_lifestyle_xp_gain_mult = 0.1
-		monthly_dynasty_prestige = 0.25
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -4138,15 +3391,7 @@ nalanda_university = {
 	cost_gold = 1000
 
 	character_modifier = {
-		learning_per_prestige_level = 1
-		stewardship_per_prestige_level = 1
-		monthly_lifestyle_xp_gain_mult = 0.1
-		monthly_dynasty_prestige = 0.25
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.2
-		development_growth = 0.1
+		monthly_dynasty_prestige_mult = 0.05
 	}
 	
 	ai_value = {
@@ -4169,14 +3414,9 @@ special_sicilian_parliament_01 = {
 	}
 
 	cost_gold = 1500
+	
 	county_modifier = {
-		monthly_income = 1
-		development_growth_factor = 0.25
-		monthly_county_control_change_add = 1
-		county_opinion_add = 25
-	}
-	character_modifier = {
-		monthly_prestige = 0.75
+		development_growth_factor = 0.50
 	}
 
 	type_icon = "icon_building_generic_house.dds"
@@ -4205,14 +3445,8 @@ special_greenhouse_01 = {
 		has_variable = variable_greenhouse
 	}
 
-	county_modifier = {
-		monthly_income = 1
-		development_growth_factor = 0.25
-		county_opinion_add = 25
-	}
 	character_modifier = {
-		health = 0.25
-		monthly_prestige = 1
+		monthly_prestige_gain_mult = 0.05
 	}
 
 	type_icon = "icon_building_generic_house.dds"
