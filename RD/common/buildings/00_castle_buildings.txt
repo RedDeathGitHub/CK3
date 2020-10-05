@@ -6,12 +6,6 @@
 		building_requirement_tribal = no
 	}
 	
-	can_construct_showing_failures_only = {
-		culture = {
-			has_innovation = innovation_burhs
-		}
-	}
-	
 	cost_gold = normal_building_tier_1_cost
 	
 	character_modifier = {
@@ -37,7 +31,7 @@ royal_armory_02 = {
 	
 	can_construct_showing_failures_only = {
 		culture = {
-			has_innovation = innovation_castle_baileys
+			has_innovation = innovation_burhs
 		}
 	}
 	
@@ -64,7 +58,7 @@ royal_armory_03 = {
 	
 	can_construct_showing_failures_only = {
 		culture = {
-			has_innovation = innovation_royal_armory
+			has_innovation = innovation_castle_baileys
 		}
 	}
 

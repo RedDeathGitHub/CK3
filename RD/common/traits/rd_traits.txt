@@ -6,7 +6,7 @@
 	fertility = -1000
 	immortal = yes
 	monthly_lifestyle_xp_gain_mult = -1.10
-	monthly_dynasty_prestige_mult = 4.0
+	monthly_dynasty_prestige_mult = 1.0
 }
 
 professional_army = {

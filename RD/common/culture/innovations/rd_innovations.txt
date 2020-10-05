@@ -105,3 +105,55 @@ innovation_currency_01 = {
 	flag = tribal_era_regular
 }
 
+innovation_mustering_grounds = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @leadership_2
+
+	modifier = {
+		men_at_arms_cap = 1
+	}
+
+	flag = global_regular
+	flag = tribal_era_regular
+}
+
+innovation_house_soldiers = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @maa_01
+
+	modifier = {
+		men_at_arms_cap = 1
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+innovation_men_at_arms = {
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @maa_02
+
+	modifier = {
+		men_at_arms_cap = 1
+	}
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+innovation_standing_armies = {
+	group = culture_group_military
+	culture_era = culture_era_late_medieval
+	icon = @leadership_2
+	
+	modifier = {
+		men_at_arms_cap = 1
+	}
+
+	flag = global_regular
+	flag = late_medieval_era_regular
+}
+
