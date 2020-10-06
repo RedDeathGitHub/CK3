@@ -141,7 +141,6 @@ absolute_control_perk = {
 	position = { 1 4 }
 	icon = node_martial
 
-	parent = soldiers_of_lesser_fortune_perk
 	parent = prepared_conscription_perk
 	
 	effect = {
