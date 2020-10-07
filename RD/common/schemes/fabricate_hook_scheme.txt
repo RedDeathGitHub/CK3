@@ -387,7 +387,6 @@
 	}
 
 	on_monthly = {
-		hostile_scheme_discovery_chance_effect = yes
 		if = {
 			limit = {
 				NOT = { exists = scope:discovery_event_happening }
