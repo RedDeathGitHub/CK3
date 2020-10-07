@@ -7465,8 +7465,13 @@
 	
 	religion = catholic
 	culture = polish
+	
 	845.3.3 = {
 		birth = 845.3.3
+		
+		effect = {
+			add_character_flag = block_seduce_attempts
+		}	
 	}
 }
 

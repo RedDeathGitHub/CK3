@@ -55,3 +55,6 @@
  building_wieliczka_mines_03_desc:1 "As the mining operations grow, so does the mines themselves. More entrances are constructed, and large shafts are dug to allow the extraction of deep salt."
  building_wieliczka_mines_04:1 "Wieliczka Mining Complex"
  building_wieliczka_mines_04_desc:1 "As the production of salt increases, so do the profits."
+ 
+ MAP_COUNTY_HOLDER_RIGHT_CLICK:1 ""
+ holding_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 ""
