@@ -25,6 +25,7 @@
 		}
 		scope:recipient = {
 			is_imprisoned = no
+			gold >= 1
 		}
 	}
 

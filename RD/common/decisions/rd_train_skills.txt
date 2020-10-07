@@ -228,7 +228,7 @@ train_diplomacy4_decision = {
 	}
 	
 	cost = {
-		gold = 2000
+		gold = education_cost_level4
 	}
 	
 	effect = {
@@ -340,7 +340,7 @@ train_stewardship4_decision = {
 	}
 	
 	cost = {
-		gold = 2000
+		gold = education_cost_level4
 	}
 	
 	effect = {
@@ -452,7 +452,7 @@ train_martial4_decision = {
 	}
 	
 	cost = {
-		gold = 2000
+		gold = education_cost_level4
 	}
 	
 	effect = {
@@ -564,7 +564,7 @@ train_learning4_decision = {
 	}
 	
 	cost = {
-		gold = 2000
+		gold = education_cost_level4
 	}
 	
 	effect = {

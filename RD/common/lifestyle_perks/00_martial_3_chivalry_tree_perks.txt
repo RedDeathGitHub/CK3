@@ -136,7 +136,6 @@ peacemaker_perk = {
 	position = { 1 4 }
 	icon = node_martial
 
-	parent = loyalty_and_respect_perk
 	parent = kingsguard_perk
 
 	effect = {
