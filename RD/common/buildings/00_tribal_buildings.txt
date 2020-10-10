@@ -28,7 +28,7 @@ tribe_01 = {
 	next_building = tribe_02
 	
 	levy = normal_building_levy_tier_1
-	garrison = good_building_garrison_tier_1
+	garrison = normal_building_garrison_tier_1
 	
 	province_modifier = {
 		monthly_income = poor_building_tax_tier_2
@@ -81,7 +81,7 @@ tribe_02 = {
 	cost_gold = cheap_building_tier_2_cost
 	
 	levy = normal_building_levy_tier_2
-	garrison = good_building_garrison_tier_2
+	garrison = normal_building_garrison_tier_2
 	
 	province_modifier = {
 		monthly_income = poor_building_tax_tier_4

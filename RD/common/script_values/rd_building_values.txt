@@ -43,30 +43,30 @@ metropolis_building_tax = 5
 ########
 
 # Base
-@poor_levy_base = 50
-@small_levy_base = 100
-@normal_levy_base = 200
-@good_levy_base = 300
-@excellent_levy_base = 400
+@poor_levy_base = 25
+@small_levy_base = 50
+@normal_levy_base = 100
+@good_levy_base = 150
+@excellent_levy_base = 200
 
 # Scaling Increase
-@poor_levy_scale_addition_per_tier = 25
-@small_levy_scale_addition_per_tier = 50
-@normal_levy_scale_addition_per_tier = 100
-@good_levy_scale_addition_per_tier = 150
-@excellent_levy_scale_addition_per_tier = 200
+@poor_levy_scale_addition_per_tier = 15
+@small_levy_scale_addition_per_tier = 25
+@normal_levy_scale_addition_per_tier = 50
+@good_levy_scale_addition_per_tier = 75
+@excellent_levy_scale_addition_per_tier = 100
 
 ############
 # Garrison #
 ############
 
 # Base
-@normal_garrison_base = 100
-@good_garrison_base = 200
+@normal_garrison_base = 50
+@good_garrison_base = 100
 
 # Scaling Increase
-@normal_garrison_scale_addition_per_tier = 100
-@good_garrison_scale_addition_per_tier = 200
+@normal_garrison_scale_addition_per_tier = 25
+@good_garrison_scale_addition_per_tier = 50
 
 ###############
 # Fort Levels #
@@ -225,7 +225,7 @@ building_disable_inefficient_value_add = 5
 @good_garrison_tier_2 = @[good_garrison_tier_1 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_3 = @[good_garrison_tier_2 + good_garrison_scale_addition_per_tier]
 @good_garrison_tier_4 = @[good_garrison_tier_3 + good_garrison_scale_addition_per_tier]
-@good_garrison_tier_5 = @[good_garrison_tier_4 + good_garrison_scale_addition_per_tier]
+@good_garrison_tier_5 = @[good_garrison_tier_4 + good_garrison_scale_addition_per_tier * 2]
 
 @normal_build_speed_tier_1 = @[normal_build_speed_base]
 @normal_build_speed_tier_2 = @[normal_build_speed_tier_1 + normal_build_speed_scale_addition_per_tier]

@@ -76,3 +76,14 @@ peasant_war_lost_county_modifier = {
 	county_opinion_add = 50
 	monthly_county_control_change_factor = -0.20
 }
+
+steward_construction_slowdown_modifier = {
+	icon = county_modifier_development_negative
+	build_speed = 0.25
+}
+
+governance_emphasised_corvee_modifier = {
+	icon = stewardship_negative
+	tax_mult = -0.10
+	build_gold_cost = 0.10
+}
