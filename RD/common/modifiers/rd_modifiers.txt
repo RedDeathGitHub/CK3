@@ -68,7 +68,6 @@ recently_looted_modifier = {
 }
 
 county_capital_province_modifier = {
-	fort_level = 2
 }
 
 peasant_war_lost_county_modifier = {

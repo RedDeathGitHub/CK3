@@ -59,6 +59,7 @@ city_01 = {
 	can_construct_showing_failures_only = {
 		building_requirement_tribal_holding_in_county = no
 	}
+	
 	cost_gold = main_building_tier_1_cost
 	
 	levy = good_building_levy_tier_1
@@ -66,6 +67,18 @@ city_01 = {
 	
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_1
+		fort_level = great_building_fort_level_tier_1
+		defender_advantage = normal_building_advantage_tier_1
+	}
+	
+	character_modifier = {
+		monthly_piety = 0.03
+		monthly_prestige = 0.04
+		men_at_arms_limit = 1
+	}
+	
+	county_modifier = {
+		development_growth = 0.05
 	}
 	
 	flag = city
@@ -141,7 +154,20 @@ city_02 = {
 	
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_2
+		fort_level = great_building_fort_level_tier_2
+		defender_advantage = normal_building_advantage_tier_2
 	}
+	
+	character_modifier = {
+		monthly_piety = 0.06
+		monthly_prestige = 0.08
+		men_at_arms_limit = 2
+	}
+	
+	county_modifier = {
+		development_growth = 0.1
+	}
+	
 	flag = city
 	next_building = city_03
 	ai_value = {
@@ -207,7 +233,20 @@ city_03 = {
 	
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_3
+		fort_level = great_building_fort_level_tier_3
+		defender_advantage = normal_building_advantage_tier_3
 	}
+	
+	character_modifier = {
+		monthly_piety = 0.09
+		monthly_prestige = 0.12
+		men_at_arms_limit = 3
+	}
+	
+	county_modifier = {
+		development_growth = 0.15
+	}
+	
 	flag = city
 	ai_value = {
 		base = 100
@@ -271,7 +310,20 @@ city_04 = {
 	
 	province_modifier = {
 		monthly_income = excellent_building_tax_tier_4
+		fort_level = great_building_fort_level_tier_4
+		defender_advantage = normal_building_advantage_tier_4
 	}
+	
+	character_modifier = {
+		monthly_piety = 0.12
+		monthly_prestige = 0.16
+		men_at_arms_limit = 4
+	}
+	
+	county_modifier = {
+		development_growth = 0.15
+	}
+	
 	flag = city
 	
 	next_building = city_05
@@ -340,150 +392,21 @@ city_05 = {
 	
 	province_modifier = {
 		monthly_income = metropolis_main_building_tax
+		fort_level = great_building_fort_level_tier_5
+		defender_advantage = normal_building_advantage_tier_5
+	}
+
+	character_modifier = {
+		monthly_piety = 0.5
+		monthly_prestige = 0.6
+		men_at_arms_limit = 5
 	}
 	
 	county_modifier = {
-		development_growth = 0.3
-		development_growth_factor = 0.35
+		development_growth = 0.5
 	}
 	
 	flag = city
-	ai_value = {
-		base = 100
-	}
-}
-
-
-####
-#
-# City Buildings
-#
-####
-
-### Guild Halls
-
-guild_halls_01 = {
-	construction_time = standard_construction_time
-
-	can_construct_potential = {
-		has_building_or_higher = city_01
-	}
-
-	can_construct_showing_failures_only = {
-		building_requirement_tribal = no
-	}
-
-	cost_gold = cheap_building_tier_1_cost
-	
-	province_modifier = {
-		tax_mult = 0.08
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.05
-	}
-	
-	next_building = guild_halls_02
-
-	type_icon = "icon_building_guild_halls.dds"
-	
-	ai_value = {
-		base = 500
-		modifier = {
-			add = 500
-			scope:holder = {
-				has_government = republic_government
-			}
-		}
-	}
-}
-
-guild_halls_02 = {
-	construction_time = standard_construction_time
-
-	can_construct = {
-		has_building_or_higher = city_02
-		culture = {
-			has_innovation = innovation_manorialism
-		}
-	}
-
-	can_construct_showing_failures_only = {
-		building_requirement_tribal = no
-	}
-
-	cost_gold = cheap_building_tier_2_cost
-	
-	province_modifier = {
-		tax_mult = 0.16
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.10
-	}
-	
-	next_building = guild_halls_03
-	
-	ai_value = {
-		base = 100
-	}
-}
-
-guild_halls_03 = {
-	construction_time = standard_construction_time
-
-	can_construct = {
-		has_building_or_higher = city_03
-		culture = {
-			has_innovation = innovation_windmills
-		}
-	}
-
-	can_construct_showing_failures_only = {
-		building_requirement_tribal = no
-	}
-
-	cost_gold = cheap_building_tier_3_cost
-	
-	province_modifier = {
-		tax_mult = 0.24
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.15
-	}
-	
-	next_building = guild_halls_04
-	
-	ai_value = {
-		base = 100
-	}
-}
-
-guild_halls_04 = {
-	construction_time = standard_construction_time
-
-	can_construct = {
-		has_building_or_higher = city_04
-		culture = {
-			has_innovation = innovation_cranes
-		}
-	}
-
-	can_construct_showing_failures_only = {
-		building_requirement_tribal = no
-	}
-
-	cost_gold = cheap_building_tier_4_cost
-	
-	province_modifier = {
-		tax_mult = 0.32
-	}
-	
-	county_modifier = {
-		development_growth_factor = 0.20
-	}
-	
 	ai_value = {
 		base = 100
 	}

@@ -32,7 +32,7 @@ metropolis_building_tax = 5
 @poor_tax_scale_addition_per_tier = 0.05
 @normal_tax_scale_addition_per_tier = 0.1
 @good_tax_scale_addition_per_tier = 0.15
-@excellent_tax_scale_addition_per_tier = 0.25
+@excellent_tax_scale_addition_per_tier = 0.5
 
 @copper_mine_tax_scale_addition_per_tier = 1
 @silver_mine_tax_scale_addition_per_tier = 1.5
@@ -256,7 +256,7 @@ building_disable_inefficient_value_add = 5
 @great_fort_level_tier_2 = @[great_fort_level_tier_1 + great_fort_level_scale_addition_per_tier]
 @great_fort_level_tier_3 = @[great_fort_level_tier_2 + great_fort_level_scale_addition_per_tier]
 @great_fort_level_tier_4 = @[great_fort_level_tier_3 + great_fort_level_scale_addition_per_tier]
-@great_fort_level_tier_5 = @[great_fort_level_tier_4 + 20]
+@great_fort_level_tier_5 = @[great_fort_level_tier_4 + great_fort_level_scale_addition_per_tier * 2]
 
 @normal_advantage_tier_1 = @[normal_advantage_base]
 @normal_advantage_tier_2 = @[normal_advantage_tier_1 + normal_advantage_scale_addition_per_tier]

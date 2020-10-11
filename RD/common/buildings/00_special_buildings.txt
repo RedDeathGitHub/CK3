@@ -889,7 +889,7 @@ theodosian_walls_01 = {
 	garrison = 400
 
 	province_modifier = {
-		fort_level = 30
+		fort_level = 20
 	}
 	
 	ai_value = {
@@ -918,7 +918,7 @@ aurelian_walls_01 = {
 	garrison = 250
 	
 	province_modifier = {
-		fort_level = 20
+		fort_level = 15
 	}
 	
 	ai_value = {

@@ -44,6 +44,7 @@ law_legacy_5 = { # Home Estates
 	character_modifier = {
 		name = law_legacy_5_name
 		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
 		build_speed = -0.10
 	}
 }

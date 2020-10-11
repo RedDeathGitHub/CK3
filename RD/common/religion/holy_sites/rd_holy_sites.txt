@@ -56,6 +56,7 @@ nok_kundi = {
 	character_modifier = {
 		name = holy_site_nok_kundi_effect_name
 		build_gold_cost = -0.05
+		holding_build_gold_cost = -0.05
 		stewardship = 1
 	}
 }

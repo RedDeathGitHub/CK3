@@ -55,6 +55,7 @@ councillor_steward = {
 	modifier = {
 		name = councillor_steward_modifier
 		build_gold_cost = -0.02
+		holding_build_gold_cost = -0.02
 		monthly_stewardship_lifestyle_xp_gain_mult = 0.05
 		domain_tax_mult = 0.02
 		scale = council_scaled_by_liege_tier
