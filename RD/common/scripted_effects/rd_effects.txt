@@ -18,3 +18,24 @@ conquest_kingdom_cb_cooldown_effect = {
 		years = 5
 	}
 }
+
+hof_ask_for_gold_interaction_effect = {
+	scope:recipient = {
+		pay_short_term_gold = {
+			target = scope:actor
+			gold = scope:actor.head_of_faith_gold_value
+		}
+	}
+	scope:actor = {
+		if = {
+			limit = {
+				scope:hook = no
+			}
+			add_piety = major_piety_loss
+		}
+		if = {
+			limit = { always = scope:hook }
+			use_hook = scope:recipient
+		}
+	}
+}

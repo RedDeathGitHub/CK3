@@ -299,10 +299,10 @@
 		}
 
 		scope:attacker.faith = {
-			change_fervor = -3
+			change_fervor = 3
 		}
 		scope:defender.faith = {
-			change_fervor = 3
+			change_fervor = -3
 		}
 
 		# Truce
@@ -337,6 +337,12 @@
 
 		scope:attacker = {
 			add_piety = religious_cb_piety_white_peace
+		}
+		scope:attacker.faith = {
+			change_fervor = -1
+		}
+		scope:defender.faith = {
+			change_fervor = 1
 		}
 	}
 
@@ -400,6 +406,9 @@
 
 		scope:attacker.faith = {
 			change_fervor = -3
+		}
+		scope:defender.faith = {
+			change_fervor = 3
 		}
 
 		# Truce
@@ -736,10 +745,10 @@ religious_war = {
 		}
 
 		scope:attacker.faith = {
-			change_fervor = -5
+			change_fervor = 5
 		}
 		scope:defender.faith = {
-			change_fervor = 5
+			change_fervor = -5
 		}
 
 		# Truce
@@ -774,6 +783,12 @@ religious_war = {
 
 		scope:attacker = {
 			add_piety = religious_cb_piety_white_peace
+		}
+		scope:attacker.faith = {
+			change_fervor = -2
+		}
+		scope:defender.faith = {
+			change_fervor = 2
 		}
 	}
 
@@ -838,6 +853,9 @@ religious_war = {
 
 		scope:attacker.faith = {
 			change_fervor = -5
+		}
+		scope:defender.faith = {
+			change_fervor = 5
 		}
 
 		# Truce
@@ -1181,10 +1199,10 @@ major_religious_war = {
 		}
 
 		scope:attacker.faith = {
-			change_fervor = -10
+			change_fervor = 10
 		}
 		scope:defender.faith = {
-			change_fervor = 10
+			change_fervor = -10
 		}
 
 		# Truce
@@ -1220,6 +1238,13 @@ major_religious_war = {
 
 		# Truce
 		add_truce_white_peace_effect = yes
+		
+		scope:attacker.faith = {
+			change_fervor = -3
+		}
+		scope:defender.faith = {
+			change_fervor = 3
+		}
 	}
 
 	on_defeat_desc = {
@@ -1283,6 +1308,9 @@ major_religious_war = {
 
 		scope:attacker.faith = {
 			change_fervor = -10
+		}
+		scope:defender.faith = {
+			change_fervor = 10
 		}
 
 		# Truce
@@ -1402,7 +1430,10 @@ excommunication_war = {
 
 		# Truce
 		add_truce_attacker_victory_effect = yes
-
+	
+		scope:attacker.faith = {
+			change_fervor = 2
+		}
 	}
 
 	on_white_peace_desc = {
@@ -1424,6 +1455,10 @@ excommunication_war = {
 
 		# Truce
 		add_truce_white_peace_effect = yes
+		
+		scope:attacker.faith = {
+			change_fervor = -1
+		}
 	}
 
 	on_defeat_desc = {
@@ -1469,6 +1504,10 @@ excommunication_war = {
 
 		# Truce
 		add_truce_attacker_defeat_effect = yes
+		
+		scope:attacker.faith = {
+			change_fervor = -2
+		}
 	}
 	
 	should_invalidate = {
@@ -3182,7 +3221,7 @@ undirected_great_holy_war = {
 				set_variable = {
 					name = variable_ghw_cooldown
 					value = yes
-					years = 5
+					years = 30
 				}
 			}
 			if = { #Clear pledged gold flag.
@@ -3201,10 +3240,10 @@ undirected_great_holy_war = {
 		}
 
 		scope:attacker.faith = {
-			change_fervor = -30
+			change_fervor = 30
 		}
 		scope:defender.faith = {
-			change_fervor = 25
+			change_fervor = -25
 		}
 
 		#Truce between the chief beneficiary & all defenders
@@ -3227,11 +3266,11 @@ undirected_great_holy_war = {
 				gold = no
 			}
 		}
-
-		scope:attacker = {
-			faith = {
-			change_fervor = -30
-			}
+		scope:attacker.faith = {
+			change_fervor = -40
+		}
+		scope:defender.faith = {
+			change_fervor = 30
 		}
 		scope:attacker.faith.great_holy_war.ghw_target_title = { #Loc keys for localization fluff.
 			save_scope_as = target_kingdom
@@ -3283,7 +3322,7 @@ undirected_great_holy_war = {
 				set_variable = {
 					name = variable_ghw_cooldown
 					value = yes
-					years = 5
+					years = 30
 				}
 			}
 			if = { #Clear pledged gold flag.
@@ -3595,14 +3634,14 @@ directed_great_holy_war = {
 				}
 			}
 		}
-		#Set 5 years cooldown.
+		#Set 30 years cooldown.
 		hidden_effect = {
 			scope:attacker = {
 				faith = {
 					set_variable = {
 						name = variable_ghw_cooldown
 						value = yes
-						years = 5
+						years = 30
 					}
 				}
 			}
@@ -3615,10 +3654,10 @@ directed_great_holy_war = {
 		}
 
 		scope:attacker.faith = {
-			change_fervor = -30
+			change_fervor = 30
 		}
 		scope:defender.faith = {
-			change_fervor = 25
+			change_fervor = -25
 		}
 
 		#Truce between the chief beneficiary & all defenders
@@ -3691,19 +3730,21 @@ directed_great_holy_war = {
 		# Truce
 		add_truce_attacker_defeat_effect = yes
 
-		scope:attacker = {
-			faith = {
-				change_fervor = -25
-			}
+		scope:attacker.faith = {
+			change_fervor = -40
 		}
-		#Set 5 years cooldown.
+		scope:defender.faith = {
+			change_fervor = 30
+		}
+
+		#Set 30 years cooldown.
 		hidden_effect = {
 			scope:attacker = {
 				faith = {
 					set_variable = {
 						name = variable_ghw_cooldown
 						value = yes
-						years = 5
+						years = 30
 					}
 				}
 			}

@@ -1,0 +1,3 @@
+﻿holy_site_building_trigger_all_christians = {
+	global = ALL_CHRISTIANS_BUILDING_ENABLED
+}

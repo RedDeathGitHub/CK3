@@ -15,7 +15,7 @@ professional_army = {
 	levy_size = -10.0
 	domain_tax_mult = 0.25
 	movement_speed = 0.25
-	men_at_arms_cap = 2
+	men_at_arms_cap = 1
 }
 
 strategist = {

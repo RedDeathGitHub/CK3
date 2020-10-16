@@ -7445,7 +7445,7 @@
 	trait = greedy
 	trait = arrogant
 	
-	trait = education_intrigue_1
+	trait = education_martial_1
 	trait = beauty_good_3
 	trait = intellect_good_3
 	trait = physique_good_3
@@ -7455,15 +7455,15 @@
 	trait = organizer
 	trait = giant
 	
-	martial = 4
+	martial = 25
 	diplomacy = 4
-	intrigue = 25
+	intrigue = 5
 	stewardship = 6
 	learning = 4
 	prowess = 10
 	health = 8
 	
-	religion = catholic
+	religion = slavic_pagan
 	culture = polish
 	
 	845.3.3 = {

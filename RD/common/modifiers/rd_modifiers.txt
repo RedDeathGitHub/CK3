@@ -7,26 +7,26 @@ baron_modifier = {
 }
 
 count_modifier = {
-	domain_limit = 10
+	domain_limit = 20
 	knight_limit = 1
 }
 
 duke_modifier = {
-	domain_limit = 30
-	knight_limit = 2
-	vassal_limit = 25
-}
-
-king_modifier = {
 	domain_limit = 100
-	knight_limit = 3
+	knight_limit = 2
 	vassal_limit = 100
 }
 
+king_modifier = {
+	domain_limit = 500
+	knight_limit = 3
+	vassal_limit = 500
+}
+
 emperor_modifier = {
-	domain_limit = 5000
+	domain_limit = 10000
 	knight_limit = 4
-	vassal_limit = 2000
+	vassal_limit = 10000
 }
 
 prestige_level_0 = {
@@ -85,4 +85,9 @@ governance_emphasised_corvee_modifier = {
 	icon = stewardship_negative
 	tax_mult = -0.10
 	build_gold_cost = 0.10
+}
+
+county_increased_opinion_modifier = {
+	icon = county_modifier_opinion_positive
+	county_opinion_add = 60
 }

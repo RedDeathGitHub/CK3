@@ -145,6 +145,7 @@ tribal_government = {
 	vassal_contract = { tribal_government_obligations }
 	
 	character_modifier = {
+		title_creation_cost_mult = -0.5
 		feudal_government_vassal_opinion = -20
 		clan_government_vassal_opinion = -20
 		republic_government_vassal_opinion = -20

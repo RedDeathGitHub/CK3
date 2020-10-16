@@ -9,31 +9,31 @@
 @high_maint_mult = 1.5
 
 @skirmisher_recruitment_cost = 50
-@skirmisher_low_maint_cost = 1.20
+@skirmisher_low_maint_cost = 2.40
 @skirmisher_high_maint_cost = @[skirmisher_low_maint_cost * high_maint_mult]
 
 @archers_recruitment_cost = 60
-@archers_low_maint_cost = 1.50
+@archers_low_maint_cost = 3.0
 @archers_high_maint_cost = @[archers_low_maint_cost * high_maint_mult]
 
 @pikemen_recruitment_cost = 70
-@pikemen_low_maint_cost = 1.80
+@pikemen_low_maint_cost = 3.60
 @pikemen_high_maint_cost = @[pikemen_low_maint_cost * high_maint_mult]
 
 @light_cavalry_recruitment_cost = 100
-@light_cavalry_low_maint_cost = 2.10
+@light_cavalry_low_maint_cost = 4.20
 @light_cavalry_high_maint_cost = @[light_cavalry_low_maint_cost * high_maint_mult]
 
 @heavy_infantry_recruitment_cost = 120
-@heavy_infantry_low_maint_cost = 2.40
+@heavy_infantry_low_maint_cost = 4.80
 @heavy_infantry_high_maint_cost = @[heavy_infantry_low_maint_cost * high_maint_mult]
 
 @heavy_cavalry_recruitment_cost = 200
-@heavy_cavalry_low_maint_cost = 3.00
+@heavy_cavalry_low_maint_cost = 6.00
 @heavy_cavalry_high_maint_cost = @[heavy_cavalry_low_maint_cost * high_maint_mult]
 
 @siege_weapons_recruitment_cost = 200
-@siege_weapons_low_maint_cost = 1.00
+@siege_weapons_low_maint_cost = 2.00
 @siege_weapons_high_maint_cost = @[siege_weapons_low_maint_cost * high_maint_mult]
 
 

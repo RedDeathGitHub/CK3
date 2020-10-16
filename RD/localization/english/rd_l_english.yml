@@ -58,3 +58,6 @@
  
  MAP_COUNTY_HOLDER_RIGHT_CLICK:1 ""
  holding_MAP_MODE_TOOLTIP_CLICK_TO_SELECT:0 ""
+ 
+ ALL_CHRISTIANS_BUILDING_ENABLED:1 "The [faith|E] of the holder must be Christian"
+ NOT_ALL_CHRISTIANS_BUILDING_ENABLED:1 "The [faith|E] of the holder must be Christian"

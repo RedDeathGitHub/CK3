@@ -164,9 +164,72 @@ innovation_ghilman = {
 	icon = @maa_02
 
 	modifier = {
-		men_at_arms_maintenance = -0.05
+		men_at_arms_maintenance = -0.03
 	}
 
 	flag = global_regional
 	flag = early_medieval_era_regional
+}
+
+innovation_barracks = {
+	group = culture_group_military
+	culture_era = culture_era_tribal
+	icon = @levy_building
+
+	custom = unlock_tribal_military_buildings
+	
+	modifier = {
+		men_at_arms_maintenance = -0.025
+	}
+
+	flag = global_regular
+	flag = tribal_era_regular
+}
+
+innovation_burhs = {
+	group = culture_group_military
+	culture_era = culture_era_early_medieval
+	icon = @civil_construction_2
+
+
+	custom = unlock_early_medieval_military_buildings
+
+	custom = unlock_march_contract
+	
+	modifier = {
+		men_at_arms_maintenance = -0.025
+	}
+
+	flag = global_regular
+	flag = early_medieval_era_regular
+}
+
+innovation_castle_baileys = {
+	group = culture_group_military
+	culture_era = culture_era_high_medieval
+	icon = @levy_building
+
+	custom = unlock_high_medieval_military_buildings
+
+	modifier = {
+		men_at_arms_maintenance = -0.025
+	}
+
+	flag = global_regular
+	flag = high_medieval_era_regular
+}
+
+innovation_royal_armory = {
+	group = culture_group_military
+	culture_era = culture_era_late_medieval
+	icon = @levy_building
+	
+	custom = unlock_late_medieval_military_buildings
+	
+	modifier = {
+		men_at_arms_maintenance = -0.025
+	}
+
+	flag = global_regular
+	flag = late_medieval_era_regular
 }
