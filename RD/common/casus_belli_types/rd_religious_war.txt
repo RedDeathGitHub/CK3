@@ -3221,7 +3221,7 @@ undirected_great_holy_war = {
 				set_variable = {
 					name = variable_ghw_cooldown
 					value = yes
-					years = 30
+					years = 10
 				}
 			}
 			if = { #Clear pledged gold flag.
@@ -3322,7 +3322,7 @@ undirected_great_holy_war = {
 				set_variable = {
 					name = variable_ghw_cooldown
 					value = yes
-					years = 30
+					years = 10
 				}
 			}
 			if = { #Clear pledged gold flag.
@@ -3641,7 +3641,7 @@ directed_great_holy_war = {
 					set_variable = {
 						name = variable_ghw_cooldown
 						value = yes
-						years = 30
+						years = 10
 					}
 				}
 			}
@@ -3744,7 +3744,7 @@ directed_great_holy_war = {
 					set_variable = {
 						name = variable_ghw_cooldown
 						value = yes
-						years = 30
+						years = 10
 					}
 				}
 			}

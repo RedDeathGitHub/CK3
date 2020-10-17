@@ -21,12 +21,12 @@
 @good_tax_base = 0.3
 @excellent_tax_base = 0.5
 
-@copper_mine_tax_base = 2
-@silver_mine_tax_base = 3
-@special_mine_tax_base = 4
+@copper_mine_tax_base = 1
+@silver_mine_tax_base = 2
+@special_mine_tax_base = 3
 
-metropolis_main_building_tax = 10
-metropolis_building_tax = 5
+metropolis_main_building_tax = 5
+metropolis_building_tax = 2
 
 # We have four 'tax classes', each one has a better scale than the others.
 @poor_tax_scale_addition_per_tier = 0.05
@@ -34,9 +34,9 @@ metropolis_building_tax = 5
 @good_tax_scale_addition_per_tier = 0.15
 @excellent_tax_scale_addition_per_tier = 0.5
 
-@copper_mine_tax_scale_addition_per_tier = 1
-@silver_mine_tax_scale_addition_per_tier = 1.5
-@special_mine_tax_scale_addition_per_tier = 2
+@copper_mine_tax_scale_addition_per_tier = 0.5
+@silver_mine_tax_scale_addition_per_tier = 1
+@special_mine_tax_scale_addition_per_tier = 1.5
 
 ########
 # Levy #
@@ -103,9 +103,9 @@ metropolis_building_tax = 5
 @cheap_cost_base = 100
 @normal_cost_base = 150
 @expensive_cost_base = 300
-@main_cost_base = 500
+@main_cost_base = 1000
 
-metropolis_main_building_cost = 20000
+metropolis_main_building_cost = 40000
 metropolis_building_cost = 2000
 
 # We have four 'building cost classes', each one has a better scale than the others.
@@ -113,7 +113,7 @@ metropolis_building_cost = 2000
 @cheap_cost_scale_addition_per_tier = 50
 @normal_cost_scale_addition_per_tier = 75
 @expensive_cost_scale_addition_per_tier = 150
-@main_cost_scale_addition_per_tier = 250
+@main_cost_scale_addition_per_tier = 500
 
 
 #####################

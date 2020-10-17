@@ -66,7 +66,7 @@ city_01 = {
 	garrison = good_building_garrison_tier_1
 	
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_1
+		monthly_income = good_building_tax_tier_1
 		fort_level = great_building_fort_level_tier_1
 		defender_advantage = normal_building_advantage_tier_1
 	}
@@ -153,7 +153,7 @@ city_02 = {
 	garrison = good_building_garrison_tier_2
 	
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_2
+		monthly_income = good_building_tax_tier_2
 		fort_level = great_building_fort_level_tier_2
 		defender_advantage = normal_building_advantage_tier_2
 	}
@@ -232,7 +232,7 @@ city_03 = {
 	garrison = good_building_garrison_tier_3
 	
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_3
+		monthly_income = good_building_tax_tier_3
 		fort_level = great_building_fort_level_tier_3
 		defender_advantage = normal_building_advantage_tier_3
 	}
@@ -309,7 +309,7 @@ city_04 = {
 	garrison = good_building_garrison_tier_4
 	
 	province_modifier = {
-		monthly_income = excellent_building_tax_tier_4
+		monthly_income = good_building_tax_tier_4
 		fort_level = great_building_fort_level_tier_4
 		defender_advantage = normal_building_advantage_tier_4
 	}

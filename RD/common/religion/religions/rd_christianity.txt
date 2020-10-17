@@ -220,7 +220,7 @@
 
 	faiths = {
 		catholic = {
-			color = { 0.8 0.8 0.6 }
+			color = { 1.0 0.0 0.0 }
 			religious_head = k_papal_state
 			graphical_faith = "catholic_gfx"
 			

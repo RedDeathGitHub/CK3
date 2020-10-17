@@ -31,7 +31,7 @@ tribe_01 = {
 	garrison = normal_building_garrison_tier_1
 	
 	province_modifier = {
-		monthly_income = normal_building_tax_tier_1
+		monthly_income = poor_building_tax_tier_1
 		fort_level = 1
 	}
 	
@@ -87,7 +87,7 @@ tribe_02 = {
 	garrison = normal_building_garrison_tier_2
 	
 	province_modifier = {
-		monthly_income = normal_building_tax_tier_2
+		monthly_income = poor_building_tax_tier_2
 		fort_level = 2
 	}
 	
