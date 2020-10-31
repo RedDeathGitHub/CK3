@@ -312,66 +312,6 @@
 	}
 
 	ai_will_do = {
-		base = 0
-		
-		modifier = {
-			add = 100
-			OR = {
-				scope:gold = yes
-				AND = {
-					scope:recipient = {
-						gold >= 25
-					}
-					scope:secondary_recipient = {
-						time_in_prison = { years > 1 }
-					}
-					scope:current_gold = yes
-				}
-			}
-		}
-		
-		modifier = {
-			add = ai_greed
-			ai_greed > 0
-			scope:gold = yes
-		}
-		
-		modifier = {
-			add = -100
-			has_relation_rival = scope:secondary_recipient
-		}
-		
-		modifier = {
-			add = -300
-			has_relation_nemesis = scope:secondary_recipient
-		}
-		
-		modifier = {
-			add = 100
-			scope:favor = yes
-			scope:recipient = {
-				OR = {
-					is_vassal_of = scope:actor
-					AND = {
-						exists = liege
-						liege = scope:actor
-					}
-				}
-			}
-		}
-		
-		modifier = {
-			factor = 0
-			is_at_war = yes
-		}
-
-		modifier = { # Don't annoy players
-			factor = 0
-			scope:recipient = { is_ai = no }
-			OR = {
-				scope:recipient = { is_at_war = yes }
-				scope:secondary_recipient = { has_character_flag = character_ransom_refused_by_player }
-			}
-		}		
+		base = 100		
 	}
 }

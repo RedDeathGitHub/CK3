@@ -39,3 +39,61 @@ hof_ask_for_gold_interaction_effect = {
 		}
 	}
 }
+
+ransom_interaction_effect = {
+	scope:prisoner = {
+		add_character_flag = { #To make sure you don't get spammed about the release
+			flag = block_for_prison_release_notification
+			days = 1
+		}
+		release_from_prison = yes
+		if = { # no opinion if you ransomed yourself
+			limit = { NOT = { this = scope:payer } }
+			if = { #Only visible if a player is involved
+				limit = {
+					OR = {
+						scope:prisoner = { is_ai = no }
+						scope:payer = { is_ai = no }
+					}
+				}
+				add_opinion = {
+					modifier = ransomed_from_prison
+					target = scope:payer
+					years = 1
+				}
+			}
+			else = {
+				hidden_effect = {
+					add_opinion = {
+						modifier = ransomed_from_prison
+						target = scope:payer
+						years = 1
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			always = scope:gold
+		}
+		scope:payer = {
+			pay_short_term_gold = {
+				gold = scope:prisoner.ransom_cost_value
+				target = scope:imprisoner
+			}
+		}
+	}
+	if = {
+		limit = {
+			always = scope:favor
+		}
+		scope:imprisoner = {
+			add_hook = {
+				target = scope:payer
+				type = favor_hook
+			}
+		}
+	}
+
+}
